@@ -1,0 +1,24 @@
+Rusty Robots Sim Jam - Official Page (curated snapshot for deterministic replay)
+
+Rusty Robots Sim Jam · Ferrous Systems Community · $7,000 prize pool · Online
+Deadline: December 8, 2026, 11:59 PM UTC
+
+About
+Program a warehouse robot in the provided open-source simulator written in
+Rust. Simulator is free and runs in the browser.
+
+ELIGIBILITY
+- 18+, worldwide, solo or teams up to 5.
+- No purchase necessary.
+
+PRIZES (cash, USD)
+- First: $2,500
+- Second: $1,200
+- Third: $800
+
+REQUIREMENTS
+- Public repo with your controller code
+- Text writeup of the strategy
+
+FAQ
+Is Rust experience required? No, starter templates are provided.

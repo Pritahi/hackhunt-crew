@@ -1,0 +1,28 @@
+VectorDB Showdown 2026 - Official Page (curated snapshot for deterministic replay)
+
+VectorDB Showdown 2026 · Pine Labs OSS · $12,000 in prizes · 100% online
+Deadline: December 5, 2026, 11:59 PM UTC
+
+About
+Build the most creative retrieval pipeline on top of any open-source vector
+database. Everything runs on your laptop or free cloud tiers.
+
+ELIGIBILITY
+- Open to individuals and teams worldwide, 18 years or older.
+- Students, professionals, and independent builders are all welcome.
+- No purchase necessary. Entry is free.
+
+PRIZES (cash, USD, paid by bank transfer or PayPal)
+- First place: $5,000
+- Second place: $2,500
+- Third place: $1,000
+- Five honorable mentions: $700 each
+
+REQUIREMENTS
+- Public GitHub repository with a README
+- 3-minute screen-recorded demo (narration optional, captions fine)
+- Submission form on the event site
+
+FAQ
+Can I compete alone? Yes, solo entries are fully supported.
+Do I need to travel? No, every stage including the finals is online.

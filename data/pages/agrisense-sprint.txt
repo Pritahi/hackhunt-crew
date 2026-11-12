@@ -1,0 +1,25 @@
+AgriSense Data Sprint - Official Page (curated snapshot for deterministic replay)
+
+AgriSense Data Sprint · FieldByte Labs · $4,500 prize pool · Fully remote
+Deadline: November 28, 2026, 11:59 PM IST
+
+About
+Forecast crop stress from open satellite imagery. Starter notebooks and
+data are provided at no cost.
+
+ELIGIBILITY
+- Open to all individuals worldwide, 18+.
+- Solo or up to 3 members per team.
+- No fees, no purchases.
+
+PRIZES
+- 1st: $1,500 cash
+- 2nd: $900 cash
+- 3rd: $600 cash
+
+REQUIREMENTS
+- Public notebook or repo
+- 200-word summary of approach
+
+FAQ
+Is there an in-person demo day? No. Judging is fully asynchronous.

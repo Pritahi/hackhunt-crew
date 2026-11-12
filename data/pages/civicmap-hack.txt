@@ -1,0 +1,22 @@
+CivicMap Hack 2026 - Official Page (curated snapshot for deterministic replay)
+
+CivicMap Hack 2026 · Open Town Foundation · $3,000 in prizes · Online
+Deadline: November 19, 2026, 11:59 PM UTC
+
+About
+Turn messy public meeting minutes into a searchable civic knowledge map.
+
+ELIGIBILITY
+- Anyone 18 or older, anywhere in the world.
+- Solo or team entries.
+- Free to enter.
+
+PRIZES
+- Grand prize: $1,000 cash
+- Two runner-up prizes: $500 cash each
+
+REQUIREMENTS
+- Public repository and a short text description.
+
+FAQ
+Do winners present live? No, judging is from the repo and writeup.

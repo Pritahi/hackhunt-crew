@@ -3,48 +3,216 @@
     "id": "kane-cli",
     "name": "Kane CLI Online Hackathon",
     "page_file": "pages/kane-cli.txt",
-    "ground_truth": {"verdict": "PASS", "reason": "Cash prize $1,500, online, free, solo allowed, non-students eligible, deadline in future, screen-recording demo only."}
+    "ground_truth": {
+      "verdict": "PASS",
+      "reason": "Cash prize $1,500, online, free, solo allowed, non-students eligible, deadline in future, screen-recording demo only."
+    }
   },
   {
     "id": "codegeist-2026",
     "name": "Codegeist 2026 (Atlassian)",
     "page_file": "pages/codegeist.txt",
-    "ground_truth": {"verdict": "PASS", "reason": "$15,000 first cash prize, individuals allowed, India eligible, Forge free tier, online."}
+    "ground_truth": {
+      "verdict": "PASS",
+      "reason": "$15,000 first cash prize, individuals allowed, India eligible, Forge free tier, online."
+    }
   },
   {
     "id": "enveda-casmi",
     "name": "Enveda CASMI 2026 (Kaggle)",
     "page_file": "pages/enveda-casmi.txt",
-    "ground_truth": {"verdict": "PASS", "reason": "$16,000 first cash prize paid by Kaggle, open worldwide 18+, solo allowed, free GPUs."}
+    "ground_truth": {
+      "verdict": "PASS",
+      "reason": "$16,000 first cash prize paid by Kaggle, open worldwide 18+, solo allowed, free GPUs."
+    }
   },
   {
     "id": "build-with-gemini",
     "name": "Build with Google Gemini (Hack2skill)",
     "page_file": "pages/build-with-gemini.txt",
-    "ground_truth": {"verdict": "FAIL", "reason": "Rules restrict entry to working professionals; the builder is an independent developer who is neither a student nor a salaried professional, so eligibility cannot be claimed truthfully."}
+    "ground_truth": {
+      "verdict": "FAIL",
+      "reason": "Rules restrict entry to working professionals; the builder is an independent developer who is neither a student nor a salaried professional, so eligibility cannot be claimed truthfully."
+    }
   },
   {
     "id": "ai-for-church",
     "name": "AI for Church Hackathon",
     "page_file": "pages/ai-for-church.txt",
-    "ground_truth": {"verdict": "PASS", "reason": "$2,500 cash pool with first prize >= $1,000 stated, free, fully online, worldwide 18+, solo allowed."}
+    "ground_truth": {
+      "verdict": "PASS",
+      "reason": "$2,500 cash pool with first prize >= $1,000 stated, free, fully online, worldwide 18+, solo allowed."
+    }
   },
   {
     "id": "rack-it-up",
     "name": "Rack It Up 2026 (Unstop)",
     "page_file": "pages/rack-it-up.txt",
-    "ground_truth": {"verdict": "FAIL", "reason": "Prize amounts are not published; sponsor prizes announced only after registration, so a cash first prize >= $100 cannot be verified."}
+    "ground_truth": {
+      "verdict": "FAIL",
+      "reason": "Prize amounts are not published; sponsor prizes announced only after registration, so a cash first prize >= $100 cannot be verified."
+    }
   },
   {
     "id": "launchpad-hacks",
     "name": "LaunchPad Hacks (Devpost)",
     "page_file": "pages/launchpad-hacks.txt",
-    "ground_truth": {"verdict": "FAIL", "reason": "Eligibility badge and rules limit entry to students; builder is not a student."}
+    "ground_truth": {
+      "verdict": "FAIL",
+      "reason": "Eligibility badge and rules limit entry to students; builder is not a student."
+    }
   },
   {
     "id": "qnx-global",
     "name": "QNX Global Hackathon",
     "page_file": "pages/qnx-global.txt",
-    "ground_truth": {"verdict": "PASS", "reason": "$10,000 grand cash prize, age of majority only, India not excluded, QNX 8.0 free for non-commercial use, QEMU allowed."}
+    "ground_truth": {
+      "verdict": "PASS",
+      "reason": "$10,000 grand cash prize, age of majority only, India not excluded, QNX 8.0 free for non-commercial use, QEMU allowed."
+    }
+  },
+  {
+    "id": "vectordb-showdown",
+    "name": "VectorDB Showdown 2026",
+    "page_file": "pages/vectordb-showdown.txt",
+    "ground_truth": {
+      "verdict": "PASS",
+      "reason": "$5,000 first cash prize, online, free, 18+ worldwide, solo allowed, deadline Dec 5 2026"
+    }
+  },
+  {
+    "id": "openwaste-ai",
+    "name": "OpenWaste AI Challenge",
+    "page_file": "pages/openwaste-ai.txt",
+    "ground_truth": {
+      "verdict": "PASS",
+      "reason": "$2,000 winner cash, fully remote, free, age of majority, solo allowed, deadline Nov 30 2026"
+    }
+  },
+  {
+    "id": "tinyml-builders-cup",
+    "name": "TinyML Builders Cup",
+    "page_file": "pages/tinyml-builders-cup.txt",
+    "ground_truth": {
+      "verdict": "PASS",
+      "reason": "$1,200 champion cash, free simulator instead of hardware, online, 18+, solo allowed, deadline Nov 24 2026"
+    }
+  },
+  {
+    "id": "devtools-jam",
+    "name": "DevTools Jam 2026",
+    "page_file": "pages/devtools-jam.txt",
+    "ground_truth": {
+      "verdict": "PASS",
+      "reason": "$3,000 first cash, online, free, 18+, solo allowed, deadline Dec 12 2026"
+    }
+  },
+  {
+    "id": "agrisense-sprint",
+    "name": "AgriSense Data Sprint",
+    "page_file": "pages/agrisense-sprint.txt",
+    "ground_truth": {
+      "verdict": "PASS",
+      "reason": "$1,500 first cash, fully remote, free, 18+, deadline Nov 28 2026"
+    }
+  },
+  {
+    "id": "finsim-forecast",
+    "name": "FinSim Forecasting Hack",
+    "page_file": "pages/finsim-forecast.txt",
+    "ground_truth": {
+      "verdict": "PASS",
+      "reason": "$4,000 grand cash, online, free, solo explicitly welcome, deadline Dec 1 2026"
+    }
+  },
+  {
+    "id": "locallang-nlp",
+    "name": "LocalLang NLP Challenge",
+    "page_file": "pages/locallang-nlp.txt",
+    "ground_truth": {
+      "verdict": "PASS",
+      "reason": "$800 winner cash (>= $100), online, free, 18+, deadline Nov 21 2026"
+    }
+  },
+  {
+    "id": "rusty-robots",
+    "name": "Rusty Robots Sim Jam",
+    "page_file": "pages/rusty-robots.txt",
+    "ground_truth": {
+      "verdict": "PASS",
+      "reason": "$2,500 first cash, free browser simulator, online, 18+, solo allowed, deadline Dec 8 2026"
+    }
+  },
+  {
+    "id": "civicmap-hack",
+    "name": "CivicMap Hack 2026",
+    "page_file": "pages/civicmap-hack.txt",
+    "ground_truth": {
+      "verdict": "PASS",
+      "reason": "$1,000 grand cash, online, free, 18+, solo allowed, deadline Nov 19 2026"
+    }
+  },
+  {
+    "id": "campuscopilot",
+    "name": "CampusCopilot Hackathon",
+    "page_file": "pages/campuscopilot.txt",
+    "ground_truth": {
+      "verdict": "FAIL",
+      "reason": "Student-only: rules require current enrollment and .edu email; builder is not a student"
+    }
+  },
+  {
+    "id": "dronezone",
+    "name": "DroneZone Live Finals",
+    "page_file": "pages/dronezone.txt",
+    "ground_truth": {
+      "verdict": "FAIL",
+      "reason": "Finalists must attend in-person finals in Singapore at own expense; not fully online"
+    }
+  },
+  {
+    "id": "cryptokitty-defi",
+    "name": "CryptoKitty DeFi Hack",
+    "page_file": "pages/cryptokitty-defi.txt",
+    "ground_truth": {
+      "verdict": "FAIL",
+      "reason": "All prizes paid only in KITTY governance tokens; no cash alternative"
+    }
+  },
+  {
+    "id": "roboarm-hardware",
+    "name": "RoboArm Hardware Hack",
+    "page_file": "pages/roboarm-hardware.txt",
+    "ground_truth": {
+      "verdict": "FAIL",
+      "reason": "Requires purchasing a $180 robot arm kit; not free to enter"
+    }
+  },
+  {
+    "id": "retroweb-2025",
+    "name": "RetroWeb 2025 Hackathon",
+    "page_file": "pages/retroweb-2025.txt",
+    "ground_truth": {
+      "verdict": "FAIL",
+      "reason": "Submission deadline October 30 2026 has passed as of the crawl date Nov 10 2026"
+    }
+  },
+  {
+    "id": "pitchperfect-video",
+    "name": "PitchPerfect Video Challenge",
+    "page_file": "pages/pitchperfect-video.txt",
+    "ground_truth": {
+      "verdict": "FAIL",
+      "reason": "Mandatory selfie video with entrant's own face and voice; TTS/faceless disqualified"
+    }
+  },
+  {
+    "id": "teamforge-cup",
+    "name": "TeamForge Cup",
+    "page_file": "pages/teamforge-cup.txt",
+    "ground_truth": {
+      "verdict": "FAIL",
+      "reason": "Teams of 2-4 only; solo entries not accepted"
+    }
   }
 ]

@@ -1,0 +1,22 @@
+RoboArm Hardware Hack - Official Page (curated snapshot for deterministic replay)
+
+RoboArm Hardware Hack · MechaWorks · $15,000 in prizes · Online judging
+Deadline: December 6, 2026, 11:59 PM ET
+
+About
+Build a pick-and-place routine for the MechaWorks RA-2 desktop robot arm.
+
+ELIGIBILITY
+- 18+, worldwide, solo or teams.
+
+ENTRY REQUIREMENT
+- Every participant must own or purchase the MechaWorks RA-2 kit (USD 180,
+  plus shipping). Entries are validated against the kit's serial number.
+  No simulator option is available this year.
+
+PRIZES
+- First: $6,000 cash
+- Second: $3,000 cash
+
+REQUIREMENTS
+- Video of the arm completing the task, public code.

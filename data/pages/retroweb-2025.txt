@@ -1,0 +1,22 @@
+RetroWeb 2025 Hackathon - Official Page (curated snapshot for deterministic replay)
+
+RetroWeb 2025 Hackathon · Modem Nostalgia Society · $5,000 in prizes · Online
+Deadline: October 30, 2026, 11:59 PM PT
+
+About
+Rebuild a beloved Web 1.0 experience with modern accessibility.
+
+ELIGIBILITY
+- 18+, worldwide, solo or teams.
+- Free entry.
+
+PRIZES
+- Best revival: $2,000 cash
+- Most authentic: $1,000 cash
+
+STATUS
+Submissions closed on October 30, 2026. Judging is under way. The
+submission form now rejects new entries.
+
+REQUIREMENTS (archived)
+- Public repo, GIF demo.

@@ -1,0 +1,23 @@
+LocalLang NLP Challenge - Official Page (curated snapshot for deterministic replay)
+
+LocalLang NLP Challenge · Bhasha Works · $2,200 in prizes · Online
+Deadline: November 21, 2026, 11:59 PM IST
+
+About
+Build a translation-memory assistant for low-resource Indian languages.
+Open datasets only.
+
+ELIGIBILITY
+- Open worldwide, 18+, individuals or teams up to 4.
+- Free entry.
+
+PRIZES
+- Winner: $800 cash
+- Runner-up: $400 cash
+- Best dataset contribution: $300 cash
+
+REQUIREMENTS
+- Public repo and a text-only project page.
+
+FAQ
+Do I need to speak an Indian language? Helpful but not required.

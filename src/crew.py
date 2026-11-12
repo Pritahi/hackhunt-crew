@@ -68,7 +68,14 @@ class Crew:
         raw = self.meko.memory_search(query, conversation_id=cid, agent_id=agent, limit=5)
         try:
             items = json.loads(raw).get("results", [])
-            recalled = "\n".join(f"- {it['memory']}" for it in items[:5])
+            seen: set[str] = set()
+            mems: list[str] = []
+            for it in items:
+                t = it.get("memory", "") if isinstance(it, dict) else str(it)
+                if t and t not in seen:
+                    seen.add(t)
+                    mems.append(t)
+            recalled = "\n".join(f"- {t}" for t in mems[:5])
         except (json.JSONDecodeError, KeyError, TypeError):
             recalled = raw[:2000]
         return f"{CRITERIA}\n\n=== RECALLED FROM SHARED MEKO MEMORY ===\n{recalled or '(nothing shared yet)'}"

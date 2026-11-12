@@ -1,0 +1,25 @@
+TinyML Builders Cup - Official Page (curated snapshot for deterministic replay)
+
+TinyML Builders Cup · EdgeML Community · $3,400 in cash prizes · Online
+Deadline: November 24, 2026, 11:59 PM PT
+
+About
+Squeeze a useful model onto a microcontroller - in simulation. A free
+web-based board simulator is provided; no hardware purchase is needed.
+
+ELIGIBILITY
+- Open worldwide to anyone 18+.
+- Solo builders and teams of up to 3.
+- No entry fee.
+
+PRIZES (USD)
+- Champion: $1,200
+- Second: $800
+- Third: $400
+- Community choice: $1,000 split among top 5 vote getters
+
+REQUIREMENTS
+- Public repo, simulator project link, and a text writeup.
+
+FAQ
+Do I need to buy a board? No. The simulator is sufficient and free.

@@ -44,6 +44,19 @@ def _recalled_verdict(detail: str) -> str | None:
     return None
 
 
+def _run_stats(ledger: TokenLedger, mode: str, runs: int) -> dict:
+    totals = [ledger.summary(mode, run)["total_tokens"] for run in range(1, runs + 1)]
+    calls = [ledger.summary(mode, run)["llm_calls"] for run in range(1, runs + 1)]
+    mean = sum(totals) / len(totals) if totals else 0
+    return {
+        "run_totals": totals,
+        "run_calls": calls,
+        "mean_tokens": round(mean, 1),
+        "spread_tokens": (max(totals) - min(totals)) if totals else 0,
+        "mean_calls": round(sum(calls) / len(calls), 2) if calls else 0,
+    }
+
+
 def build_results(ledger: TokenLedger, reports_by_mode: dict, ground_truth: dict[str, str], runs: int) -> dict:
     modes = {}
     for mode, reports in reports_by_mode.items():
@@ -51,18 +64,20 @@ def build_results(ledger: TokenLedger, reports_by_mode: dict, ground_truth: dict
         modes[mode] = {
             "overall": ledger.summary(mode),
             "per_run": per_run,
+            "run_stats": _run_stats(ledger, mode, runs),
             "accuracy": verdict_accuracy(reports, ground_truth),
         }
     out = {"modes": modes}
     if "baseline" in modes and "meko" in modes:
-        b = modes["baseline"]["overall"]["total_tokens"]
-        m = modes["meko"]["overall"]["total_tokens"]
-        bc = modes["baseline"]["overall"]["llm_calls"]
-        mc = modes["meko"]["overall"]["llm_calls"]
+        b = modes["baseline"]["run_stats"]["mean_tokens"]
+        m = modes["meko"]["run_stats"]["mean_tokens"]
+        bc = modes["baseline"]["run_stats"]["mean_calls"]
+        mc = modes["meko"]["run_stats"]["mean_calls"]
         out["comparison"] = {
             "token_reduction_pct": round(100 * (1 - m / b), 1) if b else None,
             "llm_call_reduction_pct": round(100 * (1 - mc / bc), 1) if bc else None,
-            "quality_equal": modes["baseline"]["accuracy"]["accuracy"] == modes["meko"]["accuracy"]["accuracy"],
+            "basis": "means over runs (see run_stats)",
+            "quality_equal": modes["meko"]["accuracy"]["accuracy"] >= modes["baseline"]["accuracy"]["accuracy"],
         }
     return out
 
@@ -79,13 +94,19 @@ def write_results(out: dict, outdir: str = "results") -> None:
             lines.append(
                 f"| {mode} | {run} | {s['llm_calls']} | {s['prompt_tokens']} | {s['completion_tokens']} | {s['total_tokens']} |"
             )
+    lines.append("")
+    lines.append("| Mode | Mean tokens/run | Spread (max-min) | Mean LLM calls/run |")
+    lines.append("|---|---|---|---|")
+    for mode, data in out["modes"].items():
+        rs = data["run_stats"]
+        lines.append(f"| {mode} | {rs['mean_tokens']} | {rs['spread_tokens']} | {rs['mean_calls']} |")
     if "comparison" in out:
         c = out["comparison"]
         lines += [
             "",
-            f"- Token reduction with Meko: **{c['token_reduction_pct']}%**",
-            f"- LLM call reduction with Meko: **{c['llm_call_reduction_pct']}%**",
-            f"- Output quality equal across modes: **{c['quality_equal']}**",
+            f"- Token reduction with Meko (mean over runs): **{c['token_reduction_pct']}%**",
+            f"- LLM call reduction with Meko (mean over runs): **{c['llm_call_reduction_pct']}%**",
+            f"- Output quality equal or better with Meko: **{c['quality_equal']}**",
         ]
     for mode, data in out["modes"].items():
         acc = data["accuracy"]

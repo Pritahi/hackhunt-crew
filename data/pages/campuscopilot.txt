@@ -1,0 +1,25 @@
+CampusCopilot Hackathon - Official Page (curated snapshot for deterministic replay)
+
+CampusCopilot Hackathon · EduCloud Inc · $8,000 in prizes · Online
+Deadline: December 3, 2026, 11:59 PM ET
+
+About
+Build an AI study copilot for college courses.
+
+ELIGIBILITY (Official Rules, section 2)
+- Open only to students currently enrolled in an accredited college or
+  university. A valid .edu email address or enrollment letter is required
+  at registration.
+- Teams of up to 4.
+- Free entry for enrolled students.
+
+PRIZES
+- First: $4,000 cash
+- Second: $2,000 cash
+
+REQUIREMENTS
+- Public repo, demo video.
+
+FAQ
+I graduated last year - can I enter? Unfortunately no, this event is for
+current students only.

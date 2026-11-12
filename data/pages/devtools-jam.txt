@@ -1,0 +1,25 @@
+DevTools Jam 2026 - Official Page (curated snapshot for deterministic replay)
+
+DevTools Jam 2026 · Toolchain Collective · $9,000 in prizes · Online only
+Deadline: December 12, 2026, 11:59 PM AoE
+
+About
+Two weeks to ship a developer tool that saves other developers real time.
+CLI tools, editor plugins, CI helpers - anything goes.
+
+ELIGIBILITY
+- Anyone 18 or older, any country not under US embargo.
+- Individuals or teams.
+- Free to enter.
+
+PRIZES (cash, USD)
+- Best tool: $3,000
+- Runner up: $1,500
+- Most polished docs: $500
+
+REQUIREMENTS
+- Public source repository
+- A README with install and usage instructions
+
+FAQ
+Are students allowed? Yes, and so are professionals and hobbyists.

@@ -1,0 +1,20 @@
+TeamForge Cup - Official Page (curated snapshot for deterministic replay)
+
+TeamForge Cup · CollabWare Inc · $11,000 in prizes · Online
+Deadline: December 10, 2026, 11:59 PM UTC
+
+About
+A collaboration-tools build-off for teams.
+
+ELIGIBILITY
+- 18+, worldwide.
+- TEAMS OF 2 TO 4 MEMBERS ONLY. Solo entries are not accepted; the
+  registration form requires at least two member emails.
+- Free entry.
+
+PRIZES
+- Winning team: $5,000 cash (split among members)
+- Runner-up team: $2,000 cash
+
+REQUIREMENTS
+- Public repo listing all team members as contributors.

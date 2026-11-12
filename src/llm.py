@@ -67,7 +67,7 @@ class LLM:
         self.model = model
         self.ledger = ledger
         self._url = GROQ_URL if provider == "groq" else GEMINI_URL
-        self._client = httpx.Client(timeout=httpx.Timeout(180.0, connect=20.0))
+        self._client = httpx.Client(timeout=httpx.Timeout(45.0, connect=10.0))
 
     @classmethod
     def from_env(cls, ledger: TokenLedger) -> "LLM":
@@ -130,7 +130,12 @@ class LLM:
                 time.sleep(delay)
                 delay = min(delay * 2, 90.0)
             except httpx.TransportError as e:
+                # Read timeouts and connection errors: fail fast, and after two
+                # consecutive stalls move to the fallback model - some prompts
+                # stall one model but not another.
                 last_err = e
+                if attempt >= 1 and self.provider == "gemini" and self.model != "gemini-3.8-flash":
+                    self.model = "gemini-3.8-flash"
                 time.sleep(delay)
                 delay = min(delay * 2, 90.0)
         raise RuntimeError(f"LLM call failed after retries ({self.provider}/{self.model}): {last_err}")

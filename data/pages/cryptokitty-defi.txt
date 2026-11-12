@@ -1,0 +1,21 @@
+CryptoKitty DeFi Hack - Official Page (curated snapshot for deterministic replay)
+
+CryptoKitty DeFi Hack · KittyChain Foundation · $40,000 prize pool · Online
+Deadline: December 9, 2026, 11:59 PM UTC
+
+About
+Build playful DeFi tooling on KittyChain.
+
+ELIGIBILITY
+- 18+, worldwide, solo or teams.
+- Free entry.
+
+PRIZES
+- Grand prize: 12,000 KITTY tokens (approx. $8,000 at current rates)
+- Category prizes: 3,000 KITTY tokens each
+All prizes are paid exclusively in KITTY governance tokens to a KittyChain
+wallet. No cash alternative is offered.
+
+REQUIREMENTS
+- Deployed contract on KittyChain testnet (testnet tokens are free).
+- Public repo.

@@ -1,0 +1,25 @@
+FinSim Forecasting Hack - Official Page (curated snapshot for deterministic replay)
+
+FinSim Forecasting Hack · Quantara · $10,000 in prizes · Online
+Deadline: December 1, 2026, 11:59 PM ET
+
+About
+Build an agent that reconciles synthetic bank statements against invoices.
+All data is synthetic and provided free.
+
+ELIGIBILITY
+- Individuals 18+, any country.
+- Solo entries explicitly welcome.
+- Entry is free; no paid data feeds required.
+
+PRIZES (USD, bank transfer)
+- Grand prize: $4,000
+- Accuracy award: $1,500
+- Elegance award: $500
+
+REQUIREMENTS
+- Public repo with reproducible run script
+- Brief architecture note
+
+FAQ
+Do I need a finance background? No.

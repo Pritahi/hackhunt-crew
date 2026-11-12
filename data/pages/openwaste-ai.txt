@@ -1,0 +1,25 @@
+OpenWaste AI Challenge - Official Page (curated snapshot for deterministic replay)
+
+OpenWaste AI Challenge · GreenGrid Foundation · $6,000 prize pool · Online
+Deadline: November 30, 2026, 6:00 PM CET
+
+About
+Use computer vision to sort municipal waste streams. Dataset provided free
+under CC-BY. All training can be done on free GPU tiers.
+
+ELIGIBILITY
+- Individuals or teams of up to 4, any country, age of majority required.
+- No affiliation with any institution required.
+- Free entry.
+
+PRIZES
+- Winner: $2,000 cash (wire transfer)
+- Runner-up: $1,000 cash
+- Best writeup: $500 cash
+
+REQUIREMENTS
+- Model weights + inference notebook in a public repo
+- Short technical report (PDF)
+
+FAQ
+Is remote participation allowed? The entire challenge is remote.

@@ -1,0 +1,37 @@
+QNX Global Hackathon - Official Devpost Page (curated snapshot for deterministic replay)
+
+QNX Global Hackathon · BlackBerry QNX · $50,000 in prizes · Online
+Deadline: December 15, 2026, 2:00 PM EST
+
+About
+Build something remarkable on QNX 8.0, the real-time operating system inside
+cars, robots, and medical devices. Use QEMU - no physical hardware required.
+
+ELIGIBILITY (from the Official Rules)
+- Individuals and teams who have reached the age of majority.
+- Residents of Brazil, Russia, Crimea, Cuba, Iran, and North Korea are
+  excluded. All other countries, including India, are eligible.
+- No purchase necessary. QNX 8.0 is free for non-commercial use, and QEMU
+  emulation is explicitly allowed instead of hardware.
+
+PRIZES (all cash, USD)
+Grand prize: $10,000
+Five category first prizes: $4,000 each
+Runner-up prizes: $2,000 each
+Plus a Best Codelab award.
+
+REQUIREMENTS
+- A working project built on QNX 8.0 (QEMU images are fine)
+- A public demo video
+- A public repository with build and run instructions
+- A completed Devpost submission
+
+JUDGING
+- Technical achievement 40%
+- Innovation 30%
+- Documentation and presentation 30%
+
+FAQ
+Do I need QNX hardware? No, QEMU is fully supported.
+Can I enter alone? Yes.
+Footer: (c) 2026 BlackBerry QNX.

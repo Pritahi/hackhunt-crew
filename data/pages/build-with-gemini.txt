@@ -1,0 +1,37 @@
+Build with Google Gemini - Hack2skill x Google Cloud x YourStory (curated snapshot)
+
+Build with Google Gemini: the flagship India hackathon on Gemini Enterprise
+Idea submission by Dec 3, 2026 · Prototype by Dec 6 · Virtual Demo Day Dec 18-19
+
+About
+Build with Google Gemini invites builders across India to create production-
+grade AI solutions on Gemini Enterprise. Solve one of four problem statements
+around enterprise voice agents.
+
+WHO CAN PARTICIPATE (from the official rules)
+- Working professionals only. Students and non-professionals are not
+  eligible.
+- Participants must be based in India.
+- Teams of 1-4 members.
+
+PRIZES (total pool Rs 8,00,000)
+Winner: Rs 3,00,000
+1st Runner-up: Rs 2,00,000
+2nd Runner-up: Rs 1,25,000
+5 category prizes of Rs 35,000 each
+Shortlisted teams receive $100 in Google Cloud credits for the prototype
+phase.
+
+PROCESS
+1. Register and submit your idea by December 3, 2026.
+2. Shortlisted teams build a prototype (deadline December 6).
+3. Virtual Demo Day on December 18-19 with a 1-2 minute demo video.
+4. LinkedIn build-in-public posts count for 10% of the score.
+
+ENTRY FEE
+None. Participation is free.
+
+FAQ
+Is the event online? Yes, fully virtual.
+Can I participate solo? Yes, teams of 1-4.
+Footer: Hack2skill, Google Cloud, YourStory logos.

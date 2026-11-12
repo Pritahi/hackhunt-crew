@@ -1,0 +1,50 @@
+[
+  {
+    "id": "kane-cli",
+    "name": "Kane CLI Online Hackathon",
+    "page_file": "pages/kane-cli.txt",
+    "ground_truth": {"verdict": "PASS", "reason": "Cash prize $1,500, online, free, solo allowed, non-students eligible, deadline in future, screen-recording demo only."}
+  },
+  {
+    "id": "codegeist-2026",
+    "name": "Codegeist 2026 (Atlassian)",
+    "page_file": "pages/codegeist.txt",
+    "ground_truth": {"verdict": "PASS", "reason": "$15,000 first cash prize, individuals allowed, India eligible, Forge free tier, online."}
+  },
+  {
+    "id": "enveda-casmi",
+    "name": "Enveda CASMI 2026 (Kaggle)",
+    "page_file": "pages/enveda-casmi.txt",
+    "ground_truth": {"verdict": "PASS", "reason": "$16,000 first cash prize paid by Kaggle, open worldwide 18+, solo allowed, free GPUs."}
+  },
+  {
+    "id": "build-with-gemini",
+    "name": "Build with Google Gemini (Hack2skill)",
+    "page_file": "pages/build-with-gemini.txt",
+    "ground_truth": {"verdict": "FAIL", "reason": "Rules restrict entry to working professionals; the builder is an independent developer who is neither a student nor a salaried professional, so eligibility cannot be claimed truthfully."}
+  },
+  {
+    "id": "ai-for-church",
+    "name": "AI for Church Hackathon",
+    "page_file": "pages/ai-for-church.txt",
+    "ground_truth": {"verdict": "PASS", "reason": "$2,500 cash pool with first prize >= $1,000 stated, free, fully online, worldwide 18+, solo allowed."}
+  },
+  {
+    "id": "rack-it-up",
+    "name": "Rack It Up 2026 (Unstop)",
+    "page_file": "pages/rack-it-up.txt",
+    "ground_truth": {"verdict": "FAIL", "reason": "Prize amounts are not published; sponsor prizes announced only after registration, so a cash first prize >= $100 cannot be verified."}
+  },
+  {
+    "id": "launchpad-hacks",
+    "name": "LaunchPad Hacks (Devpost)",
+    "page_file": "pages/launchpad-hacks.txt",
+    "ground_truth": {"verdict": "FAIL", "reason": "Eligibility badge and rules limit entry to students; builder is not a student."}
+  },
+  {
+    "id": "qnx-global",
+    "name": "QNX Global Hackathon",
+    "page_file": "pages/qnx-global.txt",
+    "ground_truth": {"verdict": "PASS", "reason": "$10,000 grand cash prize, age of majority only, India not excluded, QNX 8.0 free for non-commercial use, QEMU allowed."}
+  }
+]

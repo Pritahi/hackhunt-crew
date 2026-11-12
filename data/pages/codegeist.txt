@@ -1,0 +1,44 @@
+Codegeist 2026 - Official Devpost Page (curated snapshot for deterministic replay)
+
+Codegeist 2026: Build with Atlassian Forge and Rovo
+$120,000+ in prizes · Online · Hosted by Atlassian on Devpost
+
+About the challenge
+Atlassian is calling on developers to build the next generation of teamwork
+apps. Create a Forge app or a Rovo agent that helps teams know what is
+decided, what is blocked, and what to do next.
+
+ELIGIBILITY (from the Official Rules)
+- Individuals who have reached the age of majority in their jurisdiction.
+- Teams of eligible individuals.
+- Employees of Atlassian and judges are not eligible.
+- Residents of Brazil, Quebec, Russia, Belarus, Cuba, Iran, North Korea,
+  Syria, and the Crimea region are not eligible. India is NOT excluded.
+- No purchase necessary. A free Atlassian Cloud developer instance and the
+  Forge free tier are sufficient.
+
+PRIZES (all cash, USD)
+- Best Overall App: $15,000
+- Category first places: multiple, $5,000-$10,000 each
+- Bonus: Best Rovo Agent $1,500, plus additional bonus prizes
+Total pool over $120,000.
+
+KEY DATES
+Submissions open: October 2026
+Deadline: December 22, 2026, 12:00 PM Pacific Time
+Judging: begins after the deadline
+Winners announced: expected February 15, 2027
+
+REQUIREMENTS
+- A working Forge app or Rovo agent installed in an Atlassian Cloud instance
+- A public demo video (under 5 minutes) showing the app; screen capture with
+  captions is acceptable
+- A public or shared repository with installation instructions
+- A completed Devpost submission form
+
+JUDGING
+- Quality of the idea 33%
+- Implementation 33%
+- Potential impact 34%
+
+Footer: Devpost and Atlassian logos. Official rules apply.

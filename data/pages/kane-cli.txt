@@ -1,0 +1,51 @@
+Kane CLI Online Hackathon - Official Page (curated snapshot for deterministic replay)
+
+Home | About | Prizes | Schedule | Rules | FAQ | Register
+
+Build the future of QA automation with Kane CLI
+Nov 12 - Nov 19, 2026 · 100% online · Free entry
+
+Kane CLI is the command-line test runner for agentic QA. In this online
+hackathon you will build a project that uses Kane CLI in a creative,
+technically impressive way. Judges want to see real closed-loop automation:
+an agent that writes or maintains test flows, runs them with Kane CLI, reads
+the failures, and iterates.
+
+ELIGIBILITY
+The hackathon is open worldwide to individuals and teams of up to 4. You must
+be 18 or older. Students, professionals, and independent builders are all
+welcome. No purchase is necessary to enter or win. Void where prohibited.
+
+Your repository must be initialized on or after November 12, 2026. Pre-existing
+projects are not eligible.
+
+PRIZES
+1st place: $1,500 USD (cash, paid by bank transfer or PayPal)
+2nd place: $750 USD
+3rd place: $250 USD
+Plus Kane CLI swag for the top 10 teams.
+
+SCHEDULE (all times IST)
+Nov 12, 2026 - Hackathon opens
+Nov 19, 2026, 11:59 PM - Submission deadline
+Nov 24, 2026 - Winners announced on this page and by email
+
+SUBMISSION REQUIREMENTS
+- A public GitHub repository initialized on/after Nov 12, 2026
+- A 3-minute screen recording demonstrating your project (no camera required;
+  screen capture with captions or synthesized narration is fine)
+- A completed submission form before the deadline
+
+JUDGING CRITERIA
+- Technical execution 35%
+- Creativity 25%
+- Use of Kane CLI 25%
+- Presentation 15%
+
+FAQ
+Can I participate alone? Yes, teams of 1-4.
+Is it free? Yes, completely.
+Do I need special hardware? No.
+Can I use any programming language? Yes, as long as Kane CLI runs the tests.
+
+Footer: (c) 2026 Kane CLI. Contact: hackathon@kanecli.example

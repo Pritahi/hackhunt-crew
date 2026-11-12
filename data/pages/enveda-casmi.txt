@@ -1,0 +1,40 @@
+Enveda CASMI 2026 - Kaggle Competition (curated snapshot for deterministic replay)
+
+Enveda CASMI 2026: Molecule Identification from Mass Spectra
+Kaggle · Featured Code Competition · $50,000 prize pool
+
+Overview
+Given tandem mass spectrometry (MS/MS) data, rank candidate molecular
+structures (SMILES) for each spectrum. Submissions are scored by mean
+reciprocal rank over 25 ranked candidates per molecule.
+
+ELIGIBILITY
+Open to Kaggle users worldwide who are 18 or older, subject to Kaggle's
+general competition rules and US export controls. You may compete alone or
+in teams (merger deadline applies). No degree, affiliation, or chemistry
+background is required.
+
+PRIZES (cash, paid by Kaggle to a bank account)
+1st: $16,000
+2nd: $12,000
+3rd: $9,000
+4th: $7,000
+5th: $6,000
+
+TIMELINE (UTC)
+Competition start: November 2026
+Entry and rules acceptance deadline: December 7, 2026
+Team merger deadline: December 7, 2026
+Final submission deadline: December 14, 2026, 11:59 PM UTC
+Winners: shortly after the final deadline, once the private leaderboard is
+revealed.
+
+COMPUTE
+This is a code competition. Notebooks run on Kaggle's free tier (including
+free GPU hours) with internet access disabled at scoring time. Pretrained
+models are allowed subject to the competition rules.
+
+FAQ
+Do I need to pay anything? No. Kaggle competitions are free to enter.
+Can I compete alone? Yes.
+Footer: (c) 2026 Kaggle / Enveda.

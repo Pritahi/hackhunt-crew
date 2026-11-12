@@ -1,0 +1,28 @@
+Rack It Up 2026: 48-Hour Online Hackathon - Unstop (curated snapshot)
+
+Rack It Up 2026 · by Rack'Em (Karma Enterprises, Bengaluru)
+Hack window: December 11-13, 2026 (48 hours) · Finals on Zoom December 14 ·
+Results December 15 · Fully online
+
+About
+Rack It Up is a 48-hour online build sprint. Ship a genuinely live, deployed
+product - we reward working deployments over slide decks.
+
+WHO CAN PARTICIPATE
+- Cross-college and open registration: students AND non-students welcome.
+- Teams of 1-4. Solo participants are explicitly welcome.
+- Free registration. Registration closes December 9, 2026.
+
+PRIZES
+Prize amounts are not yet published. Sponsor prizes will be announced between
+December 2 and December 5 on this page. Check back before the hack window.
+
+SUBMISSION
+- A deployed live project (URL required)
+- A 3-minute demo video
+- Finalists present on Zoom on December 14; results December 15.
+
+FAQ
+Is there a cash prize? Sponsor prizes will be announced soon.
+Is it online? Yes, the hack and finals are fully online.
+Footer: Powered by Unstop.

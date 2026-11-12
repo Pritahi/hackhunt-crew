@@ -1,0 +1,33 @@
+LaunchPad Hacks - Devpost (curated snapshot for deterministic replay)
+
+LaunchPad Hacks · $300 in prizes · Online · Deadline December 4, 2026
+
+About
+A beginner-friendly online hackathon for builders early in their journey.
+Come build something fun over the weekend!
+
+ELIGIBILITY
+This hackathon is open to students only. Participants must be currently
+enrolled in a high school, college, university, or an equivalent educational
+program. Recent graduates (within 6 months) may also enter. Professionals
+who are not students are not eligible to win prizes.
+
+PRIZES
+Best Overall: $300
+Best Beginner: $100 (gift card)
+Category prizes: sponsor credits
+
+REQUIREMENTS
+- A Devpost submission with a demo video (max 3 minutes)
+- A link to source code
+
+TEAM SIZE
+1-4. Solo is fine.
+
+ENTRY FEE
+None.
+
+JUDGING
+Creativity, execution, and presentation, weighted equally.
+
+Footer: (c) 2026 LaunchPad Hacks. Devpost terms apply.

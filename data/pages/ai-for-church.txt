@@ -1,0 +1,36 @@
+AI for Church Hackathon - Official Page (curated snapshot for deterministic replay)
+
+AI for Church Hackathon 2026 · Build AI that serves ministries worldwide
+Submission deadline: November 27, 2026, 11:59 PM ET · Winners announced live
+December 1, 2026 · 100% online
+
+About
+The AI for Church community invites builders of all backgrounds to create AI
+tools that help churches and ministries: sermon preparation helpers, outreach
+assistants, administration copilots, translation tools, and more. Sponsored
+credits from Lovable are available, but any stack is allowed.
+
+ELIGIBILITY
+- Open worldwide to anyone 18 or older.
+- Individuals and teams welcome; solo entries are explicitly allowed.
+- No purchase necessary. Free to enter.
+
+PRIZES
+Total cash pool: $2,500 USD, split among the top entries. The first-place
+award is the largest share (announced as at least $1,000).
+Winners are announced during a live online event on December 1, 2026.
+
+SUBMISSION
+- A working demo link or repository
+- A short writeup of what the tool does and who it serves
+- A 2-3 minute demo video (screen recording is fine)
+
+JUDGING
+- Impact for ministries 40%
+- Execution 30%
+- Creativity 30%
+
+FAQ
+Do I need to be a church member? No, the hackathon is open to everyone.
+Is it online? Yes, fully.
+Footer: (c) 2026 AI for Church.

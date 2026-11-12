@@ -2724,5 +2724,1184 @@
         "effort_days": 4
       }
     }
+  },
+  {
+    "candidate": "LocalLang NLP Challenge",
+    "mode": "meko",
+    "run": 2,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "LocalLang NLP Challenge",
+        "organizer": "Bhasha Works",
+        "deadline": "2026-11-21T23:59:00",
+        "prizes": {
+          "winner": "$800 cash",
+          "runner_up": "$400 cash",
+          "best_dataset_contribution": "$300 cash"
+        },
+        "first_prize_cash_usd": 800,
+        "eligibility": "Open worldwide, 18+, individuals or teams up to 4.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Build a translation-memory assistant for low-resource Indian languages using open datasets. Requires a public repository and a text-only project page."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate is open to non-students, fully online, free to enter, offers a cash prize of $800, allows solo participation, has a deadline of 2026-11-21, and does not require face or voice recording."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Prize payment logistics for international/cross-border transfers may involve high intermediary bank fees or reliance on third-party payment platforms (e.g., PayPal, Wise) which may have regional restrictions.",
+            "severity": "medium"
+          },
+          {
+            "risk": "The requirement for a 'public repository' implies potential exposure of intellectual property; ensure no proprietary API keys or sensitive data are committed to the repo.",
+            "severity": "low"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "A lightweight Translation Memory (TM) assistant using a vector-database-backed retrieval system for low-resource Indian languages (e.g., Marathi, Odia, or Assamese) leveraging the IndicNLP library.",
+        "reuse": [
+          "Vector search implementation from previous RAG projects",
+          "IndicNLP library integration patterns",
+          "Streamlit UI boilerplate for text-based tools"
+        ],
+        "steps": [
+          "Select a target low-resource language and curate a small, high-quality parallel corpus from open sources like PMIndia or Tatoeba.",
+          "Implement a sentence-transformer model (e.g., LaBSE or IndicBERT) to generate embeddings for the translation memory.",
+          "Build a retrieval engine using FAISS to find the most relevant translation segments for a given input query.",
+          "Develop a simple Streamlit interface that displays the top-k matches to assist human translators.",
+          "Package the code into a public GitHub repository with a clear README and a sample dataset."
+        ],
+        "demo_risks": [
+          "Low-resource language models may produce inaccurate semantic matches if the training data is insufficient.",
+          "Latency issues during vector search if the index grows too large for the free-tier hosting environment."
+        ],
+        "effort_days": 7
+      }
+    }
+  },
+  {
+    "candidate": "Rusty Robots Sim Jam",
+    "mode": "meko",
+    "run": 2,
+    "verdict": "FAIL",
+    "agents": {
+      "scout": {
+        "name": "Rusty Robots Sim Jam",
+        "organizer": "Ferrous Systems Community",
+        "deadline": "2026-12-08T23:59:00Z",
+        "prizes": {
+          "first": 2500,
+          "second": 1200,
+          "third": 800
+        },
+        "first_prize_cash_usd": 2500,
+        "eligibility": "18+, worldwide, solo or teams up to 5.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Participants must program a warehouse robot using a browser-based Rust simulator. Submission requires a public repository with controller code and a strategy writeup."
+      },
+      "verifier": {
+        "checks": {
+          "1": "fail",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "The builder profile explicitly states they are not an employed working professional, and the evaluation criteria require the candidate to be for working professionals only, excluding hobbyists."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "The verifier flagged a potential 'working professional' requirement that is not explicitly stated in the Scout facts; if such a hidden clause exists in the full rules, hobbyists could be disqualified.",
+            "severity": "medium"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "Develop a high-efficiency pathfinding and load-balancing controller for the warehouse robot simulator using Rust, focusing on A* search optimization and collision avoidance heuristics.",
+        "reuse": [
+          "Rust boilerplate for WASM-based simulation environments",
+          "A* pathfinding algorithm implementation",
+          "PID controller logic for smooth robot movement",
+          "Previous documentation templates for strategy writeups"
+        ],
+        "steps": [
+          "Set up the local Rust development environment and clone the simulator repository",
+          "Implement a basic reactive controller to establish a baseline score",
+          "Develop an A* pathfinding module with dynamic obstacle avoidance",
+          "Optimize the controller for multi-robot coordination to maximize throughput",
+          "Conduct stress tests in the simulator to refine movement parameters",
+          "Draft the strategy writeup detailing the algorithmic approach and performance metrics",
+          "Finalize code and submit via public repository"
+        ],
+        "demo_risks": [
+          "Simulator API changes during the jam",
+          "Performance bottlenecks in the WASM runtime",
+          "Unexpected edge cases in warehouse layout generation"
+        ],
+        "effort_days": 12
+      }
+    }
+  },
+  {
+    "candidate": "CivicMap Hack 2026",
+    "mode": "meko",
+    "run": 2,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "CivicMap Hack 2026",
+        "organizer": "Open Town Foundation",
+        "deadline": "2026-11-19T23:59:00Z",
+        "prizes": {
+          "grand_prize": "$1,000 cash",
+          "runner_up": "$500 cash each"
+        },
+        "first_prize_cash_usd": 1000,
+        "eligibility": "Anyone 18 or older, anywhere in the world.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Hackathon focuses on mapping civic meeting minutes. Judging is based solely on public repository and text description; no live presentations required."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate is open to non-students.",
+          "The hackathon is fully online.",
+          "Entry is free.",
+          "The cash prize of $1,000 exceeds the $100 minimum.",
+          "Solo participation is permitted.",
+          "The deadline of 2026-11-19 is after the evaluation date of 2026-11-10.",
+          "There is no requirement for face or voice recording."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Prize payment logistics for international winners (India) are not specified; potential for high wire transfer fees or reliance on platforms like PayPal/Wise which may have regional restrictions.",
+            "severity": "medium"
+          },
+          {
+            "risk": "The 'Open Town Foundation' lacks a clear track record, posing a risk of non-payment or administrative abandonment.",
+            "severity": "low"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "CivicPulse: An automated pipeline that scrapes local government meeting minutes, uses LLMs to extract key policy decisions and action items, and maps them onto an interactive dashboard for citizen transparency.",
+        "reuse": [
+          "Existing RAG-based document processing pipeline from previous civic-tech projects",
+          "Standardized GitHub repository template with automated documentation generation",
+          "Pre-configured Leaflet.js mapping component for geospatial data visualization"
+        ],
+        "steps": [
+          "Identify 3-5 target municipal meeting minute portals with accessible PDF/HTML archives.",
+          "Develop a Python-based scraper to ingest meeting documents.",
+          "Implement an LLM-based extraction layer to parse decisions, dates, and locations into structured JSON.",
+          "Geocode extracted locations using OpenStreetMap API (free tier).",
+          "Build a lightweight frontend dashboard to display the map and searchable decision logs.",
+          "Finalize the GitHub repository with a clear README, installation instructions, and a demo video/GIF."
+        ],
+        "demo_risks": [
+          "Inconsistent formatting of municipal meeting minutes across different jurisdictions.",
+          "Rate limits on free geocoding APIs if the dataset is too large.",
+          "Potential for LLM hallucinations in summarizing complex policy documents."
+        ],
+        "effort_days": 7
+      }
+    }
+  },
+  {
+    "candidate": "CampusCopilot Hackathon",
+    "mode": "meko",
+    "run": 2,
+    "verdict": "FAIL",
+    "agents": {
+      "scout": {
+        "name": "CampusCopilot Hackathon",
+        "organizer": "EduCloud Inc",
+        "deadline": "2026-12-03T23:59:00-05:00",
+        "prizes": {
+          "first": "$4,000 cash",
+          "second": "$2,000 cash"
+        },
+        "first_prize_cash_usd": 4000,
+        "eligibility": "Open only to students currently enrolled in an accredited college or university.",
+        "student_only": true,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Requires a public repo and demo video. Open exclusively to currently enrolled students with a valid .edu email or enrollment letter."
+      },
+      "verifier": {
+        "checks": {
+          "1": "fail",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "The hackathon is restricted to currently enrolled students, which explicitly excludes the builder who is not a student."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Eligibility restriction: The hackathon is strictly limited to currently enrolled students, requiring a .edu email or enrollment letter, which the builder does not possess.",
+            "severity": "high"
+          }
+        ],
+        "kill": true,
+        "kill_reason": "The candidate is restricted to students only, violating the builder's eligibility criteria."
+      },
+      "_eliminated": true
+    }
+  },
+  {
+    "candidate": "DroneZone Live Finals",
+    "mode": "meko",
+    "run": 2,
+    "verdict": "FAIL",
+    "agents": {
+      "scout": {
+        "name": "DroneZone Live Finals",
+        "organizer": "SkyPort Ventures",
+        "deadline": "2026-11-26T23:59:00+08:00",
+        "prizes": {
+          "champion": "$10,000",
+          "runner_up": "$5,000"
+        },
+        "first_prize_cash_usd": 10000,
+        "eligibility": "18+, worldwide, solo or teams",
+        "student_only": false,
+        "online": false,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Qualifiers are online, but the top 8 teams must attend the live finals in Singapore at their own expense. Failure to attend results in disqualification."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "fail",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "Criterion 2 failed: The competition requires mandatory in-person attendance in Singapore for the top 8 teams, violating the requirement for fully online participation."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Mandatory in-person travel to Singapore for the top 8 teams at their own expense creates a significant financial burden and disqualification risk.",
+            "severity": "high"
+          }
+        ],
+        "kill": true,
+        "kill_reason": "The competition violates the mandatory 'fully online participation' entry criterion due to the requirement for in-person attendance at the finals in Singapore."
+      },
+      "_eliminated": true
+    }
+  },
+  {
+    "candidate": "CryptoKitty DeFi Hack",
+    "mode": "meko",
+    "run": 2,
+    "verdict": "FAIL",
+    "agents": {
+      "scout": {
+        "name": "CryptoKitty DeFi Hack",
+        "organizer": "KittyChain Foundation",
+        "deadline": "2026-12-09T23:59:00Z",
+        "prizes": {
+          "grand_prize": "12,000 KITTY tokens",
+          "category_prizes": "3,000 KITTY tokens each"
+        },
+        "first_prize_cash_usd": null,
+        "eligibility": "18+, worldwide, solo or teams",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Prizes are paid exclusively in KITTY governance tokens; no cash alternative is offered."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "fail",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "Criterion 4 failed: The hackathon offers prizes exclusively in KITTY governance tokens with no cash alternative, failing the requirement for a cash first prize of at least 100 USD."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Prize liquidity and volatility: Prizes are paid exclusively in KITTY governance tokens, which may be illiquid, subject to extreme price volatility, or difficult to convert to fiat currency.",
+            "severity": "high"
+          }
+        ],
+        "kill": true,
+        "kill_reason": "The hackathon fails Criterion 4: It offers prizes exclusively in KITTY governance tokens with no cash alternative, failing the requirement for a cash first prize of at least 100 USD."
+      },
+      "_eliminated": true
+    }
+  },
+  {
+    "candidate": "RoboArm Hardware Hack",
+    "mode": "meko",
+    "run": 2,
+    "verdict": "FAIL",
+    "agents": {
+      "scout": {
+        "name": "RoboArm Hardware Hack",
+        "organizer": "MechaWorks",
+        "deadline": "2026-12-06T23:59:00-05:00",
+        "prizes": {
+          "first": "$6,000 cash",
+          "second": "$3,000 cash"
+        },
+        "first_prize_cash_usd": 6000,
+        "eligibility": "18+, worldwide, solo or teams.",
+        "student_only": false,
+        "online": true,
+        "free_entry": false,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Requires purchase of MechaWorks RA-2 kit ($180 plus shipping) for entry. Submission requires a video of the arm completing the task and public code."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "fail",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "Criterion 3 failed: The hackathon requires the purchase of a MechaWorks RA-2 kit ($180 plus shipping) to participate, violating the free entry requirement."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Mandatory hardware purchase of $180 for the MechaWorks RA-2 kit creates a significant financial barrier to entry.",
+            "severity": "high"
+          }
+        ],
+        "kill": true,
+        "kill_reason": "The hackathon violates Criterion 3 (Free to enter) by requiring the purchase of a $180 hardware kit to participate."
+      },
+      "_eliminated": true
+    }
+  },
+  {
+    "candidate": "RetroWeb 2025 Hackathon",
+    "mode": "meko",
+    "run": 2,
+    "verdict": "FAIL",
+    "agents": {
+      "scout": {
+        "name": "RetroWeb 2025 Hackathon",
+        "organizer": "Modem Nostalgia Society",
+        "deadline": "2026-10-30T23:59:00-07:00",
+        "prizes": {
+          "Best revival": "$2,000 cash",
+          "Most authentic": "$1,000 cash"
+        },
+        "first_prize_cash_usd": 2000,
+        "eligibility": "18+, worldwide, solo or teams.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Submissions closed on October 30, 2026. Judging is currently under way."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "fail",
+          "7": "pass"
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "The submission deadline of 2026-10-30 has passed as of the evaluation date of 2026-11-10."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "The submission deadline has passed, making it impossible to enter the hackathon.",
+            "severity": "high"
+          }
+        ],
+        "kill": true,
+        "kill_reason": "The submission deadline of 2026-10-30 has passed as of the evaluation date of 2026-11-10, violating entry criterion #6."
+      },
+      "_eliminated": true
+    }
+  },
+  {
+    "candidate": "PitchPerfect Video Challenge",
+    "mode": "meko",
+    "run": 2,
+    "verdict": "FAIL",
+    "agents": {
+      "scout": {
+        "name": "PitchPerfect Video Challenge",
+        "organizer": "StageLight Media",
+        "deadline": "2026-12-04T23:59:00-05:00",
+        "prizes": {
+          "best_pitch": "$3,000 cash",
+          "audience_favorite": "$1,000 cash"
+        },
+        "first_prize_cash_usd": 3000,
+        "eligibility": "18+, worldwide, solo or teams.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": true,
+        "notes": "Requires a 2-minute selfie video with the entrant on camera narrating in their own voice. Faceless recordings and text-to-speech are disqualified."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "fail"
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "Criterion 7 failed: The challenge explicitly requires a 2-minute selfie video with the entrant on camera narrating in their own voice, which violates the requirement to not show your face or record your own voice."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "The challenge mandates a 2-minute selfie video featuring the entrant's face and voice, which directly conflicts with the builder's privacy requirements.",
+            "severity": "high"
+          }
+        ],
+        "kill": true,
+        "kill_reason": "The candidate violates Criterion 7: The challenge explicitly requires the entrant to show their face and record their own voice."
+      },
+      "_eliminated": true
+    }
+  },
+  {
+    "candidate": "TeamForge Cup",
+    "mode": "meko",
+    "run": 2,
+    "verdict": "FAIL",
+    "agents": {
+      "scout": {
+        "name": "TeamForge Cup",
+        "organizer": "CollabWare Inc",
+        "deadline": "2026-12-10T23:59:00Z",
+        "prizes": {
+          "first": "$5,000",
+          "runner_up": "$2,000"
+        },
+        "first_prize_cash_usd": 5000,
+        "eligibility": "18+, worldwide, teams of 2 to 4 members only.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": false,
+        "requires_face_or_voice": false,
+        "notes": "Collaboration-tools build-off. Solo entries are explicitly prohibited; registration requires at least two member emails. Public repository listing all team members as contributors is required."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "fail",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "The candidate explicitly prohibits solo participation, requiring teams of 2 to 4 members, which violates criterion 5."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Mandatory team requirement: The competition explicitly prohibits solo participation, requiring teams of 2 to 4 members, which is a hard disqualifier for an independent builder.",
+            "severity": "high"
+          }
+        ],
+        "kill": true,
+        "kill_reason": "The candidate violates entry criterion 5, which requires that solo participation must be allowed."
+      },
+      "_eliminated": true
+    }
+  },
+  {
+    "candidate": "Kane CLI Online Hackathon",
+    "mode": "meko",
+    "run": 3,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "Kane CLI Online Hackathon",
+        "organizer": "Kane CLI",
+        "deadline": "2026-11-19T23:59:00",
+        "prizes": {
+          "1st": "$1,500 USD",
+          "2nd": "$750 USD",
+          "3rd": "$250 USD",
+          "other": "Kane CLI swag for top 10 teams"
+        },
+        "first_prize_cash_usd": 1500,
+        "eligibility": "Worldwide, individuals and teams of up to 4, 18 or older. Students, professionals, and independent builders welcome.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Build a project using Kane CLI for agentic QA automation. Submission requires a public GitHub repo and a 3-minute screen recording (no camera or voice narration required)."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate is open to non-students.",
+          "The hackathon is fully online.",
+          "Entry is free.",
+          "The first prize is $1,500 USD cash.",
+          "Solo participation is permitted.",
+          "The deadline of 2026-11-19 is in the future relative to the evaluation date.",
+          "The submission requirements explicitly state no camera or personal voice narration is required."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Dependency on proprietary 'Kane CLI' tool may involve hidden learning curves or undocumented API limitations that could hinder project completion within the deadline.",
+            "severity": "low"
+          },
+          {
+            "risk": "Prize distribution for international winners (India) may be subject to platform-specific payment processor fees or tax withholding requirements not explicitly detailed.",
+            "severity": "medium"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "Automated Regression Suite for E-commerce using Kane CLI: A self-healing test automation framework that monitors UI changes and generates Kane CLI test scripts dynamically.",
+        "reuse": [
+          "Existing boilerplate for Playwright/Puppeteer test automation",
+          "Standard CI/CD GitHub Actions templates for automated testing",
+          "Previous logic for parsing DOM structures into JSON-based test steps"
+        ],
+        "steps": [
+          "Initialize Kane CLI environment and map core API endpoints for test execution.",
+          "Develop a crawler module to extract UI elements from a target demo e-commerce site.",
+          "Implement the 'Self-Healing' logic: if a test fails due to a selector change, use Kane CLI to re-identify the element and update the test script.",
+          "Create a dashboard/CLI output that summarizes test coverage and failure reports.",
+          "Record a 3-minute screen capture demonstrating the automated test execution and self-healing process.",
+          "Prepare the GitHub repository with clear documentation and a 'Getting Started' guide."
+        ],
+        "demo_risks": [
+          "Kane CLI API instability or undocumented breaking changes during the build phase.",
+          "Latency in the self-healing loop causing test timeouts.",
+          "Potential platform-specific payment processing delays for international prize disbursement."
+        ],
+        "effort_days": 7
+      }
+    }
+  },
+  {
+    "candidate": "Codegeist 2026 (Atlassian)",
+    "mode": "meko",
+    "run": 3,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "Codegeist 2026",
+        "organizer": "Atlassian",
+        "deadline": "2026-12-22T12:00:00Z",
+        "prizes": {
+          "best_overall": 15000,
+          "category_first_places": "5000-10000",
+          "best_rovo_agent": 1500,
+          "total_pool": "120000+"
+        },
+        "first_prize_cash_usd": 15000,
+        "eligibility": "Individuals who have reached the age of majority; teams allowed. Excludes employees and residents of specific sanctioned regions (Brazil, Quebec, Russia, Belarus, Cuba, Iran, North Korea, Syria, Crimea).",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Requires a working Forge app or Rovo agent and a public demo video. Screen capture with captions is explicitly permitted, so face/voice is not required."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate is open to non-students.",
+          "The event is fully online.",
+          "Entry is free.",
+          "The first prize is $15,000 USD, which exceeds the $100 minimum.",
+          "Solo participation is permitted.",
+          "The deadline of 2026-12-22 has not passed.",
+          "Face or voice recording is not mandatory."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Payment processing and tax compliance for international winners (India) often involve complex documentation (W-8BEN forms) and potential high transaction fees or currency conversion losses.",
+            "severity": "medium"
+          },
+          {
+            "risk": "Atlassian Forge/Rovo platform development requires significant learning curve and adherence to specific platform guidelines, which may lead to disqualification if the app does not meet strict technical compliance standards.",
+            "severity": "medium"
+          },
+          {
+            "risk": "The 'sanctioned regions' clause is broad; while India is not listed, participants must ensure they are not using VPNs or infrastructure that could trigger automated compliance flags during the submission process.",
+            "severity": "low"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "A Rovo Agent for Jira that automates 'Ticket Triage & Contextual Summarization' by analyzing linked Confluence documentation and historical ticket resolution patterns to suggest immediate action plans for support engineers.",
+        "reuse": [
+          "Standard Forge boilerplate for Jira/Confluence integration",
+          "Existing Rovo Agent SDK patterns for LLM-based reasoning",
+          "Pre-built UI components for Forge custom UI",
+          "Standard OAuth2 flow templates for Atlassian ecosystem"
+        ],
+        "steps": [
+          "Initialize Forge app environment and configure Rovo Agent manifest.",
+          "Implement Jira issue listener to trigger agent on new ticket creation.",
+          "Develop Rovo action to query Confluence spaces for relevant technical documentation.",
+          "Integrate LLM logic to synthesize documentation and historical ticket data into a structured comment.",
+          "Build a simple Forge UI for agent configuration (e.g., selecting which projects to monitor).",
+          "Perform rigorous testing on Atlassian developer sandbox to ensure compliance with platform guidelines.",
+          "Record and edit a high-quality screen-capture demo with clear text-based annotations.",
+          "Submit via the Codegeist portal, ensuring all tax documentation (W-8BEN) is prepared."
+        ],
+        "demo_risks": [
+          "Latency in Rovo Agent response times during live demo.",
+          "Inconsistent LLM output formatting requiring strict prompt engineering.",
+          "Potential failure to meet strict Forge security/privacy guidelines during automated review."
+        ],
+        "effort_days": 14
+      }
+    }
+  },
+  {
+    "candidate": "Enveda CASMI 2026 (Kaggle)",
+    "mode": "meko",
+    "run": 3,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "Enveda CASMI 2026",
+        "organizer": "Kaggle",
+        "deadline": "2026-12-14T23:59:00Z",
+        "prizes": {
+          "1st": "$16,000",
+          "2nd": "$12,000",
+          "3rd": "$9,000",
+          "4th": "$7,000",
+          "5th": "$6,000"
+        },
+        "first_prize_cash_usd": 16000,
+        "eligibility": "Open to Kaggle users worldwide 18 or older. No degree, affiliation, or chemistry background required.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "A code competition focused on molecule identification from mass spectra. Participants must rank candidate molecular structures. Submissions are evaluated via mean reciprocal rank."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The competition is open to non-students.",
+          "The competition is fully online.",
+          "Entry is free.",
+          "The first prize is $16,000 USD, which is a cash prize.",
+          "Solo participation is permitted.",
+          "The deadline of 2026-12-14 has not passed as of 2026-11-10.",
+          "There is no requirement for face or voice recording."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Kaggle competitions often require winners to undergo a rigorous code verification and documentation process to claim prizes, which can be disqualified if the code is not reproducible or lacks sufficient documentation.",
+            "severity": "medium"
+          },
+          {
+            "risk": "The competition involves complex mass spectrometry data; participants may face significant computational costs if they attempt to train large models without access to efficient hardware or Kaggle's provided kernels.",
+            "severity": "low"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "Ensemble-based molecular structure ranking using Graph Neural Networks (GNNs) and spectral feature extraction to optimize Mean Reciprocal Rank (MRR) for mass spectrometry data.",
+        "reuse": [
+          "Standard Kaggle competition pipeline (data preprocessing, cross-validation, submission formatting)",
+          "Existing GNN architectures (e.g., GraphSAGE or GIN) for molecular representation",
+          "Pre-trained chemical embedding models (e.g., ChemBERTa) for feature enrichment",
+          "Kaggle Kernels/Notebooks environment for free GPU compute"
+        ],
+        "steps": [
+          "Perform Exploratory Data Analysis (EDA) on mass spectra and candidate molecular structures to identify noise patterns.",
+          "Implement a baseline model using simple spectral feature matching and Tanimoto similarity.",
+          "Develop a GNN-based ranking model to predict the likelihood of a candidate structure matching the given spectrum.",
+          "Integrate spectral peak intensity normalization and augmentation techniques to improve model robustness.",
+          "Implement a robust cross-validation strategy to prevent overfitting to the public leaderboard.",
+          "Ensemble multiple model checkpoints and perform final inference on the test set.",
+          "Document code and pipeline thoroughly to ensure reproducibility for the prize verification process."
+        ],
+        "demo_risks": [
+          "Overfitting to the public leaderboard due to the specific nature of the mass spectrometry dataset.",
+          "High computational latency during inference if the candidate pool per spectrum is excessively large.",
+          "Potential disqualification if the final code submission is not fully reproducible or lacks clear documentation."
+        ],
+        "effort_days": 30
+      }
+    }
+  },
+  {
+    "candidate": "Build with Google Gemini (Hack2skill)",
+    "mode": "meko",
+    "run": 3,
+    "verdict": "FAIL",
+    "agents": {
+      "scout": {
+        "name": "Build with Google Gemini",
+        "organizer": "Hack2skill",
+        "deadline": "2026-12-03",
+        "prizes": {
+          "winner": "Rs 3,00,000",
+          "first_runner_up": "Rs 2,00,000",
+          "second_runner_up": "Rs 1,25,000",
+          "category_prizes": "5 prizes of Rs 35,000 each",
+          "other": "Shortlisted teams receive $100 in Google Cloud credits"
+        },
+        "first_prize_cash_usd": 3500,
+        "eligibility": "Working professionals only based in India. Students and non-professionals are not eligible.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Hackathon for working professionals in India. Requires a 1-2 minute demo video for the virtual demo day. Idea submission deadline is December 3, 2026."
+      },
+      "verifier": {
+        "checks": {
+          "1": "fail",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "The hackathon explicitly restricts eligibility to 'Working professionals only' and states 'non-professionals are not eligible'. As the builder is an independent hobbyist and not an employed working professional, they do not meet the eligibility criteria."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Strict eligibility criteria: The hackathon explicitly restricts participation to 'Working professionals only' and excludes non-professionals/hobbyists.",
+            "severity": "high"
+          },
+          {
+            "risk": "Potential tax/compliance burden: Prize money in India is subject to TDS (Tax Deducted at Source), which may complicate the payout process for independent participants.",
+            "severity": "medium"
+          }
+        ],
+        "kill": true,
+        "kill_reason": "The candidate fails the eligibility criteria as they are an independent hobbyist, while the hackathon explicitly restricts participation to 'Working professionals only' and states 'non-professionals are not eligible'."
+      },
+      "_eliminated": true
+    }
+  },
+  {
+    "candidate": "AI for Church Hackathon",
+    "mode": "meko",
+    "run": 3,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "AI for Church Hackathon",
+        "organizer": "AI for Church",
+        "deadline": "2026-11-27T23:59:00-05:00",
+        "prizes": {
+          "total_cash_pool_usd": 2500,
+          "first_prize_cash_usd": 1000
+        },
+        "first_prize_cash_usd": 1000,
+        "eligibility": "Open worldwide to anyone 18 or older.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Hackathon focused on building AI tools for churches and ministries. Submission requires a demo link, writeup, and a 2-3 minute demo video (screen recording is acceptable)."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate is open to non-students.",
+          "The hackathon is fully online.",
+          "Entry is free.",
+          "The first prize is $1,000 USD, which exceeds the $100 minimum.",
+          "Solo participation is allowed.",
+          "The deadline of 2026-11-27 is after the evaluation date of 2026-11-10.",
+          "The requirements specify a screen recording, which does not necessitate showing a face or recording a voice."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Prize payment logistics for international winners (India) may involve high wire transfer fees or reliance on platforms like PayPal/Wise which may have regional restrictions.",
+            "severity": "medium"
+          },
+          {
+            "risk": "Subjective judging criteria inherent to 'church/ministry' themes may favor specific theological or organizational alignments over technical innovation.",
+            "severity": "low"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "SermonSync: An AI-powered tool that automatically generates small-group discussion guides, social media snippets, and prayer points from uploaded sermon transcripts or audio files.",
+        "reuse": [
+          "RAG-based document processing pipeline",
+          "OpenAI/Anthropic API integration boilerplate",
+          "Streamlit frontend template for rapid UI deployment",
+          "Automated transcription service integration (Whisper API)"
+        ],
+        "steps": [
+          "Set up a Streamlit interface for file uploads (audio/text).",
+          "Integrate OpenAI Whisper for audio-to-text transcription.",
+          "Implement a prompt-engineering module to structure sermon content into specific church-use formats (discussion questions, social media posts, prayer points).",
+          "Add a 'Copy to Clipboard' and 'Export to PDF' feature for user convenience.",
+          "Record a 2-3 minute screen-capture demo showcasing the workflow from raw audio to finished discussion guide.",
+          "Draft the project writeup focusing on how this saves time for busy ministry volunteers."
+        ],
+        "demo_risks": [
+          "API latency during live demo if the sermon file is long.",
+          "Hallucinations in AI-generated content requiring a disclaimer or 'human-in-the-loop' verification step.",
+          "Potential for inconsistent formatting if the sermon transcript is poorly structured."
+        ],
+        "effort_days": 5
+      }
+    }
+  },
+  {
+    "candidate": "Rack It Up 2026 (Unstop)",
+    "mode": "meko",
+    "run": 3,
+    "verdict": "FAIL",
+    "agents": {
+      "scout": {
+        "name": "Rack It Up 2026",
+        "organizer": "Rack'Em (Karma Enterprises, Bengaluru)",
+        "deadline": "2026-12-09",
+        "prizes": {
+          "description": "Sponsor prizes to be announced between December 2 and December 5, 2026."
+        },
+        "first_prize_cash_usd": null,
+        "eligibility": "Cross-college and open registration: students AND non-students welcome.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "A 48-hour online build sprint. Requires a live, deployed product and a 3-minute demo video. Finalists present on Zoom. Cash prize amount is currently unconfirmed."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "unknown",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "UNSURE",
+        "reasons": [
+          "The cash prize amount is currently unconfirmed and not guaranteed to meet the minimum threshold of 100 USD."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "The cash prize amount is currently unconfirmed and not guaranteed to meet the minimum threshold of 100 USD.",
+            "severity": "high"
+          },
+          {
+            "risk": "Prize pool is described as 'sponsor prizes', which frequently indicates non-cash rewards or credits rather than guaranteed liquid currency.",
+            "severity": "medium"
+          }
+        ],
+        "kill": true,
+        "kill_reason": "The candidate fails the entry criterion regarding a guaranteed cash prize of at least 100 USD; the prize pool is currently unconfirmed and explicitly stated as 'sponsor prizes' to be announced later, which does not guarantee the required minimum cash threshold."
+      },
+      "_eliminated": true
+    }
+  },
+  {
+    "candidate": "LaunchPad Hacks (Devpost)",
+    "mode": "meko",
+    "run": 3,
+    "verdict": "FAIL",
+    "agents": {
+      "scout": {
+        "name": "LaunchPad Hacks",
+        "organizer": "LaunchPad Hacks",
+        "deadline": "2026-12-04",
+        "prizes": {
+          "Best Overall": "$300",
+          "Best Beginner": "$100 (gift card)",
+          "Category prizes": "sponsor credits"
+        },
+        "first_prize_cash_usd": 300,
+        "eligibility": "Students currently enrolled in high school, college, university, or equivalent educational programs. Recent graduates (within 6 months) may also enter.",
+        "student_only": true,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "A beginner-friendly online hackathon. Requires a Devpost submission with a demo video (max 3 minutes) and source code link. Team size 1-4."
+      },
+      "verifier": {
+        "checks": {
+          "1": "fail",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "The hackathon is restricted to students and recent graduates; the builder is not a student, which violates the eligibility criteria."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Eligibility restriction: The hackathon is strictly limited to students and recent graduates, which excludes the builder.",
+            "severity": "high"
+          },
+          {
+            "risk": "Prize structure: Secondary prizes are limited to gift cards and sponsor credits, which are not cash-equivalent.",
+            "severity": "medium"
+          }
+        ],
+        "kill": true,
+        "kill_reason": "The builder is not a student or recent graduate, violating the 'student_only' eligibility criterion."
+      },
+      "_eliminated": true
+    }
+  },
+  {
+    "candidate": "QNX Global Hackathon",
+    "mode": "meko",
+    "run": 3,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "QNX Global Hackathon",
+        "organizer": "BlackBerry QNX",
+        "deadline": "2026-12-15T14:00:00-05:00",
+        "prizes": {
+          "grand_prize": 10000,
+          "category_first_prizes": 4000,
+          "runner_up_prizes": 2000
+        },
+        "first_prize_cash_usd": 10000,
+        "eligibility": "Individuals and teams who have reached the age of majority. Residents of Brazil, Russia, Crimea, Cuba, Iran, and North Korea are excluded.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Build on QNX 8.0 using QEMU. No physical hardware required. Submission requires a public demo video, public repository, and Devpost entry."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate allows individuals and teams who have reached the age of majority, which includes the builder. The 'working-professional-only' restriction mentioned in the RedTeam memory is not present in the provided Scout output or the official eligibility criteria provided for this evaluation. The builder meets all stated requirements."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "The requirement to use QNX 8.0 via QEMU may involve complex licensing or registration hurdles for non-corporate, independent hobbyists, potentially creating a barrier to entry despite the 'free' label.",
+            "severity": "medium"
+          },
+          {
+            "risk": "Public repository requirement may conflict with intellectual property preferences for hobbyists who wish to keep their code private.",
+            "severity": "low"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "A real-time, safety-critical 'Smart Cabin' monitoring system using QNX 8.0, focusing on low-latency sensor data processing and secure inter-process communication (IPC) within a QEMU-emulated environment.",
+        "reuse": [
+          "Modular C++ boilerplate for POSIX-compliant real-time systems",
+          "Existing QEMU virtualization configuration scripts",
+          "Standardized documentation templates for Devpost submissions"
+        ],
+        "steps": [
+          "Register for the QNX 8.0 evaluation license and set up the QEMU development environment.",
+          "Develop a core service for sensor data ingestion using QNX's microkernel architecture.",
+          "Implement a secure IPC mechanism to handle data between the sensor service and a mock UI display.",
+          "Optimize the system for real-time performance metrics to demonstrate QNX's core value proposition.",
+          "Record a screen-capture demo video showcasing the system boot, sensor simulation, and real-time response.",
+          "Prepare the public repository with clear build instructions and documentation for the Devpost submission."
+        ],
+        "demo_risks": [
+          "Complexity of QNX 8.0 configuration in QEMU may lead to unexpected kernel panics or driver issues.",
+          "Potential difficulty in creating a visually compelling demo without physical hardware.",
+          "Strict adherence to public repository requirements may expose proprietary-style architectural patterns."
+        ],
+        "effort_days": 25
+      }
+    }
   }
 ]

@@ -1,8 +1,14 @@
-"""LLM access (Groq, free tier) with per-call token accounting.
+"""LLM access with per-call token accounting and retry-on-overload.
 
-Every chat call is recorded in a TokenLedger with the exact prompt/completion
-token counts returned by the API, so the benchmark never estimates: it sums
-what the provider metered.
+Two free-tier providers are supported, selected per run:
+- Groq (GROQ_API_KEY, e.g. llama-3.3-70b-versatile)
+- Google AI Studio Gemini (GEMINI_API_KEY, e.g. gemini-2.5-flash), via the
+  OpenAI-compatible endpoint. The free tier 503s/429s under load, so every
+  call retries with exponential backoff.
+
+Every successful call is recorded in a TokenLedger with the exact
+prompt/completion token counts returned by the provider, so the benchmark
+never estimates: it sums what the provider metered.
 """
 
 from __future__ import annotations
@@ -13,6 +19,7 @@ from dataclasses import dataclass, field
 import httpx
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
+GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
 
 
 @dataclass
@@ -50,12 +57,26 @@ class TokenLedger:
         }
 
 
-class GroqLLM:
-    def __init__(self, api_key: str, model: str, ledger: TokenLedger):
+class LLM:
+    """One metered chat-completions client for either free-tier provider."""
+
+    def __init__(self, provider: str, api_key: str, model: str, ledger: TokenLedger):
+        assert provider in {"groq", "gemini"}
+        self.provider = provider
         self.api_key = api_key
         self.model = model
         self.ledger = ledger
-        self._client = httpx.Client(timeout=httpx.Timeout(120.0, connect=20.0))
+        self._url = GROQ_URL if provider == "groq" else GEMINI_URL
+        self._client = httpx.Client(timeout=httpx.Timeout(180.0, connect=20.0))
+
+    @classmethod
+    def from_env(cls, ledger: TokenLedger) -> "LLM":
+        import os
+
+        provider = os.environ.get("LLM_PROVIDER", "gemini")
+        if provider == "groq":
+            return cls(provider, os.environ["GROQ_API_KEY"], os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile"), ledger)
+        return cls(provider, os.environ["GEMINI_API_KEY"], os.environ.get("GEMINI_MODEL", "gemini-3.1-flash-lite"), ledger)
 
     def chat(
         self,
@@ -68,27 +89,52 @@ class GroqLLM:
         max_tokens: int = 1500,
         temperature: float = 0.0,
     ) -> str:
-        """One metered chat completion. Temperature 0 keeps verdicts deterministic."""
-        started = time.monotonic()
-        resp = self._client.post(
-            GROQ_URL,
-            headers={"Authorization": f"Bearer {self.api_key}", "Content-Type": "application/json"},
-            json={"model": self.model, "messages": messages, "max_tokens": max_tokens, "temperature": temperature},
-        )
-        latency_ms = int((time.monotonic() - started) * 1000)
-        resp.raise_for_status()
-        data = resp.json()
-        usage = data.get("usage", {})
-        self.ledger.add(
-            CallRecord(
-                agent=agent,
-                candidate=candidate,
-                run=run,
-                mode=mode,
-                model=self.model,
-                prompt_tokens=usage.get("prompt_tokens", 0),
-                completion_tokens=usage.get("completion_tokens", 0),
-                latency_ms=latency_ms,
-            )
-        )
-        return data["choices"][0]["message"]["content"]
+        """One metered chat completion with backoff on 429/5xx.
+        Temperature 0 keeps verdicts deterministic across modes."""
+        delay = 5.0
+        last_err: Exception | None = None
+        for attempt in range(6):
+            started = time.monotonic()
+            try:
+                resp = self._client.post(
+                    self._url,
+                    headers={"Authorization": f"Bearer {self.api_key}", "Content-Type": "application/json"},
+                    json={"model": self.model, "messages": messages, "max_tokens": max_tokens, "temperature": temperature},
+                )
+                latency_ms = int((time.monotonic() - started) * 1000)
+                if resp.status_code in (429, 500, 502, 503, 504):
+                    raise httpx.HTTPStatusError(f"transient {resp.status_code}", request=resp.request, response=resp)
+                resp.raise_for_status()  # non-transient errors (404 etc.) surface immediately, no retry
+                data = resp.json()
+                usage = data.get("usage", {})
+                self.ledger.add(
+                    CallRecord(
+                        agent=agent,
+                        candidate=candidate,
+                        run=run,
+                        mode=mode,
+                        model=self.model,
+                        prompt_tokens=usage.get("prompt_tokens", 0),
+                        completion_tokens=usage.get("completion_tokens", 0),
+                        latency_ms=latency_ms,
+                    )
+                )
+                return data["choices"][0]["message"]["content"]
+            except httpx.HTTPStatusError as e:
+                if e.response is not None and e.response.status_code == 404 and self.provider == "gemini" and self.model != "gemini-3.8-flash":
+                    self.model = "gemini-3.8-flash"  # deprecated/renamed model: fall back once
+                    continue
+                if e.response is not None and e.response.status_code not in (429, 500, 502, 503, 504):
+                    raise  # permanent error: fail fast instead of burning the retry budget
+                last_err = e
+                time.sleep(delay)
+                delay = min(delay * 2, 90.0)
+            except httpx.TransportError as e:
+                last_err = e
+                time.sleep(delay)
+                delay = min(delay * 2, 90.0)
+        raise RuntimeError(f"LLM call failed after retries ({self.provider}/{self.model}): {last_err}")
+
+
+# Backwards-compatible alias.
+GroqLLM = LLM

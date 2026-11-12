@@ -1,0 +1,104 @@
+{
+  "modes": {
+    "baseline": {
+      "overall": {
+        "mode": "baseline",
+        "run": null,
+        "llm_calls": 58,
+        "prompt_tokens": 62508,
+        "completion_tokens": 12227,
+        "total_tokens": 74735
+      },
+      "per_run": {
+        "1": {
+          "mode": "baseline",
+          "run": 1,
+          "llm_calls": 28,
+          "prompt_tokens": 26318,
+          "completion_tokens": 5720,
+          "total_tokens": 32038
+        },
+        "2": {
+          "mode": "baseline",
+          "run": 2,
+          "llm_calls": 30,
+          "prompt_tokens": 36190,
+          "completion_tokens": 6507,
+          "total_tokens": 42697
+        }
+      },
+      "accuracy": {
+        "compared": 16,
+        "correct": 14,
+        "accuracy": 0.875,
+        "misses": [
+          {
+            "candidate": "QNX Global Hackathon",
+            "want": "PASS",
+            "got": "FAIL"
+          },
+          {
+            "candidate": "Build with Google Gemini (Hack2skill)",
+            "want": "FAIL",
+            "got": "PASS"
+          }
+        ]
+      }
+    },
+    "meko": {
+      "overall": {
+        "mode": "meko",
+        "run": null,
+        "llm_calls": 55,
+        "prompt_tokens": 53003,
+        "completion_tokens": 11450,
+        "total_tokens": 64453
+      },
+      "per_run": {
+        "1": {
+          "mode": "meko",
+          "run": 1,
+          "llm_calls": 28,
+          "prompt_tokens": 26485,
+          "completion_tokens": 5887,
+          "total_tokens": 32372
+        },
+        "2": {
+          "mode": "meko",
+          "run": 2,
+          "llm_calls": 27,
+          "prompt_tokens": 26518,
+          "completion_tokens": 5563,
+          "total_tokens": 32081
+        }
+      },
+      "accuracy": {
+        "compared": 16,
+        "correct": 13,
+        "accuracy": 0.8125,
+        "misses": [
+          {
+            "candidate": "QNX Global Hackathon",
+            "want": "PASS",
+            "got": "FAIL"
+          },
+          {
+            "candidate": "Kane CLI Online Hackathon",
+            "want": "PASS",
+            "got": "FAIL"
+          },
+          {
+            "candidate": "QNX Global Hackathon",
+            "want": "PASS",
+            "got": "FAIL"
+          }
+        ]
+      }
+    }
+  },
+  "comparison": {
+    "token_reduction_pct": 13.8,
+    "llm_call_reduction_pct": 5.2,
+    "quality_equal": false
+  }
+}

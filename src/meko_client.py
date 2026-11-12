@@ -6,12 +6,22 @@ Authentication is a user API key sent as `Authorization: Bearer <key>`.
 A User-Agent header is required by the server. The datapack is selected per
 tool call via the `datapack_id` argument, not via the URL.
 
-Only what HackHunt Crew needs is implemented: initialize, tools/list and
-tools/call, with both `application/json` and `text/event-stream` responses.
+Verified against the live cloud endpoint on 2026-11-12:
+- conversation_* tools are owner-scoped: only the agent_id that created a
+  conversation may append to it. The crew therefore keeps one conversation
+  per agent per run.
+- knowledgebase_upload_document is two-step: the tool returns a presigned S3
+  POST target, and the document bytes must be POSTed there to finish.
+- track_token_usage takes (conversation_id, name, model, input_tokens,
+  output_tokens, total_tokens).
+- Artifacts use artifact_put (filename, content_base64, content_type,
+  conversation_id).
 """
 
 from __future__ import annotations
 
+import base64
+import hashlib
 import json
 import time
 from dataclasses import dataclass, field
@@ -23,12 +33,16 @@ PROTOCOL_VERSION = "2025-03-26"
 
 @dataclass
 class ToolCallResult:
-    """Parsed result of a Meko MCP tool call."""
-
     text: str
     is_error: bool = False
     latency_ms: int = 0
     raw: dict = field(default_factory=dict)
+
+    def json(self) -> dict:
+        try:
+            return json.loads(self.text)
+        except (json.JSONDecodeError, TypeError):
+            return {}
 
 
 class MekoClient:
@@ -39,7 +53,7 @@ class MekoClient:
         self._session_id: str | None = None
         self._next_id = 0
         self._client = httpx.Client(timeout=httpx.Timeout(60.0, connect=20.0))
-        self.calls: list[dict] = []  # lightweight client-side audit log
+        self.calls: list[dict] = []
 
     # -- transport ---------------------------------------------------------
 
@@ -75,15 +89,12 @@ class MekoClient:
     def _parse_body(resp: httpx.Response) -> dict:
         ctype = resp.headers.get("content-type", "")
         if "text/event-stream" in ctype:
-            # SSE: concatenate data: lines of the terminal event.
             data = ""
             for line in resp.text.splitlines():
                 if line.startswith("data:"):
                     data += line[5:].strip()
             return json.loads(data) if data else {}
         return resp.json() if resp.text else {}
-
-    # -- public API --------------------------------------------------------
 
     def initialize(self) -> dict:
         return self._rpc(
@@ -98,49 +109,27 @@ class MekoClient:
     def list_tools(self) -> list[dict]:
         return self._rpc("tools/list").get("tools", [])
 
-    def call_tool(self, name: str, **arguments) -> ToolCallResult:
+    def call_tool(self, tool: str, **arguments) -> ToolCallResult:
         arguments.setdefault("datapack_id", self.datapack_id)
         started = time.monotonic()
-        result = self._rpc("tools/call", {"name": name, "arguments": arguments})
+        result = self._rpc("tools/call", {"name": tool, "arguments": arguments})
         latency_ms = int((time.monotonic() - started) * 1000)
         parts = result.get("content", [])
         text = "\n".join(p.get("text", "") for p in parts if p.get("type") == "text")
         return ToolCallResult(text=text, is_error=bool(result.get("isError")), latency_ms=latency_ms, raw=result)
 
-    # -- convenience wrappers used by the crew ------------------------------
-
-    def context_search(self, query: str, agent_id: str, conversation_id: str | None = None, limit: int = 8) -> str:
-        args: dict = {"query": query, "agent_id": agent_id, "limit": limit}
-        if conversation_id:
-            args["conversation_id"] = conversation_id
-        return self.call_tool("context_search", **args).text
-
-    def memory_add(self, text: str, agent_id: str, conversation_id: str | None = None) -> str:
-        args: dict = {"text": text, "agent_id": agent_id}
-        if conversation_id:
-            args["conversation_id"] = conversation_id
-        return self.call_tool("memory_add", **args).text
-
-    def memory_search(self, query: str, agent_id: str, limit: int = 8) -> str:
-        return self.call_tool("memory_search", query=query, agent_id=agent_id, limit=limit).text
-
-    def knowledge_upload(self, filename: str, content_base64: str, agent_id: str) -> str:
-        return self.call_tool(
-            "knowledgebase_upload_document", filename=filename, content_base64=content_base64, agent_id=agent_id
-        ).text
-
-    def knowledge_search(self, query: str, agent_id: str, limit: int = 5) -> str:
-        return self.call_tool("knowledgebase_search", query=query, agent_id=agent_id, limit=limit).text
+    # -- conversations -----------------------------------------------------
 
     def conversation_create(self, agent_id: str, title: str, session_id: str, metadata: dict | None = None) -> str:
-        result = self.call_tool(
-            "conversation_create", agent_id=agent_id, title=title, session_id=session_id, metadata=metadata or {}
-        )
-        # The tool returns the new conversation id inside its text payload as JSON.
-        try:
-            return json.loads(result.text).get("conversation_id", "")
-        except (json.JSONDecodeError, AttributeError):
-            return result.text.strip().strip('"')
+        """Returns the new conversation id. Only `agent_id` may append to it."""
+        args: dict = {"agent_id": agent_id, "title": title, "session_id": session_id}
+        if metadata:
+            args["metadata"] = json.dumps(metadata)  # server expects a string
+        r = self.call_tool("conversation_create", **args)
+        cid = r.json().get("id")
+        if not cid:
+            raise RuntimeError(f"conversation_create returned no id: {r.text[:300]}")
+        return cid
 
     def conversation_add_message(
         self,
@@ -152,27 +141,82 @@ class MekoClient:
         plan: list[str] | None = None,
         metadata: dict | None = None,
     ) -> None:
-        self.call_tool(
-            "conversation_add_message",
-            conversation_id=conversation_id,
-            agent_id=agent_id,
-            input=input_text,
-            output=output_text,
-            reasoning=reasoning,
-            plan=plan or [],
-            metadata=metadata or {},
-        )
+        args: dict = {
+            "conversation_id": conversation_id,
+            "agent_id": agent_id,
+            "input": input_text,
+            "output": output_text,
+            "reasoning": reasoning,
+            "plan": plan or [],
+        }
+        if metadata:
+            args["metadata"] = json.dumps(metadata)  # server expects a string
+        self.call_tool("conversation_add_message", **args)
 
-    def artifact_store(self, filename: str, content_base64: str, agent_id: str, content_type: str = "application/json") -> str:
+    # -- memory --------------------------------------------------------------
+
+    def memory_add(self, text: str, conversation_id: str, agent_id: str) -> None:
+        self.call_tool("memory_add", text=text, conversation_id=conversation_id, agent_id=agent_id)
+
+    def memory_search(self, query: str, conversation_id: str, agent_id: str, limit: int = 8) -> str:
         return self.call_tool(
-            "artifact_store", filename=filename, content_base64=content_base64, agent_id=agent_id, content_type=content_type
+            "memory_search", query=query, conversation_id=conversation_id, agent_id=agent_id, limit=limit
         ).text
 
-    def track_token_usage(self, conversation_id: str, agent_id: str, usage: dict) -> None:
-        """Attribute LLM token spend to a conversation trace (decision tracing)."""
+    def context_search(self, query: str, conversation_id: str, agent_id: str, limit: int = 8) -> str:
+        return self.call_tool(
+            "context_search", query=query, conversation_id=conversation_id, agent_id=agent_id, limit=limit
+        ).text
+
+    # -- knowledge base --------------------------------------------------------
+
+    def knowledge_upload(self, filename: str, content: bytes, conversation_id: str, agent_id: str) -> None:
+        """Two-step upload: MCP tool returns a presigned POST, then the bytes go to S3."""
+        init = self.call_tool(
+            "knowledgebase_upload_document",
+            filename=filename,
+            size=len(content),
+            content_hash=hashlib.sha256(content).hexdigest(),
+            conversation_id=conversation_id,
+            content_head_base64=base64.b64encode(content[:65536]).decode(),
+            agent_id=agent_id,
+        ).json()
+        if init.get("already_uploaded"):
+            return  # same content already in the datapack: nothing to do
+        url, fields = init.get("url"), init.get("fields")
+        if not url or not fields:
+            raise RuntimeError(f"knowledgebase_upload_document init failed: {json.dumps(init)[:300]}")
+        resp = self._client.post(url, data=fields, files={"file": (filename, content)})
+        if resp.status_code >= 300:
+            raise RuntimeError(f"knowledge S3 upload failed: {resp.status_code} {resp.text[:200]}")
+
+    def knowledge_search(self, query: str, conversation_id: str, agent_id: str, limit: int = 5) -> str:
+        return self.call_tool(
+            "knowledgebase_search", query=query, conversation_id=conversation_id, agent_id=agent_id, limit=limit
+        ).text
+
+    # -- artifacts and token accounting -----------------------------------------
+
+    def artifact_put(self, filename: str, content: bytes, content_type: str, conversation_id: str, agent_id: str) -> None:
+        self.call_tool(
+            "artifact_put",
+            filename=filename,
+            content_base64=base64.b64encode(content).decode(),
+            content_type=content_type,
+            conversation_id=conversation_id,
+            agent_id=agent_id,
+        )
+
+    def track_token_usage(
+        self, conversation_id: str, name: str, model: str, input_tokens: int, output_tokens: int, total_tokens: int
+    ) -> None:
+        """Attach metered LLM spend to a conversation trace (decision tracing)."""
         self.call_tool(
             "track_token_usage",
             conversation_id=conversation_id,
-            agent_id=agent_id,
-            **{k: v for k, v in usage.items() if k in {"prompt_tokens", "completion_tokens", "total_tokens", "model"}},
+            name=name,
+            model=model,
+            input_tokens=input_tokens,
+            output_tokens=output_tokens,
+            total_tokens=total_tokens,
         )

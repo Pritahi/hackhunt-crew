@@ -1,0 +1,552 @@
+[
+  {
+    "agent": "scout",
+    "candidate": "Kane CLI Online Hackathon",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 825,
+    "completion_tokens": 248,
+    "latency_ms": 854
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Kane CLI Online Hackathon",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 556,
+    "completion_tokens": 174,
+    "latency_ms": 1016
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Kane CLI Online Hackathon",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 777,
+    "completion_tokens": 167,
+    "latency_ms": 3919
+  },
+  {
+    "agent": "builder",
+    "candidate": "Kane CLI Online Hackathon",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 920,
+    "completion_tokens": 307,
+    "latency_ms": 1617
+  },
+  {
+    "agent": "scout",
+    "candidate": "Codegeist 2026 (Atlassian)",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 968,
+    "completion_tokens": 274,
+    "latency_ms": 975
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Codegeist 2026 (Atlassian)",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 804,
+    "completion_tokens": 174,
+    "latency_ms": 767
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Codegeist 2026 (Atlassian)",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1031,
+    "completion_tokens": 165,
+    "latency_ms": 1007
+  },
+  {
+    "agent": "builder",
+    "candidate": "Codegeist 2026 (Atlassian)",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1172,
+    "completion_tokens": 343,
+    "latency_ms": 1681
+  },
+  {
+    "agent": "scout",
+    "candidate": "Enveda CASMI 2026 (Kaggle)",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1112,
+    "completion_tokens": 255,
+    "latency_ms": 857
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Enveda CASMI 2026 (Kaggle)",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 904,
+    "completion_tokens": 174,
+    "latency_ms": 804
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Enveda CASMI 2026 (Kaggle)",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1050,
+    "completion_tokens": 124,
+    "latency_ms": 857
+  },
+  {
+    "agent": "builder",
+    "candidate": "Enveda CASMI 2026 (Kaggle)",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1150,
+    "completion_tokens": 306,
+    "latency_ms": 1342
+  },
+  {
+    "agent": "scout",
+    "candidate": "Build with Google Gemini (Hack2skill)",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1057,
+    "completion_tokens": 289,
+    "latency_ms": 1519
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Build with Google Gemini (Hack2skill)",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 948,
+    "completion_tokens": 198,
+    "latency_ms": 777
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Build with Google Gemini (Hack2skill)",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1161,
+    "completion_tokens": 192,
+    "latency_ms": 1094
+  },
+  {
+    "agent": "scout",
+    "candidate": "AI for Church Hackathon",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 968,
+    "completion_tokens": 222,
+    "latency_ms": 912
+  },
+  {
+    "agent": "verifier",
+    "candidate": "AI for Church Hackathon",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 779,
+    "completion_tokens": 174,
+    "latency_ms": 734
+  },
+  {
+    "agent": "redteam",
+    "candidate": "AI for Church Hackathon",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 973,
+    "completion_tokens": 142,
+    "latency_ms": 1002
+  },
+  {
+    "agent": "builder",
+    "candidate": "AI for Church Hackathon",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1091,
+    "completion_tokens": 321,
+    "latency_ms": 1823
+  },
+  {
+    "agent": "scout",
+    "candidate": "Rack It Up 2026 (Unstop)",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 989,
+    "completion_tokens": 195,
+    "latency_ms": 2291
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Rack It Up 2026 (Unstop)",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 792,
+    "completion_tokens": 194,
+    "latency_ms": 1100
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Rack It Up 2026 (Unstop)",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1008,
+    "completion_tokens": 170,
+    "latency_ms": 921
+  },
+  {
+    "agent": "scout",
+    "candidate": "LaunchPad Hacks (Devpost)",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 851,
+    "completion_tokens": 226,
+    "latency_ms": 1056
+  },
+  {
+    "agent": "verifier",
+    "candidate": "LaunchPad Hacks (Devpost)",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 786,
+    "completion_tokens": 165,
+    "latency_ms": 1040
+  },
+  {
+    "agent": "redteam",
+    "candidate": "LaunchPad Hacks (Devpost)",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 948,
+    "completion_tokens": 114,
+    "latency_ms": 975
+  },
+  {
+    "agent": "scout",
+    "candidate": "QNX Global Hackathon",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 972,
+    "completion_tokens": 262,
+    "latency_ms": 1183
+  },
+  {
+    "agent": "verifier",
+    "candidate": "QNX Global Hackathon",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 823,
+    "completion_tokens": 207,
+    "latency_ms": 1260
+  },
+  {
+    "agent": "redteam",
+    "candidate": "QNX Global Hackathon",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1070,
+    "completion_tokens": 105,
+    "latency_ms": 1463
+  },
+  {
+    "agent": "scout",
+    "candidate": "Kane CLI Online Hackathon",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1049,
+    "completion_tokens": 242,
+    "latency_ms": 1177
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Kane CLI Online Hackathon",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 704,
+    "completion_tokens": 198,
+    "latency_ms": 1103
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Kane CLI Online Hackathon",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 922,
+    "completion_tokens": 192,
+    "latency_ms": 1311
+  },
+  {
+    "agent": "scout",
+    "candidate": "Codegeist 2026 (Atlassian)",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1110,
+    "completion_tokens": 290,
+    "latency_ms": 1559
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Codegeist 2026 (Atlassian)",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 879,
+    "completion_tokens": 252,
+    "latency_ms": 1771
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Codegeist 2026 (Atlassian)",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1179,
+    "completion_tokens": 146,
+    "latency_ms": 1338
+  },
+  {
+    "agent": "builder",
+    "candidate": "Codegeist 2026 (Atlassian)",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1301,
+    "completion_tokens": 344,
+    "latency_ms": 2176
+  },
+  {
+    "agent": "scout",
+    "candidate": "Enveda CASMI 2026 (Kaggle)",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1136,
+    "completion_tokens": 254,
+    "latency_ms": 1542
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Enveda CASMI 2026 (Kaggle)",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 924,
+    "completion_tokens": 174,
+    "latency_ms": 3971
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Enveda CASMI 2026 (Kaggle)",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1039,
+    "completion_tokens": 133,
+    "latency_ms": 1593
+  },
+  {
+    "agent": "builder",
+    "candidate": "Enveda CASMI 2026 (Kaggle)",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1148,
+    "completion_tokens": 334,
+    "latency_ms": 2107
+  },
+  {
+    "agent": "scout",
+    "candidate": "Build with Google Gemini (Hack2skill)",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1064,
+    "completion_tokens": 291,
+    "latency_ms": 1850
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Build with Google Gemini (Hack2skill)",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 914,
+    "completion_tokens": 196,
+    "latency_ms": 1632
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Build with Google Gemini (Hack2skill)",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1130,
+    "completion_tokens": 142,
+    "latency_ms": 989
+  },
+  {
+    "agent": "scout",
+    "candidate": "AI for Church Hackathon",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 995,
+    "completion_tokens": 220,
+    "latency_ms": 1041
+  },
+  {
+    "agent": "verifier",
+    "candidate": "AI for Church Hackathon",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 817,
+    "completion_tokens": 174,
+    "latency_ms": 834
+  },
+  {
+    "agent": "redteam",
+    "candidate": "AI for Church Hackathon",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 960,
+    "completion_tokens": 144,
+    "latency_ms": 1005
+  },
+  {
+    "agent": "builder",
+    "candidate": "AI for Church Hackathon",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1080,
+    "completion_tokens": 307,
+    "latency_ms": 3891
+  },
+  {
+    "agent": "scout",
+    "candidate": "Rack It Up 2026 (Unstop)",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1047,
+    "completion_tokens": 189,
+    "latency_ms": 1079
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Rack It Up 2026 (Unstop)",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 889,
+    "completion_tokens": 194,
+    "latency_ms": 1340
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Rack It Up 2026 (Unstop)",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1110,
+    "completion_tokens": 162,
+    "latency_ms": 1090
+  },
+  {
+    "agent": "scout",
+    "candidate": "LaunchPad Hacks (Devpost)",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 846,
+    "completion_tokens": 216,
+    "latency_ms": 1381
+  },
+  {
+    "agent": "verifier",
+    "candidate": "LaunchPad Hacks (Devpost)",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 757,
+    "completion_tokens": 165,
+    "latency_ms": 768
+  },
+  {
+    "agent": "redteam",
+    "candidate": "LaunchPad Hacks (Devpost)",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 882,
+    "completion_tokens": 105,
+    "latency_ms": 890
+  },
+  {
+    "agent": "scout",
+    "candidate": "QNX Global Hackathon",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 930,
+    "completion_tokens": 281,
+    "latency_ms": 1121
+  },
+  {
+    "agent": "verifier",
+    "candidate": "QNX Global Hackathon",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 787,
+    "completion_tokens": 159,
+    "latency_ms": 1336
+  },
+  {
+    "agent": "redteam",
+    "candidate": "QNX Global Hackathon",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 919,
+    "completion_tokens": 59,
+    "latency_ms": 656
+  }
+]

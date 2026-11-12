@@ -5,10 +5,15 @@ Usage:
     python run_benchmark.py --mode baseline --runs 2
     python run_benchmark.py --mode meko --runs 2
     python run_benchmark.py --mode both --runs 2
+    python run_benchmark.py --mode meko --runs 2 --limit 3   # resumable chunk
 
 Each run evaluates every candidate in data/candidates.json. In meko mode the
 second run starts warm: verdicts and failure patterns are recalled from the
 shared datapack instead of being re-derived.
+
+With --limit the run is resumable: reports and the token ledger are
+checkpointed under results/ after every candidate, so a later invocation
+picks up exactly where the previous one stopped.
 """
 
 from __future__ import annotations
@@ -16,14 +21,16 @@ from __future__ import annotations
 import argparse
 import json
 import os
+from dataclasses import asdict
 from pathlib import Path
 
 from src.crew import Crew
-from src.llm import GroqLLM, TokenLedger
+from src.llm import LLM, CallRecord, TokenLedger
 from src.meko_client import MekoClient
 from src.metrics import build_results, write_results
 
 ROOT = Path(__file__).parent
+RESULTS = ROOT / "results"
 
 
 def load_candidates() -> list[dict]:
@@ -33,24 +40,47 @@ def load_candidates() -> list[dict]:
     return candidates
 
 
+def load_checkpoint(mode: str) -> tuple[list[dict], TokenLedger]:
+    reports_path = RESULTS / f"reports-{mode}.json"
+    ledger_path = RESULTS / f"ledger-{mode}.json"
+    reports = json.loads(reports_path.read_text()) if reports_path.exists() else []
+    ledger = TokenLedger()
+    if ledger_path.exists():
+        ledger.records = [CallRecord(**r) for r in json.loads(ledger_path.read_text())]
+    return reports, ledger
+
+
+def save_checkpoint(mode: str, reports: list[dict], ledger: TokenLedger) -> None:
+    RESULTS.mkdir(exist_ok=True)
+    (RESULTS / f"reports-{mode}.json").write_text(json.dumps(reports, indent=2))
+    (RESULTS / f"ledger-{mode}.json").write_text(json.dumps([asdict(r) for r in ledger.records], indent=2))
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--mode", choices=["baseline", "meko", "both"], default="both")
     ap.add_argument("--runs", type=int, default=2)
+    ap.add_argument("--limit", type=int, default=0, help="max candidates this invocation (0 = all)")
+    ap.add_argument("--fresh", action="store_true", help="discard existing checkpoints first")
     args = ap.parse_args()
 
-    ledger = TokenLedger()
-    llm = GroqLLM(
-        api_key=os.environ["GROQ_API_KEY"],
-        model=os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile"),
-        ledger=ledger,
-    )
     candidates = load_candidates()
     ground_truth = {c["name"]: c["ground_truth"]["verdict"] for c in candidates}
     modes = ["baseline", "meko"] if args.mode == "both" else [args.mode]
+    n = len(candidates)
+    total = args.runs * n
+
+    if args.fresh:
+        for mode in modes:
+            for suffix in (f"reports-{mode}.json", f"ledger-{mode}.json"):
+                p = RESULTS / suffix
+                if p.exists():
+                    p.unlink()
 
     reports_by_mode: dict[str, list[dict]] = {}
+    combined_ledger = TokenLedger()
     for mode in modes:
+        reports, ledger = load_checkpoint(mode)
         meko = None
         if mode == "meko":
             meko = MekoClient(
@@ -59,19 +89,31 @@ def main() -> None:
                 base_url=os.environ.get("MEKO_MCP_URL", "https://mcp.mekodata.ai/mcp"),
             )
             meko.initialize()
+        llm = LLM.from_env(ledger)
         crew = Crew(llm, meko=meko, mode=mode)
         crew.seed_knowledge()
-        reports: list[dict] = []
-        for run in range(1, args.runs + 1):
-            for c in candidates:
-                reports.append(crew.evaluate(c, run))
-        reports_by_mode[mode] = reports
-        (ROOT / "results").mkdir(exist_ok=True)
-        (ROOT / "results" / f"reports-{mode}.json").write_text(json.dumps(reports, indent=2))
 
-    out = build_results(ledger, reports_by_mode, ground_truth, args.runs)
-    write_results(out, str(ROOT / "results"))
-    print(json.dumps(out.get("comparison", out), indent=2))
+        done_this_call = 0
+        while len(reports) < total:
+            if args.limit and done_this_call >= args.limit:
+                break
+            idx = len(reports) % n
+            run = len(reports) // n + 1
+            reports.append(crew.evaluate(candidates[idx], run))
+            save_checkpoint(mode, reports, ledger)
+            done_this_call += 1
+            print(f"[{mode}] run {run} candidate {idx + 1}/{n} done -> {reports[-1].get('verdict')}", flush=True)
+        reports_by_mode[mode] = reports
+        combined_ledger.records.extend(ledger.records)
+
+    complete = all(len(reports_by_mode[m]) >= total for m in modes)
+    if complete:
+        out = build_results(combined_ledger, reports_by_mode, ground_truth, args.runs)
+        write_results(out, str(RESULTS))
+        print(json.dumps(out.get("comparison", out), indent=2))
+    else:
+        progress = {m: f"{len(reports_by_mode[m])}/{total}" for m in modes}
+        print(json.dumps({"status": "partial", "progress": progress}, indent=2))
 
 
 if __name__ == "__main__":

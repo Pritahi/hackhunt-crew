@@ -1,3 +1,6 @@
+> WORK IN PROGRESS: this document predates the corrected benchmark.
+> Fixture pages are illustrative, not official. Old savings/quality claims are not validated.
+
 # How HackHunt Crew uses Meko
 
 Mapped to the ContextCon judging rubric ("Use of Meko", 30%: all parts of the

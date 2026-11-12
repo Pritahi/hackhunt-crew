@@ -93,7 +93,8 @@ class LLM:
         Temperature 0 keeps verdicts deterministic across modes."""
         delay = 5.0
         last_err: Exception | None = None
-        for attempt in range(6):
+        for attempt in range(2):
+            time.sleep(5.0)  # keep a sequential run below the free-tier 15 RPM cap
             started = time.monotonic()
             try:
                 resp = self._client.post(
@@ -121,21 +122,30 @@ class LLM:
                 )
                 return data["choices"][0]["message"]["content"]
             except httpx.HTTPStatusError as e:
-                if e.response is not None and e.response.status_code == 404 and self.provider == "gemini" and self.model != "gemini-3.8-flash":
-                    self.model = "gemini-3.8-flash"  # deprecated/renamed model: fall back once
-                    continue
                 if e.response is not None and e.response.status_code not in (429, 500, 502, 503, 504):
                     raise  # permanent error: fail fast instead of burning the retry budget
+                if isinstance(e, httpx.HTTPStatusError) and e.response.status_code == 429:
+                    message = e.response.text
+                    if "per minute" in message.lower() and attempt == 0:
+                        time.sleep(60)
+                        continue
+                    raise RuntimeError("Quota/rate limit: stop this chunk and retry later") from e
                 last_err = e
+                print(f"LLM retry after {type(e).__name__}", flush=True)
                 time.sleep(delay)
                 delay = min(delay * 2, 90.0)
             except httpx.TransportError as e:
                 # Read timeouts and connection errors: fail fast, and after two
                 # consecutive stalls move to the fallback model - some prompts
                 # stall one model but not another.
+                if isinstance(e, httpx.HTTPStatusError) and e.response.status_code == 429:
+                    message = e.response.text
+                    if "per minute" in message.lower() and attempt == 0:
+                        time.sleep(60)
+                        continue
+                    raise RuntimeError("Quota/rate limit: stop this chunk and retry later") from e
                 last_err = e
-                if attempt >= 1 and self.provider == "gemini" and self.model != "gemini-3.8-flash":
-                    self.model = "gemini-3.8-flash"
+                print(f"LLM retry after {type(e).__name__}", flush=True)
                 time.sleep(delay)
                 delay = min(delay * 2, 90.0)
         raise RuntimeError(f"LLM call failed after retries ({self.provider}/{self.model}): {last_err}")

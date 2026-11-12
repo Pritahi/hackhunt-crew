@@ -1,4 +1,4 @@
-RoboArm Hardware Hack - Official Page (curated snapshot for deterministic replay)
+RoboArm Hardware Hack - ILLUSTRATIVE BENCHMARK FIXTURE (not an official source)
 
 RoboArm Hardware Hack · MechaWorks · $15,000 in prizes · Online judging
 Deadline: December 6, 2026, 11:59 PM ET

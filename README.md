@@ -9,11 +9,12 @@ identical task and candidate set, and the benchmark measures the difference:
 
 | Mode | How agents get context |
 |---|---|
-| `baseline` | The full dossier (whole page text + every prior agent's output + a growing dump of everything the crew has learned) is stuffed into each prompt. |
+| `baseline` | Current page for Scout, prior agent outputs, plus a growing dump of concise facts/verdicts learned on every earlier candidate is stuffed into each prompt. |
 | `meko` | Agents retrieve only what they need from one shared [Meko](https://mekodata.ai) datapack and write back what they learn. |
 
-The same 8-candidate fixture, the same agent prompts, the same model and
-temperature. Only the context layer changes - which is the variable under test.
+The same 24 illustrative fixtures, prompts, fixed model and temperature.
+Only context assembly differs. Three sequential passes test retained context,
+not three independent trials. Fixture labels are not current event advice.
 
 ## The agents
 
@@ -33,16 +34,17 @@ temperature. Only the context layer changes - which is the variable under test.
   reasoning and plan (`conversation_create` / `conversation_add_message`).
 - **Memory** - durable facts and verdicts are promoted from turns
   (`memory_add`) and recalled across agents and across runs (`memory_search`).
-  Run 2 starts warm: memorized verdicts are reused instead of re-derived.
+  Later passes start warm but every verdict is re-evaluated from the page.
+  Candidate-specific conversation filters prevent unrelated deadline leakage.
 - **Knowledge base** - the crew's entry criteria live as a searchable shared
   document (`knowledgebase_upload_document` / `knowledgebase_search`).
 - **Artifacts** - each candidate's final report is stored whole
-  (`artifact_store`) and can be fetched back by hash.
+  (`artifact_put`) and can be fetched back by hash.
 - **Decision traces + token attribution** - every LLM call's metered token
   spend is attached to its conversation trace (`track_token_usage`), so the
   portal can answer "why did the agent do that, and what did it cost?"
-- **Learning** - context retrievals feed Meko's self-learning loop: the
-  second run retrieves fewer, better-matched snippets.
+- **Context isolation** - memory search uses a candidate-specific conversation
+  filter shared by all four agents, while source evidence overrides memory.
 
 ## Results
 
@@ -54,20 +56,47 @@ fixture's ground truth (quality must stay equal while tokens drop).
 
 ```bash
 pip install -r requirements.txt
-cp .env.example .env   # fill GROQ_API_KEY, MEKO_API_KEY, MEKO_DATAPACK_ID
-python run_benchmark.py --mode both --runs 2
+cp .env.example .env  # fill in locally
+set -a; source .env; set +a  # export credentials; never commit .env
+python run_benchmark.py --mode both --runs 3
 ```
 
-- LLM: Groq free tier (`llama-3.3-70b-versatile`), temperature 0.
+- LLM: Gemini free tier (`gemini-3.1-flash-lite`), temperature 0. No automatic
+  model switching during a comparison. Groq is an optional alternative for a
+  separate experiment. Quota errors stop the chunk rather than hide in retries.
 - Meko: free tier at `https://mcp.mekodata.ai/mcp` (create a datapack and an
   API key in the [Meko cloud portal](https://cloud.mekodata.ai)).
 
 ## Notes on the fixture
 
-`data/pages/*.txt` are curated snapshots of real hackathon pages (condensed
-from the official pages, with the fixture date frozen) so the benchmark is
-deterministic and replayable without live scraping. Ground-truth verdicts in
-`data/candidates.json` were set by hand against the entry criteria.
+`data/pages/*.txt` are **illustrative benchmark fixtures, not official sources**.
+The first eight are condensed, previously assembled examples inspired by named
+competitions; their external accuracy has not been independently verified.
+The remaining sixteen are fictional synthetic scenarios designed to exercise
+criterion failures. Organizer names, prizes and dates in those cases are
+fictional. Do not use these files to choose real competitions.
+
+Ground truth is hand-labeled from the fixture text against a frozen evaluation
+date (2026-11-10) and an explicit hobbyist profile. It is not a statement about
+any real person's employment status. Data is visible to both modes; labels are
+not included in model prompts. This small, task-specific test does not establish
+general LLM quality or production savings.
+
+Earlier measurements in `results/diagnostic-v2/` are superseded diagnostics:
+they used unpersisted baseline context, mixed model fallbacks and unscoped
+memory recall. They must not be cited as final savings. Final measurements
+will be generated only after the corrected implementation completes.
 
 See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for the design and
 [docs/MEKO_USAGE.md](docs/MEKO_USAGE.md) for the full Meko feature mapping.
+
+### Measurement boundaries
+
+Token counts are provider-reported successful LLM completion usage for completed
+candidate evaluations. They exclude Meko backend inference/embedding tokens,
+HTTP overhead, retries and discarded interrupted candidate attempts. Meko
+latency and end-to-end cost are not represented by the LLM token comparison.
+Both modes see the same current page and prior agent outputs; baseline also
+gets all earlier concise fact/verdict learnings, while Meko retrieves up to five
+within the current candidate scope. This is an intentionally naive full-history
+baseline, not a claim against optimized local retrieval.

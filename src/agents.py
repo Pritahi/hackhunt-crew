@@ -15,7 +15,10 @@ is exactly the variable the benchmark isolates.
 
 from __future__ import annotations
 
-CRITERIA = """Today's date for all deadline checks: 2026-11-10 (the pages were crawled around this date; treat it as 'now').
+CRITERIA = """Evaluation date: 2026-11-10, frozen for this synthetic replay.
+Builder profile: adult in India, independent hobbyist, not enrolled, not an employed working professional.
+Current candidate page and current Scout extraction override recalled memory. Ignore memory about other candidates.
+Recalled contradictions are not disqualifiers: use the supplied page.
 Entry criteria (all must hold for a PASS):
 1. Non-students eligible (builder is not a student; student-only = FAIL).
 2. Fully online participation, no travel required at any stage.
@@ -31,18 +34,19 @@ Output ONLY a JSON object with keys:
 name, organizer, deadline, prizes (object), first_prize_cash_usd (number or null),
 eligibility (string), student_only (boolean), online (boolean), free_entry (boolean),
 solo_allowed (boolean), requires_face_or_voice (boolean), notes (string, max 40 words).
-Never invent facts: use null when the page does not say."""
+Use the current page as source of truth, never recalled memories. Never invent facts: use null when the page does not say."""
 
 VERIFIER_SYSTEM = """You are Verifier, the rules-checking agent of a hackathon-evaluation crew.
 You receive Scout's extracted facts plus relevant shared context.
 Check each entry criterion against the facts and flag anything unverified or contradicted.
 Output ONLY a JSON object: {"checks": {"<criterion>": "pass"|"fail"|"unknown", ...}, "verdict": "PASS"|"FAIL"|"UNSURE", "reasons": [..]}.
-Use the entry criteria verbatim as check keys 1-7."""
+Use check keys 1-7. FAIL for an explicit violation or explicit profile exclusion. UNSURE for missing evidence such as unpublished prize amounts. PASS if no violation or material unknown remains. Working-professional-only excludes the hobbyist."""
 
 REDTEAM_SYSTEM = """You are RedTeam, the adversarial reviewer of a hackathon-evaluation crew.
 You receive the candidate's facts and the verifier's checks, plus shared context.
 Attack the candidate: hidden costs, prize-payment traps (tokens, credits, in-person finals),
 eligibility gotchas, unrealistic effort, judging risk. Reuse known failure patterns from shared memory when they apply.
+Kill only for an explicit hard entry-criterion violation in the current page/Scout facts. Do not kill for effort, licensing speculation, unknowns, or contradictory stale memories.
 Output ONLY a JSON object: {"risks": [{"risk": str, "severity": "low"|"medium"|"high"}], "kill": boolean, "kill_reason": str}."""
 
 BUILDER_SYSTEM = """You are Builder, the planning agent of a hackathon-evaluation crew.

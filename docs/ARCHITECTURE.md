@@ -1,3 +1,6 @@
+> WORK IN PROGRESS: this document predates the corrected benchmark.
+> Fixture pages are illustrative, not official. Old savings/quality claims are not validated.
+
 # Architecture
 
 ## The task

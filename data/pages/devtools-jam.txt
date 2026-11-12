@@ -1,4 +1,4 @@
-DevTools Jam 2026 - Official Page (curated snapshot for deterministic replay)
+DevTools Jam 2026 - ILLUSTRATIVE BENCHMARK FIXTURE (not an official source)
 
 DevTools Jam 2026 · Toolchain Collective · $9,000 in prizes · Online only
 Deadline: December 12, 2026, 11:59 PM AoE

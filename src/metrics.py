@@ -77,7 +77,8 @@ def build_results(ledger: TokenLedger, reports_by_mode: dict, ground_truth: dict
             "token_reduction_pct": round(100 * (1 - m / b), 1) if b else None,
             "llm_call_reduction_pct": round(100 * (1 - mc / bc), 1) if bc else None,
             "basis": "means over runs (see run_stats)",
-            "quality_equal": modes["meko"]["accuracy"]["accuracy"] >= modes["baseline"]["accuracy"]["accuracy"],
+            "quality_equal": modes["meko"]["accuracy"]["accuracy"] == modes["baseline"]["accuracy"]["accuracy"],
+            "quality_equal_or_better": modes["meko"]["accuracy"]["accuracy"] >= modes["baseline"]["accuracy"]["accuracy"],
         }
     return out
 
@@ -106,7 +107,7 @@ def write_results(out: dict, outdir: str = "results") -> None:
             "",
             f"- Token reduction with Meko (mean over runs): **{c['token_reduction_pct']}%**",
             f"- LLM call reduction with Meko (mean over runs): **{c['llm_call_reduction_pct']}%**",
-            f"- Output quality equal or better with Meko: **{c['quality_equal']}**",
+            f"- Output quality equal or better with Meko: **{c['quality_equal_or_better']}**",
         ]
     for mode, data in out["modes"].items():
         acc = data["accuracy"]

@@ -1,4 +1,4 @@
-AgriSense Data Sprint - Official Page (curated snapshot for deterministic replay)
+AgriSense Data Sprint - ILLUSTRATIVE BENCHMARK FIXTURE (not an official source)
 
 AgriSense Data Sprint · FieldByte Labs · $4,500 prize pool · Fully remote
 Deadline: November 28, 2026, 11:59 PM IST

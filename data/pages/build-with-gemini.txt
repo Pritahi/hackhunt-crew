@@ -1,4 +1,4 @@
-Build with Google Gemini - Hack2skill x Google Cloud x YourStory (curated snapshot)
+Build with Google Gemini (Hack2skill) - ILLUSTRATIVE BENCHMARK FIXTURE (not an official source)
 
 Build with Google Gemini: the flagship India hackathon on Gemini Enterprise
 Idea submission by Dec 3, 2026 · Prototype by Dec 6 · Virtual Demo Day Dec 18-19

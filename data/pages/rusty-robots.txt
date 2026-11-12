@@ -1,4 +1,4 @@
-Rusty Robots Sim Jam - Official Page (curated snapshot for deterministic replay)
+Rusty Robots Sim Jam - ILLUSTRATIVE BENCHMARK FIXTURE (not an official source)
 
 Rusty Robots Sim Jam · Ferrous Systems Community · $7,000 prize pool · Online
 Deadline: December 8, 2026, 11:59 PM UTC

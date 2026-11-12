@@ -8,8 +8,8 @@ Usage:
     python run_benchmark.py --mode meko --runs 2 --limit 3   # resumable chunk
 
 Each run evaluates every candidate in data/candidates.json. In meko mode the
-second run starts warm: verdicts and failure patterns are recalled from the
-shared datapack instead of being re-derived.
+later passes recall scoped facts from the shared datapack. Every verdict
+is re-evaluated; no label is reused as a shortcut.
 
 With --limit the run is resumable: reports and the token ledger are
 checkpointed under results/ after every candidate, so a later invocation
@@ -50,8 +50,9 @@ def load_checkpoint(mode: str) -> tuple[list[dict], TokenLedger]:
     return reports, ledger
 
 
-def save_checkpoint(mode: str, reports: list[dict], ledger: TokenLedger) -> None:
+def save_checkpoint(mode: str, reports: list[dict], ledger: TokenLedger, crew: Crew) -> None:
     RESULTS.mkdir(exist_ok=True)
+    (RESULTS / f"state-{mode}.json").write_text(json.dumps({"learnings": crew.learnings, "conversations": crew._conversations}))
     (RESULTS / f"reports-{mode}.json").write_text(json.dumps(reports, indent=2))
     (RESULTS / f"ledger-{mode}.json").write_text(json.dumps([asdict(r) for r in ledger.records], indent=2))
 
@@ -72,7 +73,7 @@ def main() -> None:
 
     if args.fresh:
         for mode in modes:
-            for suffix in (f"reports-{mode}.json", f"ledger-{mode}.json"):
+            for suffix in (f"reports-{mode}.json", f"ledger-{mode}.json", f"state-{mode}.json"):
                 p = RESULTS / suffix
                 if p.exists():
                     p.unlink()
@@ -91,6 +92,13 @@ def main() -> None:
             meko.initialize()
         llm = LLM.from_env(ledger)
         crew = Crew(llm, meko=meko, mode=mode)
+        state_path = RESULTS / f"state-{mode}.json"
+        if state_path.exists():
+            state = json.loads(state_path.read_text())
+            crew.learnings = state["learnings"]
+            crew._conversations = state["conversations"]
+        elif reports:
+            raise RuntimeError("Reports without persisted context state: start a fresh experiment")
         crew.seed_knowledge()
 
         done_this_call = 0
@@ -100,7 +108,7 @@ def main() -> None:
             idx = len(reports) % n
             run = len(reports) // n + 1
             reports.append(crew.evaluate(candidates[idx], run))
-            save_checkpoint(mode, reports, ledger)
+            save_checkpoint(mode, reports, ledger, crew)
             done_this_call += 1
             print(f"[{mode}] run {run} candidate {idx + 1}/{n} done -> {reports[-1].get('verdict')}", flush=True)
         reports_by_mode[mode] = reports

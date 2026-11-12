@@ -1,3 +1,6 @@
+> WORK IN PROGRESS: this document predates the corrected benchmark.
+> Fixture pages are illustrative, not official. Old savings/quality claims are not validated.
+
 # Demo video script (target: 4 minutes, screen recording + TTS narration, no face)
 
 Judging: Presentation is 10% - clear video and documentation.

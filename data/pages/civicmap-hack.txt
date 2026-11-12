@@ -1,4 +1,4 @@
-CivicMap Hack 2026 - Official Page (curated snapshot for deterministic replay)
+CivicMap Hack 2026 - ILLUSTRATIVE BENCHMARK FIXTURE (not an official source)
 
 CivicMap Hack 2026 · Open Town Foundation · $3,000 in prizes · Online
 Deadline: November 19, 2026, 11:59 PM UTC

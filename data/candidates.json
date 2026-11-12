@@ -6,7 +6,8 @@
     "ground_truth": {
       "verdict": "PASS",
       "reason": "Cash prize $1,500, online, free, solo allowed, non-students eligible, deadline in future, screen-recording demo only."
-    }
+    },
+    "fixture_type": "illustrative_condensed"
   },
   {
     "id": "codegeist-2026",
@@ -15,7 +16,8 @@
     "ground_truth": {
       "verdict": "PASS",
       "reason": "$15,000 first cash prize, individuals allowed, India eligible, Forge free tier, online."
-    }
+    },
+    "fixture_type": "illustrative_condensed"
   },
   {
     "id": "enveda-casmi",
@@ -24,7 +26,8 @@
     "ground_truth": {
       "verdict": "PASS",
       "reason": "$16,000 first cash prize paid by Kaggle, open worldwide 18+, solo allowed, free GPUs."
-    }
+    },
+    "fixture_type": "illustrative_condensed"
   },
   {
     "id": "build-with-gemini",
@@ -33,7 +36,8 @@
     "ground_truth": {
       "verdict": "FAIL",
       "reason": "Rules restrict entry to working professionals; the builder is an independent developer who is neither a student nor a salaried professional, so eligibility cannot be claimed truthfully."
-    }
+    },
+    "fixture_type": "illustrative_condensed"
   },
   {
     "id": "ai-for-church",
@@ -42,16 +46,18 @@
     "ground_truth": {
       "verdict": "PASS",
       "reason": "$2,500 cash pool with first prize >= $1,000 stated, free, fully online, worldwide 18+, solo allowed."
-    }
+    },
+    "fixture_type": "illustrative_condensed"
   },
   {
     "id": "rack-it-up",
     "name": "Rack It Up 2026 (Unstop)",
     "page_file": "pages/rack-it-up.txt",
     "ground_truth": {
-      "verdict": "FAIL",
-      "reason": "Prize amounts are not published; sponsor prizes announced only after registration, so a cash first prize >= $100 cannot be verified."
-    }
+      "verdict": "UNSURE",
+      "reason": "Prize amounts unpublished: missing evidence, not a proven hard-rule failure."
+    },
+    "fixture_type": "illustrative_condensed"
   },
   {
     "id": "launchpad-hacks",
@@ -60,7 +66,8 @@
     "ground_truth": {
       "verdict": "FAIL",
       "reason": "Eligibility badge and rules limit entry to students; builder is not a student."
-    }
+    },
+    "fixture_type": "illustrative_condensed"
   },
   {
     "id": "qnx-global",
@@ -69,7 +76,8 @@
     "ground_truth": {
       "verdict": "PASS",
       "reason": "$10,000 grand cash prize, age of majority only, India not excluded, QNX 8.0 free for non-commercial use, QEMU allowed."
-    }
+    },
+    "fixture_type": "illustrative_condensed"
   },
   {
     "id": "vectordb-showdown",
@@ -78,7 +86,8 @@
     "ground_truth": {
       "verdict": "PASS",
       "reason": "$5,000 first cash prize, online, free, 18+ worldwide, solo allowed, deadline Dec 5 2026"
-    }
+    },
+    "fixture_type": "synthetic"
   },
   {
     "id": "openwaste-ai",
@@ -87,7 +96,8 @@
     "ground_truth": {
       "verdict": "PASS",
       "reason": "$2,000 winner cash, fully remote, free, age of majority, solo allowed, deadline Nov 30 2026"
-    }
+    },
+    "fixture_type": "synthetic"
   },
   {
     "id": "tinyml-builders-cup",
@@ -96,7 +106,8 @@
     "ground_truth": {
       "verdict": "PASS",
       "reason": "$1,200 champion cash, free simulator instead of hardware, online, 18+, solo allowed, deadline Nov 24 2026"
-    }
+    },
+    "fixture_type": "synthetic"
   },
   {
     "id": "devtools-jam",
@@ -105,7 +116,8 @@
     "ground_truth": {
       "verdict": "PASS",
       "reason": "$3,000 first cash, online, free, 18+, solo allowed, deadline Dec 12 2026"
-    }
+    },
+    "fixture_type": "synthetic"
   },
   {
     "id": "agrisense-sprint",
@@ -114,7 +126,8 @@
     "ground_truth": {
       "verdict": "PASS",
       "reason": "$1,500 first cash, fully remote, free, 18+, deadline Nov 28 2026"
-    }
+    },
+    "fixture_type": "synthetic"
   },
   {
     "id": "finsim-forecast",
@@ -123,7 +136,8 @@
     "ground_truth": {
       "verdict": "PASS",
       "reason": "$4,000 grand cash, online, free, solo explicitly welcome, deadline Dec 1 2026"
-    }
+    },
+    "fixture_type": "synthetic"
   },
   {
     "id": "locallang-nlp",
@@ -132,7 +146,8 @@
     "ground_truth": {
       "verdict": "PASS",
       "reason": "$800 winner cash (>= $100), online, free, 18+, deadline Nov 21 2026"
-    }
+    },
+    "fixture_type": "synthetic"
   },
   {
     "id": "rusty-robots",
@@ -141,7 +156,8 @@
     "ground_truth": {
       "verdict": "PASS",
       "reason": "$2,500 first cash, free browser simulator, online, 18+, solo allowed, deadline Dec 8 2026"
-    }
+    },
+    "fixture_type": "synthetic"
   },
   {
     "id": "civicmap-hack",
@@ -150,7 +166,8 @@
     "ground_truth": {
       "verdict": "PASS",
       "reason": "$1,000 grand cash, online, free, 18+, solo allowed, deadline Nov 19 2026"
-    }
+    },
+    "fixture_type": "synthetic"
   },
   {
     "id": "campuscopilot",
@@ -159,7 +176,8 @@
     "ground_truth": {
       "verdict": "FAIL",
       "reason": "Student-only: rules require current enrollment and .edu email; builder is not a student"
-    }
+    },
+    "fixture_type": "synthetic"
   },
   {
     "id": "dronezone",
@@ -168,7 +186,8 @@
     "ground_truth": {
       "verdict": "FAIL",
       "reason": "Finalists must attend in-person finals in Singapore at own expense; not fully online"
-    }
+    },
+    "fixture_type": "synthetic"
   },
   {
     "id": "cryptokitty-defi",
@@ -177,7 +196,8 @@
     "ground_truth": {
       "verdict": "FAIL",
       "reason": "All prizes paid only in KITTY governance tokens; no cash alternative"
-    }
+    },
+    "fixture_type": "synthetic"
   },
   {
     "id": "roboarm-hardware",
@@ -186,7 +206,8 @@
     "ground_truth": {
       "verdict": "FAIL",
       "reason": "Requires purchasing a $180 robot arm kit; not free to enter"
-    }
+    },
+    "fixture_type": "synthetic"
   },
   {
     "id": "retroweb-2025",
@@ -195,7 +216,8 @@
     "ground_truth": {
       "verdict": "FAIL",
       "reason": "Submission deadline October 30 2026 has passed as of the crawl date Nov 10 2026"
-    }
+    },
+    "fixture_type": "synthetic"
   },
   {
     "id": "pitchperfect-video",
@@ -204,7 +226,8 @@
     "ground_truth": {
       "verdict": "FAIL",
       "reason": "Mandatory selfie video with entrant's own face and voice; TTS/faceless disqualified"
-    }
+    },
+    "fixture_type": "synthetic"
   },
   {
     "id": "teamforge-cup",
@@ -213,6 +236,7 @@
     "ground_truth": {
       "verdict": "FAIL",
       "reason": "Teams of 2-4 only; solo entries not accepted"
-    }
+    },
+    "fixture_type": "synthetic"
   }
 ]

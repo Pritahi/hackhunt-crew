@@ -1,16 +1,14 @@
 """Crew orchestrator: runs the 4 agents over every candidate in two modes.
 
 baseline  - context is assembled the way ad-hoc multi-agent systems do it:
-            the whole dossier (page text + every prior agent output, plus a
-            full dump of everything the crew has ever learned) is stuffed
+            the current page (Scout only), prior agent outputs, plus a
+            full dump of accumulated concise fact/verdict learnings is stuffed
             into each prompt. Context per agent grows with every agent added.
 meko      - agents retrieve only what they need from the shared Meko datapack
             and write back what they learn. Each agent owns one conversation
             per run (Meko conversations are owner-scoped); memories, the
             knowledge base and artifacts are shared datapack-wide. On later
-            runs the crew starts warm: verdicts and failure patterns are
-            recalled from memory instead of being re-derived, which cuts both
-            tokens and LLM calls.
+            passes recall candidate-scoped facts, but re-evaluate every verdict.
 """
 
 from __future__ import annotations
@@ -42,6 +40,7 @@ class Crew:
         self.meko = meko
         self.mode = mode
         self.learnings: list[str] = []  # baseline mode's in-process memory dump
+        self._candidate_id = ""
         self._conversations: dict[str, str] = {}  # "agent:run" -> conversation id
 
     # -- conversation management (meko mode; conversations are owner-scoped) --
@@ -60,12 +59,19 @@ class Crew:
 
     # -- context assembly: the one variable under test ----------------------
 
+    def _memory_conversation(self) -> str:
+        key = f"memory:{self._candidate_id}"
+        if key not in self._conversations:
+            self._conversations[key] = self.meko.conversation_create(
+                agent_id="shared-memory", title=key, session_id=key)
+        return self._conversations[key]
+
     def _context(self, agent: str, candidate: dict, run: int) -> str:
         if self.mode == "baseline":
             return "\n\n".join([CRITERIA, *self.learnings])
         cid = self._conversation(agent, run)
         query = f"{candidate['name']} hackathon eligibility prize deadline entry criteria"
-        raw = self.meko.memory_search(query, conversation_id=cid, agent_id=agent, limit=5)
+        raw = self.meko.memory_search(query, conversation_id=cid, agent_id=agent, limit=5, run_id=self._memory_conversation())
         try:
             items = json.loads(raw).get("results", [])
             seen: set[str] = set()
@@ -118,26 +124,12 @@ class Crew:
         if self.mode == "baseline":
             self.learnings.append(f"[{agent}] {text}")
         elif self.meko is not None:
-            self.meko.memory_add(text, conversation_id=self._conversation(agent, run), agent_id=agent)
+            self.meko.memory_add(text, conversation_id=self._memory_conversation(), agent_id="shared-memory")
 
     # -- one candidate -----------------------------------------------------
 
     def evaluate(self, candidate: dict, run: int) -> dict:
-        if self.mode == "meko" and self.meko is not None and run > 1:
-            # Warm start: reuse a memorized verdict instead of re-deriving it.
-            cid = self._conversation("crew", run)
-            recalled = self.meko.memory_search(
-                f"final verdict for {candidate['name']}", conversation_id=cid, agent_id="crew", limit=3
-            )
-            if '"reused_ok": true' in recalled:
-                m = re.search(r"final verdict for .*: (PASS|FAIL|UNSURE)", recalled)
-                return {
-                    "candidate": candidate["name"],
-                    "verdict": m.group(1) if m else "UNSURE",
-                    "reused": True,
-                    "detail": recalled[:500],
-                }
-
+        self._candidate_id = candidate["id"]
         prior: dict = {}
         outputs: dict = {}
         for agent in AGENT_ORDER:
@@ -167,9 +159,9 @@ class Crew:
                 agent_id="crew",
             )
             self.meko.memory_add(
-                f'final verdict for {candidate["name"]}: {verdict}. {json.dumps(outputs.get("verifier", {}))[:300]} "reused_ok": true',
-                conversation_id=cid,
-                agent_id="crew",
+                f'final verdict for {candidate["name"]}: {verdict}. {json.dumps(outputs.get("verifier", {}))[:300]}',
+                conversation_id=self._memory_conversation(),
+                agent_id="shared-memory",
             )
         return report
 

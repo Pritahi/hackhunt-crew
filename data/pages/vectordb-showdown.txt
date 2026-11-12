@@ -1,4 +1,4 @@
-VectorDB Showdown 2026 - Official Page (curated snapshot for deterministic replay)
+VectorDB Showdown 2026 - ILLUSTRATIVE BENCHMARK FIXTURE (not an official source)
 
 VectorDB Showdown 2026 · Pine Labs OSS · $12,000 in prizes · 100% online
 Deadline: December 5, 2026, 11:59 PM UTC

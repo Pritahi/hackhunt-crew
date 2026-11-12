@@ -1,4 +1,4 @@
-Enveda CASMI 2026 - Kaggle Competition (curated snapshot for deterministic replay)
+Enveda CASMI 2026 (Kaggle) - ILLUSTRATIVE BENCHMARK FIXTURE (not an official source)
 
 Enveda CASMI 2026: Molecule Identification from Mass Spectra
 Kaggle · Featured Code Competition · $50,000 prize pool

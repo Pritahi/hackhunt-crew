@@ -1,0 +1,67 @@
+{
+  "modes": {
+    "baseline": {
+      "overall": {
+        "mode": "baseline",
+        "run": null,
+        "llm_calls": 257,
+        "prompt_tokens": 318673,
+        "completion_tokens": 53132,
+        "total_tokens": 371805
+      },
+      "per_run": {
+        "1": {
+          "mode": "baseline",
+          "run": 1,
+          "llm_calls": 86,
+          "prompt_tokens": 111483,
+          "completion_tokens": 18178,
+          "total_tokens": 129661
+        },
+        "2": {
+          "mode": "baseline",
+          "run": 2,
+          "llm_calls": 86,
+          "prompt_tokens": 98560,
+          "completion_tokens": 17961,
+          "total_tokens": 116521
+        },
+        "3": {
+          "mode": "baseline",
+          "run": 3,
+          "llm_calls": 85,
+          "prompt_tokens": 108630,
+          "completion_tokens": 16993,
+          "total_tokens": 125623
+        }
+      },
+      "run_stats": {
+        "run_totals": [
+          129661,
+          116521,
+          125623
+        ],
+        "run_calls": [
+          86,
+          86,
+          85
+        ],
+        "mean_tokens": 123935.0,
+        "spread_tokens": 13140,
+        "mean_calls": 85.67
+      },
+      "accuracy": {
+        "compared": 72,
+        "correct": 71,
+        "accuracy": 0.9861,
+        "misses": [
+          {
+            "candidate": "AI for Church Hackathon",
+            "want": "PASS",
+            "got": "FAIL"
+          }
+        ]
+      }
+    }
+  }
+}

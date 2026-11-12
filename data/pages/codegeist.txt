@@ -1,4 +1,4 @@
-Codegeist 2026 - Official Devpost Page (curated snapshot for deterministic replay)
+Codegeist 2026 (Atlassian) - ILLUSTRATIVE BENCHMARK FIXTURE (not an official source)
 
 Codegeist 2026: Build with Atlassian Forge and Rovo
 $120,000+ in prizes · Online · Hosted by Atlassian on Devpost

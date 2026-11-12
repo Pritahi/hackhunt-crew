@@ -1,4 +1,4 @@
-TinyML Builders Cup - Official Page (curated snapshot for deterministic replay)
+TinyML Builders Cup - ILLUSTRATIVE BENCHMARK FIXTURE (not an official source)
 
 TinyML Builders Cup · EdgeML Community · $3,400 in cash prizes · Online
 Deadline: November 24, 2026, 11:59 PM PT

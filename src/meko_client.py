@@ -158,9 +158,9 @@ class MekoClient:
     def memory_add(self, text: str, conversation_id: str, agent_id: str) -> None:
         self.call_tool("memory_add", text=text, conversation_id=conversation_id, agent_id=agent_id)
 
-    def memory_search(self, query: str, conversation_id: str, agent_id: str, limit: int = 8) -> str:
+    def memory_search(self, query: str, conversation_id: str, agent_id: str, limit: int = 8, run_id: str | None = None) -> str:
         return self.call_tool(
-            "memory_search", query=query, conversation_id=conversation_id, agent_id=agent_id, limit=limit
+            "memory_search", query=query, conversation_id=conversation_id, agent_id=agent_id, limit=limit, run_id=run_id
         ).text
 
     def context_search(self, query: str, conversation_id: str, agent_id: str, limit: int = 8) -> str:

@@ -392,5 +392,602 @@
         "effort_days": 5
       }
     }
+  },
+  {
+    "candidate": "Rack It Up 2026 (Unstop)",
+    "mode": "meko",
+    "run": 1,
+    "verdict": "FAIL",
+    "agents": {
+      "scout": {
+        "name": "Rack It Up 2026",
+        "organizer": "Rack'Em (Karma Enterprises, Bengaluru)",
+        "deadline": "2026-12-09",
+        "prizes": {
+          "description": "Sponsor prizes to be announced between December 2 and December 5."
+        },
+        "first_prize_cash_usd": null,
+        "eligibility": "Cross-college and open registration: students AND non-students welcome.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "A 48-hour online build sprint requiring a live, deployed product and a 3-minute demo video. Cash prizes are not yet confirmed; sponsor prizes will be announced in early December."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "unknown",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "UNSURE",
+        "reasons": [
+          "The cash prize amount is currently unconfirmed and not guaranteed to meet the 100 USD minimum requirement."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "The cash prize is currently unconfirmed and may not meet the $100 USD minimum requirement, as sponsor prizes are not announced until December.",
+            "severity": "high"
+          },
+          {
+            "risk": "The organizer (Karma Enterprises) is not a well-known entity, increasing the risk of prize non-payment or bait-and-switch tactics.",
+            "severity": "medium"
+          }
+        ],
+        "kill": true,
+        "kill_reason": "The candidate fails the entry criterion regarding a guaranteed cash prize of at least 100 USD; the prize pool is currently unconfirmed and explicitly stated as 'sponsor prizes' to be announced later, which often implies non-cash or sub-threshold rewards."
+      },
+      "_eliminated": true
+    }
+  },
+  {
+    "candidate": "LaunchPad Hacks (Devpost)",
+    "mode": "meko",
+    "run": 1,
+    "verdict": "FAIL",
+    "agents": {
+      "scout": {
+        "name": "LaunchPad Hacks",
+        "organizer": "LaunchPad Hacks",
+        "deadline": "2026-12-04",
+        "prizes": {
+          "best_overall": "$300",
+          "best_beginner": "$100 (gift card)",
+          "category_prizes": "sponsor credits"
+        },
+        "first_prize_cash_usd": 300,
+        "eligibility": "Students currently enrolled in high school, college, university, or equivalent; recent graduates (within 6 months) also eligible.",
+        "student_only": true,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Beginner-friendly hackathon. Requires a Devpost submission with a demo video (max 3 minutes) and source code link. Professionals not enrolled as students are ineligible for prizes."
+      },
+      "verifier": {
+        "checks": {
+          "1": "fail",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "The candidate is restricted to students and recent graduates; the builder is not a student, making them ineligible for prizes."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Eligibility restriction: The hackathon is strictly limited to students and recent graduates, excluding the builder.",
+            "severity": "high"
+          },
+          {
+            "risk": "Prize structure: Secondary prizes are limited to gift cards and sponsor credits, which are non-liquid and often restricted by region.",
+            "severity": "medium"
+          }
+        ],
+        "kill": true,
+        "kill_reason": "The candidate is restricted to students and recent graduates; the builder is not a student, violating the entry criterion for eligibility."
+      },
+      "_eliminated": true
+    }
+  },
+  {
+    "candidate": "QNX Global Hackathon",
+    "mode": "meko",
+    "run": 1,
+    "verdict": "FAIL",
+    "agents": {
+      "scout": {
+        "name": "QNX Global Hackathon",
+        "organizer": "BlackBerry QNX",
+        "deadline": "2026-12-15T14:00:00-05:00",
+        "prizes": {
+          "grand_prize": "$10,000",
+          "category_first_prizes": "$4,000 each",
+          "runner_up_prizes": "$2,000 each",
+          "other": "Best Codelab award"
+        },
+        "first_prize_cash_usd": 10000,
+        "eligibility": "Individuals and teams who have reached the age of majority, excluding residents of Brazil, Russia, Crimea, Cuba, Iran, and North Korea.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Requires a working project on QNX 8.0, a public demo video, and a public repository. QEMU emulation is supported, removing the need for physical hardware."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "The builder profile specifies they are an 'independent hobbyist' and 'not an employed working professional'. The evaluation criteria explicitly state: 'Working-professional-only excludes the hobbyist.'"
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "The verifier flagged a potential 'working-professional-only' restriction that could disqualify independent hobbyists, though this is not explicitly stated in the Scout's eligibility summary.",
+            "severity": "medium"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "A real-time, safety-critical sensor fusion dashboard for autonomous systems using QNX 8.0 and QEMU, designed to demonstrate high-availability task scheduling.",
+        "reuse": [
+          "Modular C++ sensor processing library from previous embedded projects",
+          "QEMU virtualization setup scripts",
+          "Standardized documentation template for safety-critical systems"
+        ],
+        "steps": [
+          "Set up QNX 8.0 development environment via QEMU",
+          "Implement a multi-threaded sensor data aggregator using QNX Neutrino RTOS primitives",
+          "Develop a lightweight visualization module for the dashboard",
+          "Conduct performance testing to demonstrate deterministic latency",
+          "Record and edit a high-quality demo video showcasing the system's responsiveness",
+          "Prepare the public repository with clear build instructions and safety compliance documentation"
+        ],
+        "demo_risks": [
+          "Potential disqualification due to 'working-professional' preference despite lack of explicit eligibility ban",
+          "Complexity of QNX 8.0 API learning curve within the timeframe",
+          "Performance overhead of QEMU emulation affecting real-time metrics"
+        ],
+        "effort_days": 25
+      }
+    }
+  },
+  {
+    "candidate": "VectorDB Showdown 2026",
+    "mode": "meko",
+    "run": 1,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "VectorDB Showdown 2026",
+        "organizer": "Pine Labs OSS",
+        "deadline": "2026-12-05T23:59:00Z",
+        "prizes": {
+          "first": "$5,000",
+          "second": "$2,500",
+          "third": "$1,000",
+          "honorable_mentions": "$700 each"
+        },
+        "first_prize_cash_usd": 5000,
+        "eligibility": "Open to individuals and teams worldwide, 18 years or older. Students, professionals, and independent builders are all welcome.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Requires a public GitHub repository and a 3-minute screen-recorded demo. Narration is optional for the demo, and captions are acceptable."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate is open to independent builders and non-students.",
+          "The event is fully online.",
+          "Entry is free.",
+          "The first prize is $5,000 USD cash.",
+          "Solo participation is explicitly allowed.",
+          "The deadline of 2026-12-05 is after the evaluation date of 2026-11-10.",
+          "The demo requirements allow for optional narration and captions, meaning no voice or face is strictly required."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Prize payment logistics for international winners (India) may involve high wire transfer fees or reliance on third-party platforms like Devpost/Wise, potentially reducing the net payout.",
+            "severity": "medium"
+          },
+          {
+            "risk": "The requirement for a public GitHub repository may expose proprietary or unfinished code to public scrutiny before the builder is ready.",
+            "severity": "low"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "Vector-RAG Benchmarker: A lightweight, open-source CLI tool that stress-tests vector databases (Pinecone, Milvus, Qdrant) for latency, recall, and cost-efficiency under specific workload patterns.",
+        "reuse": [
+          "Existing Python benchmarking harness from previous RAG-eval projects",
+          "Standardized dataset loaders for common vector search benchmarks (e.g., SQuAD, MS MARCO)",
+          "Docker-compose templates for spinning up local vector DB instances"
+        ],
+        "steps": [
+          "Define standardized workload profiles (CRUD operations, high-dimensional vector insertion, hybrid search queries).",
+          "Implement the benchmarking engine using Python's 'asyncio' for high-concurrency simulation.",
+          "Develop a reporting module that generates comparative JSON/CSV outputs for the demo.",
+          "Create a clean, minimal CLI interface to run tests against multiple DB endpoints.",
+          "Record a 3-minute screen-capture demo showing the tool running a comparative test between two vector DBs, using on-screen captions to explain the metrics.",
+          "Publish the repository with a clear README, installation guide, and sample benchmark results."
+        ],
+        "demo_risks": [
+          "Network latency variability during live benchmarking could skew results.",
+          "Potential for 'noisy neighbor' effects if running multiple DB containers on a single local machine.",
+          "Risk of the demo appearing too technical/dry without clear visual data representation."
+        ],
+        "effort_days": 12
+      }
+    }
+  },
+  {
+    "candidate": "OpenWaste AI Challenge",
+    "mode": "meko",
+    "run": 1,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "OpenWaste AI Challenge",
+        "organizer": "GreenGrid Foundation",
+        "deadline": "2026-11-30T18:00:00+01:00",
+        "prizes": {
+          "winner": "$2,000",
+          "runner_up": "$1,000",
+          "best_writeup": "$500"
+        },
+        "first_prize_cash_usd": 2000,
+        "eligibility": "Individuals or teams of up to 4, any country, age of majority required.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Challenge focuses on computer vision for waste sorting. Requires model weights, inference notebook, and a technical report. Entirely remote participation."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate is open to non-students.",
+          "Participation is entirely remote.",
+          "Entry is free.",
+          "The first prize is $2,000 USD, which exceeds the $100 minimum.",
+          "Solo participation is explicitly allowed.",
+          "The deadline of 2026-11-30 is in the future relative to the evaluation date.",
+          "There is no requirement for face or voice recording."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Prize payment logistics for international winners (India) are not specified; potential for high wire transfer fees or reliance on platforms like PayPal/Wise which may have regional restrictions.",
+            "severity": "medium"
+          },
+          {
+            "risk": "The 'GreenGrid Foundation' is not a widely recognized entity; potential for lack of transparency in judging criteria or intellectual property rights over submitted model weights.",
+            "severity": "medium"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "A lightweight, high-accuracy waste classification pipeline using YOLOv11-nano for real-time inference on edge devices, optimized for the OpenWaste dataset.",
+        "reuse": [
+          "YOLOv8/v11 training boilerplate",
+          "Data augmentation scripts for waste imagery",
+          "Standard PyTorch-to-ONNX export pipeline",
+          "Technical report template from previous CV hackathons"
+        ],
+        "steps": [
+          "Perform exploratory data analysis on the provided waste dataset to identify class imbalances.",
+          "Implement a custom data loader with heavy augmentation (mosaic, mixup) to improve generalization.",
+          "Train a YOLOv11-nano model using transfer learning to ensure low latency and high accuracy.",
+          "Optimize model weights using FP16 quantization for efficient inference.",
+          "Develop a clean, documented inference notebook that handles image preprocessing and post-processing.",
+          "Draft a technical report focusing on model architecture, training methodology, and performance metrics (mAP)."
+        ],
+        "demo_risks": [
+          "Potential overfitting due to limited dataset size in specific waste categories.",
+          "Inference latency issues if the test environment has restricted hardware.",
+          "Ambiguity in judging criteria regarding the 'GreenGrid Foundation's' evaluation metrics."
+        ],
+        "effort_days": 12
+      }
+    }
+  },
+  {
+    "candidate": "TinyML Builders Cup",
+    "mode": "meko",
+    "run": 1,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "TinyML Builders Cup",
+        "organizer": "EdgeML Community",
+        "deadline": "2026-11-24T23:59:00-07:00",
+        "prizes": {
+          "champion": 1200,
+          "second": 800,
+          "third": 400,
+          "community_choice": 1000
+        },
+        "first_prize_cash_usd": 1200,
+        "eligibility": "Open worldwide to anyone 18+",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "A web-based simulator is provided, so no hardware purchase is required. Open to solo builders and teams of up to 3."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate is open to non-students.",
+          "The event is fully online.",
+          "Entry is free and no hardware purchase is required.",
+          "The first prize is 1200 USD cash.",
+          "Solo participation is explicitly allowed.",
+          "The deadline of 2026-11-24 is in the future relative to the evaluation date.",
+          "There is no requirement to show face or voice."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Prize payment logistics: International wire transfers for a 1200 USD prize may incur significant intermediary bank fees or require complex tax documentation (e.g., W-8BEN forms) for non-US residents.",
+            "severity": "medium"
+          },
+          {
+            "risk": "Community Choice prize: The 1000 USD 'community_choice' award often relies on social media engagement or popularity contests, which can be gamed and may not reflect technical merit.",
+            "severity": "low"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "An ultra-low-power anomaly detection system for industrial vibration sensors using a quantized TinyML model optimized for the provided web simulator.",
+        "reuse": [
+          "TensorFlow Lite for Microcontrollers (TFLM) boilerplate",
+          "Quantization-aware training scripts from previous EdgeML projects",
+          "Standard anomaly detection dataset preprocessing pipeline"
+        ],
+        "steps": [
+          "Analyze the web simulator's instruction set and memory constraints.",
+          "Train a lightweight Autoencoder model using TensorFlow Lite.",
+          "Apply 8-bit quantization to minimize memory footprint.",
+          "Implement the inference engine within the simulator environment.",
+          "Optimize the model's latency and accuracy trade-off to maximize performance metrics.",
+          "Document the model architecture and performance results for the submission."
+        ],
+        "demo_risks": [
+          "Simulator environment may have undocumented limitations or bugs compared to real hardware.",
+          "Community Choice prize may be biased toward projects with higher social media visibility rather than technical optimization."
+        ],
+        "effort_days": 10
+      }
+    }
+  },
+  {
+    "candidate": "DevTools Jam 2026",
+    "mode": "meko",
+    "run": 1,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "DevTools Jam 2026",
+        "organizer": "Toolchain Collective",
+        "deadline": "2026-12-12T23:59:00-12:00",
+        "prizes": {
+          "best_tool": 3000,
+          "runner_up": 1500,
+          "most_polished_docs": 500
+        },
+        "first_prize_cash_usd": 3000,
+        "eligibility": "Anyone 18 or older, any country not under US embargo. Individuals or teams.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "A two-week hackathon focused on building developer tools like CLI tools, editor plugins, or CI helpers. Requires a public repository and a README with installation and usage instructions."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate is open to non-students.",
+          "The event is fully online.",
+          "Entry is free.",
+          "The first prize is $3000 USD cash.",
+          "Solo participation is explicitly allowed.",
+          "The deadline of 2026-12-12 is in the future relative to the evaluation date.",
+          "There is no requirement for face or voice recording."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Prize payment logistics: International wire transfers to India may incur significant intermediary bank fees or require complex tax documentation (W-8BEN forms) that can delay or reduce the net payout.",
+            "severity": "medium"
+          },
+          {
+            "risk": "Subjective judging criteria: 'Most polished docs' and 'Best tool' are highly subjective, increasing the risk of effort-to-reward mismatch if the judges' preferences are not aligned with the builder's technical approach.",
+            "severity": "low"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "A high-performance CLI tool for local LLM-based code refactoring that integrates directly with VS Code via a language server protocol (LSP) wrapper.",
+        "reuse": [
+          "Existing boilerplate for CLI argument parsing (Go/Cobra)",
+          "Standardized documentation template for developer tools",
+          "Pre-configured CI/CD pipeline for cross-platform binary distribution (GitHub Actions)",
+          "Existing local LLM inference integration logic"
+        ],
+        "steps": [
+          "Define core CLI functionality: file-based refactoring and code analysis.",
+          "Implement LSP wrapper to allow the CLI to act as a backend for editor plugins.",
+          "Develop the core refactoring engine using local LLM context window optimization.",
+          "Write comprehensive documentation (README, installation, usage) to target the 'Most polished docs' prize.",
+          "Package the tool for Homebrew and npm to ensure ease of installation.",
+          "Finalize the public repository with clear contribution guidelines and demo GIFs."
+        ],
+        "demo_risks": [
+          "Subjective judging: The tool's utility might be overlooked if the UI/UX isn't polished enough.",
+          "Performance variance: Local LLM inference speed depends heavily on the user's hardware, which may affect judge perception.",
+          "Payment friction: Potential delays in international prize disbursement due to tax documentation requirements."
+        ],
+        "effort_days": 14
+      }
+    }
+  },
+  {
+    "candidate": "AgriSense Data Sprint",
+    "mode": "meko",
+    "run": 1,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "AgriSense Data Sprint",
+        "organizer": "FieldByte Labs",
+        "deadline": "2026-11-28T23:59:00",
+        "prizes": {
+          "1st": "$1,500",
+          "2nd": "$900",
+          "3rd": "$600"
+        },
+        "first_prize_cash_usd": 1500,
+        "eligibility": "Open to all individuals worldwide, 18+.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "A fully remote data science sprint focused on forecasting crop stress using satellite imagery. Participants must submit a public notebook or repository and a 200-word summary."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate meets all eligibility criteria: it is open to non-students, fully online, free to enter, offers a cash prize exceeding $100, allows solo participation, has a future deadline, and does not require face or voice recording."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "The prize pool is relatively small ($1,500) for a data science sprint, which may indicate a low-budget organizer with potential delays or administrative hurdles in international prize disbursement.",
+            "severity": "low"
+          },
+          {
+            "risk": "The requirement for a 'public notebook or repository' may expose proprietary code or data handling methods if the participant is not careful about what they push to public platforms.",
+            "severity": "low"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "A robust crop stress forecasting pipeline using a pre-trained Vision Transformer (ViT) fine-tuned on Sentinel-2 satellite imagery, utilizing a modular Jupyter notebook structure for reproducibility.",
+        "reuse": [
+          "Standardized data preprocessing pipeline for satellite imagery (GeoTIFF handling)",
+          "Pre-trained PyTorch/HuggingFace ViT model architecture",
+          "Evaluation metrics script (RMSE/MAE for stress index prediction)",
+          "Automated visualization module for stress heatmaps"
+        ],
+        "steps": [
+          "Download and normalize sample satellite imagery datasets to establish a baseline model.",
+          "Implement a data loader that handles multi-spectral bands for crop stress detection.",
+          "Fine-tune the ViT model on the provided training set, focusing on temporal feature extraction.",
+          "Develop the final Jupyter notebook, ensuring clear documentation of the feature engineering process.",
+          "Generate the 200-word summary highlighting the model's accuracy and scalability.",
+          "Perform a final code audit to ensure no proprietary or sensitive data is included in the public repository."
+        ],
+        "demo_risks": [
+          "Overfitting to the specific satellite sensor characteristics provided in the sprint.",
+          "Computational latency if the model architecture is too heavy for the provided evaluation environment.",
+          "Potential data leakage if temporal cross-validation is not strictly implemented."
+        ],
+        "effort_days": 5
+      }
+    }
   }
 ]

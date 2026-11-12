@@ -76,7 +76,7 @@ def build_results(ledger: TokenLedger, reports_by_mode: dict, ground_truth: dict
         out["comparison"] = {
             "token_reduction_pct": round(100 * (1 - m / b), 1) if b else None,
             "llm_call_reduction_pct": round(100 * (1 - mc / bc), 1) if bc else None,
-            "basis": "means over runs (see run_stats)",
+            "basis": "means over three sequential passes, not independent trials (see run_stats)",
             "quality_equal": modes["meko"]["accuracy"]["accuracy"] == modes["baseline"]["accuracy"]["accuracy"],
             "quality_equal_or_better": modes["meko"]["accuracy"]["accuracy"] >= modes["baseline"]["accuracy"]["accuracy"],
         }
@@ -87,7 +87,7 @@ def write_results(out: dict, outdir: str = "results") -> None:
     p = Path(outdir)
     p.mkdir(exist_ok=True)
     (p / "metrics.json").write_text(json.dumps(out, indent=2))
-    lines = ["# HackHunt Crew benchmark results", ""]
+    lines = ["# HackHunt Crew benchmark results", "", "Sequential passes over illustrative fixtures, not independent trials.", "Tokens cover successful completed client LLM calls only, excluding Meko backend inference, retries and interrupted attempts.", ""]
     lines.append("| Mode | Run | LLM calls | Prompt tokens | Completion tokens | Total tokens |")
     lines.append("|---|---|---|---|---|---|")
     for mode, data in out["modes"].items():

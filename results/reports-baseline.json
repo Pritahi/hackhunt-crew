@@ -500,5 +500,566 @@
       },
       "_eliminated": true
     }
+  },
+  {
+    "candidate": "QNX Global Hackathon",
+    "mode": "baseline",
+    "run": 1,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "QNX Global Hackathon",
+        "organizer": "BlackBerry QNX",
+        "deadline": "2026-12-15T14:00:00",
+        "prizes": {
+          "grand_prize": 10000,
+          "category_first_prizes": 4000,
+          "runner_up_prizes": 2000,
+          "best_codelab": null
+        },
+        "first_prize_cash_usd": 10000,
+        "eligibility": "Individuals and teams who have reached the age of majority. Residents of Brazil, Russia, Crimea, Cuba, Iran, and North Korea are excluded.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Build on QNX 8.0 using QEMU. Requires public demo video, public repository, and Devpost submission. India is eligible."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate is open to non-students.",
+          "The hackathon is fully online.",
+          "Entry is free.",
+          "The first prize of $10,000 USD exceeds the $100 minimum.",
+          "Solo participation is allowed.",
+          "The deadline of 2026-12-15 is after the evaluation date of 2026-11-10.",
+          "The submission requirements do not mandate face or voice recording."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Technical barrier: The requirement to build on QNX 8.0 using QEMU may involve a steep learning curve or proprietary software environment setup that could hinder development speed.",
+            "severity": "medium"
+          },
+          {
+            "risk": "Prize payment risk: International prize distribution from BlackBerry/QNX may involve complex tax documentation or banking hurdles for an independent hobbyist in India.",
+            "severity": "low"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "QNX 8.0 Real-Time Embedded System Monitor: A lightweight, high-performance system telemetry dashboard for QNX-based automotive or industrial edge devices.",
+        "reuse": [
+          "QEMU virtualization setup patterns from previous embedded projects",
+          "Standard Devpost project documentation templates",
+          "Modular C/C++ system monitoring logic"
+        ],
+        "steps": [
+          "Download and configure QNX 8.0 SDP and QEMU environment as per official documentation.",
+          "Develop a lightweight C-based telemetry agent to collect CPU, memory, and process metrics.",
+          "Implement a simple POSIX-compliant interface to expose data via shared memory or local socket.",
+          "Build a minimal web-based or CLI-based dashboard to visualize the telemetry data.",
+          "Package the solution with a clear README, build scripts, and a screen-recorded demo video showing the system running in QEMU."
+        ],
+        "demo_risks": [
+          "Steep learning curve for QNX 8.0 proprietary APIs",
+          "Potential instability of QEMU emulation for specific QNX features",
+          "Complexity of cross-compilation for the QNX target architecture"
+        ],
+        "effort_days": 14
+      }
+    }
+  },
+  {
+    "candidate": "VectorDB Showdown 2026",
+    "mode": "baseline",
+    "run": 1,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "VectorDB Showdown 2026",
+        "organizer": "Pine Labs OSS",
+        "deadline": "2026-12-05T23:59:00",
+        "prizes": {
+          "first": "$5,000",
+          "second": "$2,500",
+          "third": "$1,000",
+          "honorable_mentions": "5 x $700"
+        },
+        "first_prize_cash_usd": 5000,
+        "eligibility": "Individuals and teams worldwide, 18 years or older. Students, professionals, and independent builders welcome.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Requires a public GitHub repository and a 3-minute screen-recorded demo. Narration is optional, and captions are acceptable, so face/voice is not mandatory."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate is open to non-students and independent builders.",
+          "The hackathon is fully online.",
+          "Entry is free.",
+          "The first prize of $5,000 USD exceeds the $100 minimum.",
+          "Solo participation is explicitly allowed.",
+          "The deadline of 2026-12-05 is after the evaluation date of 2026-11-10.",
+          "The submission requirements explicitly state that face/voice is not mandatory."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "International prize payment processing: Pine Labs OSS may utilize third-party platforms (like Devpost or Tipalti) that impose significant transaction fees or tax withholding for international winners in India.",
+            "severity": "medium"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "Vector-RAG-Bench: A lightweight, open-source benchmarking tool for comparing vector database retrieval latency and accuracy across different embedding models.",
+        "reuse": [
+          "Vector database integration boilerplate from previous RAG projects",
+          "Standardized evaluation metrics script (Recall@K, MRR)",
+          "Automated screen-recording workflow for silent demos"
+        ],
+        "steps": [
+          "Set up a local environment with multiple vector DB drivers (Chroma, Qdrant, LanceDB).",
+          "Implement a standardized ingestion pipeline for a sample dataset (e.g., Wikipedia snippets).",
+          "Develop the benchmarking CLI to measure query latency and retrieval precision.",
+          "Create a dashboard UI using Streamlit to visualize the performance comparison.",
+          "Record a 3-minute silent screen-capture demo highlighting the CLI output and dashboard.",
+          "Package the code into a clean GitHub repository with a comprehensive README."
+        ],
+        "demo_risks": [
+          "Performance variance due to local hardware limitations during the demo.",
+          "Dependency conflicts between different vector database SDKs."
+        ],
+        "effort_days": 8
+      }
+    }
+  },
+  {
+    "candidate": "OpenWaste AI Challenge",
+    "mode": "baseline",
+    "run": 1,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "OpenWaste AI Challenge",
+        "organizer": "GreenGrid Foundation",
+        "deadline": "2026-11-30T18:00:00",
+        "prizes": {
+          "winner": "$2,000",
+          "runner_up": "$1,000",
+          "best_writeup": "$500"
+        },
+        "first_prize_cash_usd": 2000,
+        "eligibility": "Individuals or teams of up to 4, any country, age of majority required.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Challenge involves computer vision for waste sorting. Requires model weights, inference notebook, and a technical report. Remote participation is confirmed."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate is open to non-students and independent builders.",
+          "The hackathon is fully online.",
+          "Entry is free.",
+          "The first prize of $2,000 USD exceeds the $100 minimum.",
+          "Solo participation is explicitly allowed.",
+          "The deadline of 2026-11-30 is after the evaluation date of 2026-11-10.",
+          "The submission requirements do not mandate face or voice recording."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Technical report and model weight requirements may necessitate significant compute resources or specialized datasets, potentially creating hidden costs.",
+            "severity": "medium"
+          },
+          {
+            "risk": "International prize distribution for non-US residents can be subject to complex tax withholding or banking transfer fees that reduce the net prize value.",
+            "severity": "medium"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "OpenWaste AI Challenge: A lightweight, efficient waste-sorting computer vision pipeline using transfer learning on pre-trained YOLOv8/v10 models to minimize compute costs.",
+        "reuse": [
+          "YOLOv8/v10 object detection boilerplate",
+          "PyTorch training pipeline",
+          "Hugging Face Hub for model hosting",
+          "Standard technical report template for AI challenges"
+        ],
+        "steps": [
+          "Download and preprocess open-source waste datasets (e.g., TACO or TrashNet) to ensure zero-cost data acquisition.",
+          "Fine-tune a pre-trained YOLO model using Google Colab's free tier to avoid local hardware costs.",
+          "Implement a simple inference script that takes an image path and outputs classification labels.",
+          "Draft the technical report focusing on model architecture, training methodology, and performance metrics (mAP).",
+          "Package the model weights and inference notebook for submission."
+        ],
+        "demo_risks": [
+          "Overfitting on small datasets leading to poor generalization on test data.",
+          "High inference latency if the model is too large for standard CPU-based evaluation environments.",
+          "Potential hidden costs if cloud compute credits are exhausted during training."
+        ],
+        "effort_days": 12
+      }
+    }
+  },
+  {
+    "candidate": "TinyML Builders Cup",
+    "mode": "baseline",
+    "run": 1,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "TinyML Builders Cup",
+        "organizer": "EdgeML Community",
+        "deadline": "2026-11-24T23:59:00",
+        "prizes": {
+          "champion": 1200,
+          "second": 800,
+          "third": 400,
+          "community_choice": 1000
+        },
+        "first_prize_cash_usd": 1200,
+        "eligibility": "Open worldwide to anyone 18+",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Participants use a free web-based board simulator; no hardware purchase required. Submission requires a public repo, simulator project link, and a text writeup."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate is open to non-students and independent builders.",
+          "The hackathon is fully online.",
+          "Entry is free and requires no hardware purchase.",
+          "The first prize of $1,200 USD exceeds the $100 minimum.",
+          "Solo participation is explicitly allowed.",
+          "The deadline of 2026-11-24 is after the evaluation date of 2026-11-10.",
+          "There is no requirement to show face or record voice."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Community-run hackathons often lack the robust prize-payout infrastructure of corporate-sponsored events, increasing the risk of administrative delays or payment friction for international winners.",
+            "severity": "medium"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "Develop an ultra-low-power anomaly detection system for industrial IoT sensors using the TinyML web simulator, focusing on a lightweight quantized neural network.",
+        "reuse": [
+          "Quantization techniques from previous embedded ML projects",
+          "Standard anomaly detection dataset preprocessing scripts",
+          "Documentation templates for technical writeups"
+        ],
+        "steps": [
+          "Select a target sensor use-case (e.g., vibration analysis for predictive maintenance)",
+          "Train a lightweight model using TensorFlow Lite for Microcontrollers",
+          "Implement the model in the web-based simulator provided by the hackathon",
+          "Optimize the model for memory footprint and inference speed",
+          "Draft the technical writeup detailing the model architecture and efficiency gains",
+          "Package the public repository with clear instructions and simulator links"
+        ],
+        "demo_risks": [
+          "Simulator limitations might restrict complex model architectures",
+          "Potential latency issues in the web-based environment during final testing",
+          "Community-run event payment processing delays"
+        ],
+        "effort_days": 7
+      }
+    }
+  },
+  {
+    "candidate": "DevTools Jam 2026",
+    "mode": "baseline",
+    "run": 1,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "DevTools Jam 2026",
+        "organizer": "Toolchain Collective",
+        "deadline": "2026-12-12T23:59:00",
+        "prizes": {
+          "Best tool": "$3,000",
+          "Runner up": "$1,500",
+          "Most polished docs": "$500"
+        },
+        "first_prize_cash_usd": 3000,
+        "eligibility": "Anyone 18 or older, any country not under US embargo. Individuals or teams.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Focuses on developer tools like CLI tools, editor plugins, or CI helpers. Requires a public source repository and a README with install/usage instructions."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate is open to non-students and independent builders.",
+          "The hackathon is fully online.",
+          "Entry is free.",
+          "The first prize of $3,000 USD exceeds the $100 minimum.",
+          "Solo participation is explicitly allowed.",
+          "The deadline of 2026-12-12 is after the evaluation date of 2026-11-10.",
+          "There is no requirement to show face or record voice."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Prize payment logistics for international participants (India) may involve complex tax forms (W-8BEN) or third-party payment platforms that incur high conversion/transfer fees.",
+            "severity": "medium"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "A CLI-based 'Context-Aware Git Commit Generator' that uses local LLM inference (via Ollama) to analyze staged changes and generate conventional commits, specifically designed for developers working in low-bandwidth or privacy-focused environments.",
+        "reuse": [
+          "CLI boilerplate with Oclif",
+          "Local LLM integration patterns from previous AI-tooling projects",
+          "Conventional commit parsing logic",
+          "README template for developer tools"
+        ],
+        "steps": [
+          "Initialize Oclif CLI project",
+          "Implement git diff capture and sanitization module",
+          "Integrate Ollama API client for local inference",
+          "Develop prompt engineering layer for conventional commit formatting",
+          "Add configuration file support for custom commit styles",
+          "Write comprehensive installation and usage documentation for the README"
+        ],
+        "demo_risks": [
+          "High latency on machines without GPU acceleration",
+          "Potential for hallucinated commit messages if the diff is too large",
+          "Complexity of managing local LLM dependencies for end-users"
+        ],
+        "effort_days": 5
+      }
+    }
+  },
+  {
+    "candidate": "AgriSense Data Sprint",
+    "mode": "baseline",
+    "run": 1,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "AgriSense Data Sprint",
+        "organizer": "FieldByte Labs",
+        "deadline": "2026-11-28T23:59:00",
+        "prizes": {
+          "1st": "$1,500",
+          "2nd": "$900",
+          "3rd": "$600"
+        },
+        "first_prize_cash_usd": 1500,
+        "eligibility": "Open to all individuals worldwide, 18+.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "A data science sprint focused on forecasting crop stress using satellite imagery. Requires a public notebook/repo and a 200-word summary. Fully asynchronous."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate is open to non-students and independent builders.",
+          "The hackathon is fully online.",
+          "Entry is free.",
+          "The first prize of $1,500 USD exceeds the $100 minimum.",
+          "Solo participation is explicitly allowed.",
+          "The deadline of 2026-11-28 is after the evaluation date of 2026-11-10.",
+          "There is no requirement to show face or record voice."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Data science sprints often require specific, high-compute cloud environments or proprietary datasets that may incur hidden costs if not provided by the organizer.",
+            "severity": "low"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "AgriSense Crop Stress Predictor: A lightweight CNN-based pipeline for satellite imagery analysis.",
+        "reuse": [
+          "Standard data science preprocessing pipeline (Pandas/NumPy/Scikit-learn)",
+          "Pre-trained ResNet or EfficientNet models from previous computer vision projects",
+          "Matplotlib/Seaborn visualization templates for model performance reporting"
+        ],
+        "steps": [
+          "Perform exploratory data analysis (EDA) on provided satellite imagery to identify spectral bands relevant to crop stress.",
+          "Implement a data augmentation pipeline to handle potential class imbalances in stress levels.",
+          "Fine-tune a pre-trained CNN model (e.g., ResNet-18) using a free-tier cloud environment like Google Colab or Kaggle Kernels.",
+          "Evaluate model performance using F1-score and precision-recall curves.",
+          "Draft the 200-word summary focusing on the model's interpretability and potential for real-world agricultural deployment.",
+          "Package the final notebook and summary for submission."
+        ],
+        "demo_risks": [
+          "High-resolution satellite imagery may exceed free-tier memory limits in cloud environments.",
+          "Potential lack of labeled data requiring synthetic data generation or transfer learning."
+        ],
+        "effort_days": 5
+      }
+    }
+  },
+  {
+    "candidate": "FinSim Forecasting Hack",
+    "mode": "baseline",
+    "run": 1,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "FinSim Forecasting Hack",
+        "organizer": "Quantara",
+        "deadline": "2026-12-01T23:59:00",
+        "prizes": {
+          "grand_prize": 4000,
+          "accuracy_award": 1500,
+          "elegance_award": 500
+        },
+        "first_prize_cash_usd": 4000,
+        "eligibility": "Individuals 18+, any country.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Task is to build an agent that reconciles synthetic bank statements against invoices. All data is synthetic and provided free."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate is open to non-students and independent builders.",
+          "The hackathon is fully online.",
+          "Entry is free.",
+          "The first prize of $4,000 USD exceeds the $100 minimum.",
+          "Solo participation is explicitly allowed.",
+          "The deadline of 2026-12-01 is after the evaluation date of 2026-11-10.",
+          "There is no requirement to show face or record voice."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "The task involves reconciling synthetic bank statements against invoices, which may require specialized domain knowledge in accounting or financial data processing, potentially increasing the effort required for a high-quality submission.",
+            "severity": "low"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "Automated Financial Reconciliation Agent using LLM-based entity matching and fuzzy logic.",
+        "reuse": [
+          "Data ingestion pipeline from previous CSV/JSON processing projects",
+          "Fuzzy string matching library (RapidFuzz) for invoice-to-statement mapping",
+          "Standardized logging and error-handling boilerplate for financial data"
+        ],
+        "steps": [
+          "Develop a robust parser for synthetic bank statements and invoice formats.",
+          "Implement a normalization layer to standardize dates, currency formats, and vendor names.",
+          "Build a matching engine using LLM-based semantic similarity for non-exact invoice references.",
+          "Create a reconciliation dashboard to flag discrepancies (missing invoices, amount mismatches).",
+          "Package the solution as a CLI tool with a clear audit trail output for the judges."
+        ],
+        "demo_risks": [
+          "High variance in synthetic data formats might break hard-coded parsers.",
+          "LLM latency during large-scale reconciliation batches.",
+          "False positives in fuzzy matching requiring manual verification logic."
+        ],
+        "effort_days": 5
+      }
+    }
   }
 ]

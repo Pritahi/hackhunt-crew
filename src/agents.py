@@ -15,13 +15,14 @@ is exactly the variable the benchmark isolates.
 
 from __future__ import annotations
 
-CRITERIA = """Entry criteria (all must hold for a PASS):
+CRITERIA = """Today's date for all deadline checks: 2026-11-10 (the pages were crawled around this date; treat it as 'now').
+Entry criteria (all must hold for a PASS):
 1. Non-students eligible (builder is not a student; student-only = FAIL).
 2. Fully online participation, no travel required at any stage.
 3. Free to enter: no paid API, hardware, or purchase required.
 4. Cash first prize of at least 100 USD (or INR equivalent) payable to a bank account; credit/token/merch-only prizes = FAIL.
 5. Solo participation allowed.
-6. Submission deadline has not passed.
+6. Submission deadline has not passed as of 2026-11-10.
 7. No requirement to show your face or record your own voice."""
 
 SCOUT_SYSTEM = """You are Scout, the fact-extraction agent of a hackathon-evaluation crew.

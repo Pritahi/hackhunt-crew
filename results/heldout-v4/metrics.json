@@ -1,0 +1,131 @@
+{
+  "modes": {
+    "baseline": {
+      "overall": {
+        "mode": "baseline",
+        "run": null,
+        "llm_calls": 120,
+        "prompt_tokens": 396137,
+        "completion_tokens": 14921,
+        "total_tokens": 411058
+      },
+      "per_run": {
+        "1": {
+          "mode": "baseline",
+          "run": 1,
+          "llm_calls": 40,
+          "prompt_tokens": 56302,
+          "completion_tokens": 5181,
+          "total_tokens": 61483
+        },
+        "2": {
+          "mode": "baseline",
+          "run": 2,
+          "llm_calls": 40,
+          "prompt_tokens": 132013,
+          "completion_tokens": 4877,
+          "total_tokens": 136890
+        },
+        "3": {
+          "mode": "baseline",
+          "run": 3,
+          "llm_calls": 40,
+          "prompt_tokens": 207822,
+          "completion_tokens": 4863,
+          "total_tokens": 212685
+        }
+      },
+      "run_stats": {
+        "run_totals": [
+          61483,
+          136890,
+          212685
+        ],
+        "run_calls": [
+          40,
+          40,
+          40
+        ],
+        "mean_tokens": 137019.3,
+        "spread_tokens": 151202,
+        "mean_calls": 40.0
+      },
+      "accuracy": {
+        "compared": 36,
+        "correct": 35,
+        "accuracy": 0.9722,
+        "misses": [
+          {
+            "candidate": "Lighthouse Search Sprint",
+            "want": "PASS",
+            "got": "FAIL"
+          }
+        ]
+      }
+    },
+    "meko": {
+      "overall": {
+        "mode": "meko",
+        "run": null,
+        "llm_calls": 120,
+        "prompt_tokens": 90988,
+        "completion_tokens": 15776,
+        "total_tokens": 106764
+      },
+      "per_run": {
+        "1": {
+          "mode": "meko",
+          "run": 1,
+          "llm_calls": 40,
+          "prompt_tokens": 26617,
+          "completion_tokens": 5274,
+          "total_tokens": 31891
+        },
+        "2": {
+          "mode": "meko",
+          "run": 2,
+          "llm_calls": 40,
+          "prompt_tokens": 33023,
+          "completion_tokens": 5227,
+          "total_tokens": 38250
+        },
+        "3": {
+          "mode": "meko",
+          "run": 3,
+          "llm_calls": 40,
+          "prompt_tokens": 31348,
+          "completion_tokens": 5275,
+          "total_tokens": 36623
+        }
+      },
+      "run_stats": {
+        "run_totals": [
+          31891,
+          38250,
+          36623
+        ],
+        "run_calls": [
+          40,
+          40,
+          40
+        ],
+        "mean_tokens": 35588.0,
+        "spread_tokens": 6359,
+        "mean_calls": 40.0
+      },
+      "accuracy": {
+        "compared": 36,
+        "correct": 36,
+        "accuracy": 1.0,
+        "misses": []
+      }
+    }
+  },
+  "comparison": {
+    "token_reduction_pct": 74.0,
+    "llm_call_reduction_pct": 0.0,
+    "basis": "means over three sequential passes, not independent trials (see run_stats)",
+    "quality_equal": false,
+    "quality_equal_or_better": true
+  }
+}

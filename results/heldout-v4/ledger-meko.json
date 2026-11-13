@@ -368,5 +368,835 @@
     "prompt_tokens": 780,
     "completion_tokens": 122,
     "latency_ms": 1153
+  },
+  {
+    "agent": "scout",
+    "candidate": "Enterprise Shift Jam",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 584,
+    "completion_tokens": 194,
+    "latency_ms": 1408
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Enterprise Shift Jam",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 628,
+    "completion_tokens": 99,
+    "latency_ms": 781
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Enterprise Shift Jam",
+    "run": 1,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 802,
+    "completion_tokens": 88,
+    "latency_ms": 939
+  },
+  {
+    "agent": "scout",
+    "candidate": "Lighthouse Search Sprint",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 755,
+    "completion_tokens": 182,
+    "latency_ms": 1034
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Lighthouse Search Sprint",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 791,
+    "completion_tokens": 105,
+    "latency_ms": 837
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Lighthouse Search Sprint",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 978,
+    "completion_tokens": 82,
+    "latency_ms": 1152
+  },
+  {
+    "agent": "builder",
+    "candidate": "Lighthouse Search Sprint",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1000,
+    "completion_tokens": 293,
+    "latency_ms": 1634
+  },
+  {
+    "agent": "scout",
+    "candidate": "Archive Lens Jam",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 751,
+    "completion_tokens": 194,
+    "latency_ms": 1071
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Archive Lens Jam",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 797,
+    "completion_tokens": 105,
+    "latency_ms": 1152
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Archive Lens Jam",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 984,
+    "completion_tokens": 59,
+    "latency_ms": 986
+  },
+  {
+    "agent": "builder",
+    "candidate": "Archive Lens Jam",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 983,
+    "completion_tokens": 235,
+    "latency_ms": 1621
+  },
+  {
+    "agent": "scout",
+    "candidate": "Sensor Sandbox Cup",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 753,
+    "completion_tokens": 184,
+    "latency_ms": 1032
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Sensor Sandbox Cup",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 787,
+    "completion_tokens": 150,
+    "latency_ms": 1085
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Sensor Sandbox Cup",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1064,
+    "completion_tokens": 53,
+    "latency_ms": 982
+  },
+  {
+    "agent": "builder",
+    "candidate": "Sensor Sandbox Cup",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1057,
+    "completion_tokens": 208,
+    "latency_ms": 1390
+  },
+  {
+    "agent": "scout",
+    "candidate": "Knowledge Atlas Build",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 782,
+    "completion_tokens": 176,
+    "latency_ms": 1206
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Knowledge Atlas Build",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 813,
+    "completion_tokens": 139,
+    "latency_ms": 960
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Knowledge Atlas Build",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 973,
+    "completion_tokens": 87,
+    "latency_ms": 1079
+  },
+  {
+    "agent": "builder",
+    "candidate": "Knowledge Atlas Build",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1000,
+    "completion_tokens": 220,
+    "latency_ms": 1511
+  },
+  {
+    "agent": "scout",
+    "candidate": "Campus Ledger Sprint",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 724,
+    "completion_tokens": 183,
+    "latency_ms": 1039
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Campus Ledger Sprint",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 761,
+    "completion_tokens": 74,
+    "latency_ms": 791
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Campus Ledger Sprint",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 856,
+    "completion_tokens": 67,
+    "latency_ms": 791
+  },
+  {
+    "agent": "scout",
+    "candidate": "City Stage Challenge",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 744,
+    "completion_tokens": 178,
+    "latency_ms": 973
+  },
+  {
+    "agent": "verifier",
+    "candidate": "City Stage Challenge",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 761,
+    "completion_tokens": 83,
+    "latency_ms": 820
+  },
+  {
+    "agent": "redteam",
+    "candidate": "City Stage Challenge",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 818,
+    "completion_tokens": 74,
+    "latency_ms": 864
+  },
+  {
+    "agent": "scout",
+    "candidate": "Device Studio Challenge",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 741,
+    "completion_tokens": 183,
+    "latency_ms": 1110
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Device Studio Challenge",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 773,
+    "completion_tokens": 76,
+    "latency_ms": 738
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Device Studio Challenge",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 783,
+    "completion_tokens": 70,
+    "latency_ms": 803
+  },
+  {
+    "agent": "scout",
+    "candidate": "Team Relay Challenge",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 740,
+    "completion_tokens": 194,
+    "latency_ms": 934
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Team Relay Challenge",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 780,
+    "completion_tokens": 79,
+    "latency_ms": 947
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Team Relay Challenge",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 790,
+    "completion_tokens": 73,
+    "latency_ms": 1080
+  },
+  {
+    "agent": "scout",
+    "candidate": "Personal Pitch Prize",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 755,
+    "completion_tokens": 177,
+    "latency_ms": 1189
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Personal Pitch Prize",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 785,
+    "completion_tokens": 87,
+    "latency_ms": 730
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Personal Pitch Prize",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 797,
+    "completion_tokens": 69,
+    "latency_ms": 898
+  },
+  {
+    "agent": "scout",
+    "candidate": "Old Signal Cup",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 790,
+    "completion_tokens": 187,
+    "latency_ms": 1269
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Old Signal Cup",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 826,
+    "completion_tokens": 92,
+    "latency_ms": 939
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Old Signal Cup",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 836,
+    "completion_tokens": 82,
+    "latency_ms": 1072
+  },
+  {
+    "agent": "scout",
+    "candidate": "Quiet Reward Sprint",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 759,
+    "completion_tokens": 165,
+    "latency_ms": 925
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Quiet Reward Sprint",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 781,
+    "completion_tokens": 88,
+    "latency_ms": 893
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Quiet Reward Sprint",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 790,
+    "completion_tokens": 96,
+    "latency_ms": 877
+  },
+  {
+    "agent": "scout",
+    "candidate": "Enterprise Shift Jam",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 779,
+    "completion_tokens": 197,
+    "latency_ms": 1157
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Enterprise Shift Jam",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 733,
+    "completion_tokens": 99,
+    "latency_ms": 1057
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Enterprise Shift Jam",
+    "run": 2,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 853,
+    "completion_tokens": 82,
+    "latency_ms": 1215
+  },
+  {
+    "agent": "scout",
+    "candidate": "Lighthouse Search Sprint",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 820,
+    "completion_tokens": 196,
+    "latency_ms": 1793
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Lighthouse Search Sprint",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 804,
+    "completion_tokens": 105,
+    "latency_ms": 956
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Lighthouse Search Sprint",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 930,
+    "completion_tokens": 79,
+    "latency_ms": 1135
+  },
+  {
+    "agent": "builder",
+    "candidate": "Lighthouse Search Sprint",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 949,
+    "completion_tokens": 261,
+    "latency_ms": 1589
+  },
+  {
+    "agent": "scout",
+    "candidate": "Archive Lens Jam",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 920,
+    "completion_tokens": 185,
+    "latency_ms": 1018
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Archive Lens Jam",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 962,
+    "completion_tokens": 105,
+    "latency_ms": 774
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Archive Lens Jam",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1014,
+    "completion_tokens": 107,
+    "latency_ms": 1155
+  },
+  {
+    "agent": "builder",
+    "candidate": "Archive Lens Jam",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1061,
+    "completion_tokens": 246,
+    "latency_ms": 1678
+  },
+  {
+    "agent": "scout",
+    "candidate": "Sensor Sandbox Cup",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 862,
+    "completion_tokens": 184,
+    "latency_ms": 972
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Sensor Sandbox Cup",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 788,
+    "completion_tokens": 150,
+    "latency_ms": 989
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Sensor Sandbox Cup",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 894,
+    "completion_tokens": 83,
+    "latency_ms": 878
+  },
+  {
+    "agent": "builder",
+    "candidate": "Sensor Sandbox Cup",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 917,
+    "completion_tokens": 199,
+    "latency_ms": 6577
+  },
+  {
+    "agent": "scout",
+    "candidate": "Knowledge Atlas Build",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 708,
+    "completion_tokens": 181,
+    "latency_ms": 1882
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Knowledge Atlas Build",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 744,
+    "completion_tokens": 139,
+    "latency_ms": 961
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Knowledge Atlas Build",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 904,
+    "completion_tokens": 51,
+    "latency_ms": 826
+  },
+  {
+    "agent": "builder",
+    "candidate": "Knowledge Atlas Build",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 895,
+    "completion_tokens": 198,
+    "latency_ms": 1463
+  },
+  {
+    "agent": "scout",
+    "candidate": "Campus Ledger Sprint",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 694,
+    "completion_tokens": 183,
+    "latency_ms": 1090
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Campus Ledger Sprint",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 646,
+    "completion_tokens": 80,
+    "latency_ms": 885
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Campus Ledger Sprint",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 747,
+    "completion_tokens": 64,
+    "latency_ms": 860
+  },
+  {
+    "agent": "scout",
+    "candidate": "City Stage Challenge",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 702,
+    "completion_tokens": 177,
+    "latency_ms": 3295
+  },
+  {
+    "agent": "verifier",
+    "candidate": "City Stage Challenge",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 679,
+    "completion_tokens": 79,
+    "latency_ms": 1001
+  },
+  {
+    "agent": "redteam",
+    "candidate": "City Stage Challenge",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 779,
+    "completion_tokens": 81,
+    "latency_ms": 24872
+  },
+  {
+    "agent": "scout",
+    "candidate": "Device Studio Challenge",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 690,
+    "completion_tokens": 181,
+    "latency_ms": 1095
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Device Studio Challenge",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 720,
+    "completion_tokens": 76,
+    "latency_ms": 1131
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Device Studio Challenge",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 742,
+    "completion_tokens": 75,
+    "latency_ms": 1004
+  },
+  {
+    "agent": "scout",
+    "candidate": "Team Relay Challenge",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 678,
+    "completion_tokens": 187,
+    "latency_ms": 970
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Team Relay Challenge",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 681,
+    "completion_tokens": 71,
+    "latency_ms": 847
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Team Relay Challenge",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 773,
+    "completion_tokens": 72,
+    "latency_ms": 793
+  },
+  {
+    "agent": "scout",
+    "candidate": "Personal Pitch Prize",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 696,
+    "completion_tokens": 185,
+    "latency_ms": 1089
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Personal Pitch Prize",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 691,
+    "completion_tokens": 84,
+    "latency_ms": 831
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Personal Pitch Prize",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 796,
+    "completion_tokens": 74,
+    "latency_ms": 820
+  },
+  {
+    "agent": "scout",
+    "candidate": "Old Signal Cup",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 687,
+    "completion_tokens": 193,
+    "latency_ms": 2329
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Old Signal Cup",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 676,
+    "completion_tokens": 97,
+    "latency_ms": 1011
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Old Signal Cup",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 794,
+    "completion_tokens": 81,
+    "latency_ms": 819
+  },
+  {
+    "agent": "scout",
+    "candidate": "Quiet Reward Sprint",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 701,
+    "completion_tokens": 183,
+    "latency_ms": 1079
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Quiet Reward Sprint",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 693,
+    "completion_tokens": 88,
+    "latency_ms": 977
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Quiet Reward Sprint",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 807,
+    "completion_tokens": 115,
+    "latency_ms": 1201
+  },
+  {
+    "agent": "scout",
+    "candidate": "Enterprise Shift Jam",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 660,
+    "completion_tokens": 195,
+    "latency_ms": 1058
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Enterprise Shift Jam",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 662,
+    "completion_tokens": 99,
+    "latency_ms": 975
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Enterprise Shift Jam",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 782,
+    "completion_tokens": 86,
+    "latency_ms": 964
   }
 ]

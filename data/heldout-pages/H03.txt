@@ -1,0 +1,9 @@
+SYNTHETIC HELD-OUT FIXTURE, NOT A REAL EVENT
+Sensor Sandbox Cup
+Eligibility: Open worldwide to adults. Solo allowed.
+Format: Every stage is remote.
+Entry: Free, no required purchases or paid APIs.
+Solo entry: allowed.
+Deadline: 2026-12-01T23:59:00Z
+Prizes: Winner receives USD600 cash. Hardware simulation is free.
+Presentation: No face or own-voice requirement. Captions or text writeup accepted.

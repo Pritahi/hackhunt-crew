@@ -1998,5 +1998,575 @@
     "prompt_tokens": 994,
     "completion_tokens": 327,
     "latency_ms": 1894
+  },
+  {
+    "agent": "scout",
+    "candidate": "VectorDB Showdown 2026",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1106,
+    "completion_tokens": 254,
+    "latency_ms": 1145
+  },
+  {
+    "agent": "verifier",
+    "candidate": "VectorDB Showdown 2026",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 935,
+    "completion_tokens": 156,
+    "latency_ms": 895
+  },
+  {
+    "agent": "redteam",
+    "candidate": "VectorDB Showdown 2026",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1230,
+    "completion_tokens": 102,
+    "latency_ms": 807
+  },
+  {
+    "agent": "builder",
+    "candidate": "VectorDB Showdown 2026",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1272,
+    "completion_tokens": 324,
+    "latency_ms": 2059
+  },
+  {
+    "agent": "scout",
+    "candidate": "OpenWaste AI Challenge",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 894,
+    "completion_tokens": 232,
+    "latency_ms": 1105
+  },
+  {
+    "agent": "verifier",
+    "candidate": "OpenWaste AI Challenge",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 769,
+    "completion_tokens": 143,
+    "latency_ms": 1495
+  },
+  {
+    "agent": "redteam",
+    "candidate": "OpenWaste AI Challenge",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 933,
+    "completion_tokens": 107,
+    "latency_ms": 1187
+  },
+  {
+    "agent": "builder",
+    "candidate": "OpenWaste AI Challenge",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 980,
+    "completion_tokens": 247,
+    "latency_ms": 1767
+  },
+  {
+    "agent": "scout",
+    "candidate": "TinyML Builders Cup",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 897,
+    "completion_tokens": 240,
+    "latency_ms": 1308
+  },
+  {
+    "agent": "verifier",
+    "candidate": "TinyML Builders Cup",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 774,
+    "completion_tokens": 141,
+    "latency_ms": 861
+  },
+  {
+    "agent": "redteam",
+    "candidate": "TinyML Builders Cup",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 936,
+    "completion_tokens": 114,
+    "latency_ms": 40133
+  },
+  {
+    "agent": "builder",
+    "candidate": "TinyML Builders Cup",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 990,
+    "completion_tokens": 213,
+    "latency_ms": 2224
+  },
+  {
+    "agent": "scout",
+    "candidate": "DevTools Jam 2026",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 899,
+    "completion_tokens": 239,
+    "latency_ms": 1125
+  },
+  {
+    "agent": "verifier",
+    "candidate": "DevTools Jam 2026",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 894,
+    "completion_tokens": 135,
+    "latency_ms": 1641
+  },
+  {
+    "agent": "redteam",
+    "candidate": "DevTools Jam 2026",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 965,
+    "completion_tokens": 105,
+    "latency_ms": 1789
+  },
+  {
+    "agent": "builder",
+    "candidate": "DevTools Jam 2026",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1010,
+    "completion_tokens": 245,
+    "latency_ms": 2968
+  },
+  {
+    "agent": "scout",
+    "candidate": "AgriSense Data Sprint",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 909,
+    "completion_tokens": 225,
+    "latency_ms": 1121
+  },
+  {
+    "agent": "verifier",
+    "candidate": "AgriSense Data Sprint",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 830,
+    "completion_tokens": 106,
+    "latency_ms": 779
+  },
+  {
+    "agent": "redteam",
+    "candidate": "AgriSense Data Sprint",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 957,
+    "completion_tokens": 101,
+    "latency_ms": 1178
+  },
+  {
+    "agent": "builder",
+    "candidate": "AgriSense Data Sprint",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 998,
+    "completion_tokens": 281,
+    "latency_ms": 2146
+  },
+  {
+    "agent": "scout",
+    "candidate": "FinSim Forecasting Hack",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 767,
+    "completion_tokens": 220,
+    "latency_ms": 1396
+  },
+  {
+    "agent": "verifier",
+    "candidate": "FinSim Forecasting Hack",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 712,
+    "completion_tokens": 89,
+    "latency_ms": 1742
+  },
+  {
+    "agent": "redteam",
+    "candidate": "FinSim Forecasting Hack",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 813,
+    "completion_tokens": 94,
+    "latency_ms": 1223
+  },
+  {
+    "agent": "builder",
+    "candidate": "FinSim Forecasting Hack",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 847,
+    "completion_tokens": 337,
+    "latency_ms": 2137
+  },
+  {
+    "agent": "scout",
+    "candidate": "LocalLang NLP Challenge",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1000,
+    "completion_tokens": 225,
+    "latency_ms": 1534
+  },
+  {
+    "agent": "verifier",
+    "candidate": "LocalLang NLP Challenge",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1012,
+    "completion_tokens": 105,
+    "latency_ms": 1519
+  },
+  {
+    "agent": "redteam",
+    "candidate": "LocalLang NLP Challenge",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1138,
+    "completion_tokens": 58,
+    "latency_ms": 1471
+  },
+  {
+    "agent": "builder",
+    "candidate": "LocalLang NLP Challenge",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1136,
+    "completion_tokens": 312,
+    "latency_ms": 2277
+  },
+  {
+    "agent": "scout",
+    "candidate": "Rusty Robots Sim Jam",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 870,
+    "completion_tokens": 210,
+    "latency_ms": 1331
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Rusty Robots Sim Jam",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 817,
+    "completion_tokens": 105,
+    "latency_ms": 1009
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Rusty Robots Sim Jam",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 901,
+    "completion_tokens": 104,
+    "latency_ms": 1677
+  },
+  {
+    "agent": "builder",
+    "candidate": "Rusty Robots Sim Jam",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 945,
+    "completion_tokens": 214,
+    "latency_ms": 2135
+  },
+  {
+    "agent": "scout",
+    "candidate": "CivicMap Hack 2026",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1067,
+    "completion_tokens": 219,
+    "latency_ms": 44969
+  },
+  {
+    "agent": "verifier",
+    "candidate": "CivicMap Hack 2026",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1072,
+    "completion_tokens": 149,
+    "latency_ms": 915
+  },
+  {
+    "agent": "redteam",
+    "candidate": "CivicMap Hack 2026",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1162,
+    "completion_tokens": 97,
+    "latency_ms": 1981
+  },
+  {
+    "agent": "builder",
+    "candidate": "CivicMap Hack 2026",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1199,
+    "completion_tokens": 295,
+    "latency_ms": 2277
+  },
+  {
+    "agent": "scout",
+    "candidate": "CampusCopilot Hackathon",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 793,
+    "completion_tokens": 212,
+    "latency_ms": 1182
+  },
+  {
+    "agent": "verifier",
+    "candidate": "CampusCopilot Hackathon",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 772,
+    "completion_tokens": 79,
+    "latency_ms": 753
+  },
+  {
+    "agent": "redteam",
+    "candidate": "CampusCopilot Hackathon",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 872,
+    "completion_tokens": 66,
+    "latency_ms": 1047
+  },
+  {
+    "agent": "scout",
+    "candidate": "DroneZone Live Finals",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 778,
+    "completion_tokens": 217,
+    "latency_ms": 1312
+  },
+  {
+    "agent": "verifier",
+    "candidate": "DroneZone Live Finals",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 694,
+    "completion_tokens": 83,
+    "latency_ms": 4655
+  },
+  {
+    "agent": "redteam",
+    "candidate": "DroneZone Live Finals",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 798,
+    "completion_tokens": 91,
+    "latency_ms": 984
+  },
+  {
+    "agent": "scout",
+    "candidate": "CryptoKitty DeFi Hack",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 784,
+    "completion_tokens": 203,
+    "latency_ms": 1031
+  },
+  {
+    "agent": "verifier",
+    "candidate": "CryptoKitty DeFi Hack",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 763,
+    "completion_tokens": 96,
+    "latency_ms": 794
+  },
+  {
+    "agent": "redteam",
+    "candidate": "CryptoKitty DeFi Hack",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 780,
+    "completion_tokens": 139,
+    "latency_ms": 11190
+  },
+  {
+    "agent": "scout",
+    "candidate": "RoboArm Hardware Hack",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 723,
+    "completion_tokens": 219,
+    "latency_ms": 990
+  },
+  {
+    "agent": "verifier",
+    "candidate": "RoboArm Hardware Hack",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 709,
+    "completion_tokens": 95,
+    "latency_ms": 783
+  },
+  {
+    "agent": "redteam",
+    "candidate": "RoboArm Hardware Hack",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 825,
+    "completion_tokens": 105,
+    "latency_ms": 2073
+  },
+  {
+    "agent": "scout",
+    "candidate": "RetroWeb 2025 Hackathon",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 780,
+    "completion_tokens": 218,
+    "latency_ms": 1269
+  },
+  {
+    "agent": "verifier",
+    "candidate": "RetroWeb 2025 Hackathon",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 778,
+    "completion_tokens": 98,
+    "latency_ms": 2071
+  },
+  {
+    "agent": "redteam",
+    "candidate": "RetroWeb 2025 Hackathon",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 871,
+    "completion_tokens": 83,
+    "latency_ms": 2713
+  },
+  {
+    "agent": "scout",
+    "candidate": "PitchPerfect Video Challenge",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 819,
+    "completion_tokens": 223,
+    "latency_ms": 1526
+  },
+  {
+    "agent": "verifier",
+    "candidate": "PitchPerfect Video Challenge",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 720,
+    "completion_tokens": 101,
+    "latency_ms": 960
+  },
+  {
+    "agent": "redteam",
+    "candidate": "PitchPerfect Video Challenge",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 842,
+    "completion_tokens": 81,
+    "latency_ms": 1390
+  },
+  {
+    "agent": "scout",
+    "candidate": "TeamForge Cup",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 726,
+    "completion_tokens": 217,
+    "latency_ms": 1291
+  },
+  {
+    "agent": "verifier",
+    "candidate": "TeamForge Cup",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 700,
+    "completion_tokens": 72,
+    "latency_ms": 2352
+  },
+  {
+    "agent": "redteam",
+    "candidate": "TeamForge Cup",
+    "run": 3,
+    "mode": "meko",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 793,
+    "completion_tokens": 79,
+    "latency_ms": 1746
   }
 ]

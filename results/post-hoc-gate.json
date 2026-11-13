@@ -1,0 +1,2362 @@
+{
+  "status": "post_hoc_development_analysis",
+  "prospective_validation": false,
+  "modes": {
+    "baseline": {
+      "accuracy": {
+        "compared": 72,
+        "correct": 69,
+        "accuracy": 0.9583,
+        "misses": [
+          {
+            "candidate": "CryptoKitty DeFi Hack",
+            "want": "FAIL",
+            "got": "UNSURE"
+          },
+          {
+            "candidate": "CryptoKitty DeFi Hack",
+            "want": "FAIL",
+            "got": "UNSURE"
+          },
+          {
+            "candidate": "CryptoKitty DeFi Hack",
+            "want": "FAIL",
+            "got": "UNSURE"
+          }
+        ]
+      },
+      "reports": [
+        {
+          "candidate": "Kane CLI Online Hackathon",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Codegeist 2026 (Atlassian)",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Enveda CASMI 2026 (Kaggle)",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Build with Google Gemini (Hack2skill)",
+          "run": 1,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "fail",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "AI for Church Hackathon",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Rack It Up 2026 (Unstop)",
+          "run": 1,
+          "original_verdict": "FAIL",
+          "verdict": "UNSURE",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "unknown",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "LaunchPad Hacks (Devpost)",
+          "run": 1,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "fail",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "QNX Global Hackathon",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "VectorDB Showdown 2026",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "OpenWaste AI Challenge",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "TinyML Builders Cup",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "DevTools Jam 2026",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "AgriSense Data Sprint",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "FinSim Forecasting Hack",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "LocalLang NLP Challenge",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Rusty Robots Sim Jam",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "CivicMap Hack 2026",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "CampusCopilot Hackathon",
+          "run": 1,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "fail",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "DroneZone Live Finals",
+          "run": 1,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "fail",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "CryptoKitty DeFi Hack",
+          "run": 1,
+          "original_verdict": "FAIL",
+          "verdict": "UNSURE",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "unknown",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "RoboArm Hardware Hack",
+          "run": 1,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "fail",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "RetroWeb 2025 Hackathon",
+          "run": 1,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "fail",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "PitchPerfect Video Challenge",
+          "run": 1,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "fail"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "TeamForge Cup",
+          "run": 1,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "fail",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Kane CLI Online Hackathon",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Codegeist 2026 (Atlassian)",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Enveda CASMI 2026 (Kaggle)",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Build with Google Gemini (Hack2skill)",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "fail",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "AI for Church Hackathon",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Rack It Up 2026 (Unstop)",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "UNSURE",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "unknown",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "LaunchPad Hacks (Devpost)",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "fail",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "QNX Global Hackathon",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "VectorDB Showdown 2026",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "OpenWaste AI Challenge",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "TinyML Builders Cup",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "DevTools Jam 2026",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "AgriSense Data Sprint",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "FinSim Forecasting Hack",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "LocalLang NLP Challenge",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Rusty Robots Sim Jam",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "CivicMap Hack 2026",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "CampusCopilot Hackathon",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "fail",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "DroneZone Live Finals",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "fail",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "CryptoKitty DeFi Hack",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "UNSURE",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "unknown",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "RoboArm Hardware Hack",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "fail",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "RetroWeb 2025 Hackathon",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "fail",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "PitchPerfect Video Challenge",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "fail"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "TeamForge Cup",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "fail",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Kane CLI Online Hackathon",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Codegeist 2026 (Atlassian)",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Enveda CASMI 2026 (Kaggle)",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Build with Google Gemini (Hack2skill)",
+          "run": 3,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "fail",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "AI for Church Hackathon",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Rack It Up 2026 (Unstop)",
+          "run": 3,
+          "original_verdict": "FAIL",
+          "verdict": "UNSURE",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "unknown",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "LaunchPad Hacks (Devpost)",
+          "run": 3,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "fail",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "QNX Global Hackathon",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "VectorDB Showdown 2026",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "OpenWaste AI Challenge",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "TinyML Builders Cup",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "DevTools Jam 2026",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "AgriSense Data Sprint",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "FinSim Forecasting Hack",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "LocalLang NLP Challenge",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Rusty Robots Sim Jam",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "CivicMap Hack 2026",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "CampusCopilot Hackathon",
+          "run": 3,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "fail",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "DroneZone Live Finals",
+          "run": 3,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "fail",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "CryptoKitty DeFi Hack",
+          "run": 3,
+          "original_verdict": "FAIL",
+          "verdict": "UNSURE",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "unknown",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "RoboArm Hardware Hack",
+          "run": 3,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "fail",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "RetroWeb 2025 Hackathon",
+          "run": 3,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "fail",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "PitchPerfect Video Challenge",
+          "run": 3,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "fail"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "TeamForge Cup",
+          "run": 3,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "fail",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        }
+      ]
+    },
+    "meko": {
+      "accuracy": {
+        "compared": 72,
+        "correct": 69,
+        "accuracy": 0.9583,
+        "misses": [
+          {
+            "candidate": "CryptoKitty DeFi Hack",
+            "want": "FAIL",
+            "got": "UNSURE"
+          },
+          {
+            "candidate": "CryptoKitty DeFi Hack",
+            "want": "FAIL",
+            "got": "UNSURE"
+          },
+          {
+            "candidate": "CryptoKitty DeFi Hack",
+            "want": "FAIL",
+            "got": "UNSURE"
+          }
+        ]
+      },
+      "reports": [
+        {
+          "candidate": "Kane CLI Online Hackathon",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Codegeist 2026 (Atlassian)",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Enveda CASMI 2026 (Kaggle)",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Build with Google Gemini (Hack2skill)",
+          "run": 1,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "fail",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "AI for Church Hackathon",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Rack It Up 2026 (Unstop)",
+          "run": 1,
+          "original_verdict": "FAIL",
+          "verdict": "UNSURE",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "unknown",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "LaunchPad Hacks (Devpost)",
+          "run": 1,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "fail",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "QNX Global Hackathon",
+          "run": 1,
+          "original_verdict": "FAIL",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "VectorDB Showdown 2026",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "OpenWaste AI Challenge",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "TinyML Builders Cup",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "DevTools Jam 2026",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "AgriSense Data Sprint",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "FinSim Forecasting Hack",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "LocalLang NLP Challenge",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Rusty Robots Sim Jam",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "CivicMap Hack 2026",
+          "run": 1,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "CampusCopilot Hackathon",
+          "run": 1,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "fail",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "DroneZone Live Finals",
+          "run": 1,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "fail",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "CryptoKitty DeFi Hack",
+          "run": 1,
+          "original_verdict": "FAIL",
+          "verdict": "UNSURE",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "unknown",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "RoboArm Hardware Hack",
+          "run": 1,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "fail",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "RetroWeb 2025 Hackathon",
+          "run": 1,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "fail",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "PitchPerfect Video Challenge",
+          "run": 1,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "fail"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "TeamForge Cup",
+          "run": 1,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "fail",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Kane CLI Online Hackathon",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Codegeist 2026 (Atlassian)",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Enveda CASMI 2026 (Kaggle)",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Build with Google Gemini (Hack2skill)",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "fail",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "AI for Church Hackathon",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Rack It Up 2026 (Unstop)",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "UNSURE",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "unknown",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "LaunchPad Hacks (Devpost)",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "fail",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "QNX Global Hackathon",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "VectorDB Showdown 2026",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "OpenWaste AI Challenge",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "TinyML Builders Cup",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "DevTools Jam 2026",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "AgriSense Data Sprint",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "FinSim Forecasting Hack",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "LocalLang NLP Challenge",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Rusty Robots Sim Jam",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "CivicMap Hack 2026",
+          "run": 2,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "CampusCopilot Hackathon",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "fail",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "DroneZone Live Finals",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "fail",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "CryptoKitty DeFi Hack",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "UNSURE",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "unknown",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "RoboArm Hardware Hack",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "fail",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "RetroWeb 2025 Hackathon",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "fail",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "PitchPerfect Video Challenge",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "fail"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "TeamForge Cup",
+          "run": 2,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "fail",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Kane CLI Online Hackathon",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Codegeist 2026 (Atlassian)",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Enveda CASMI 2026 (Kaggle)",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Build with Google Gemini (Hack2skill)",
+          "run": 3,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "fail",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "AI for Church Hackathon",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Rack It Up 2026 (Unstop)",
+          "run": 3,
+          "original_verdict": "FAIL",
+          "verdict": "UNSURE",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "unknown",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "LaunchPad Hacks (Devpost)",
+          "run": 3,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "fail",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "QNX Global Hackathon",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "VectorDB Showdown 2026",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "OpenWaste AI Challenge",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "TinyML Builders Cup",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "DevTools Jam 2026",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "AgriSense Data Sprint",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "FinSim Forecasting Hack",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "LocalLang NLP Challenge",
+          "run": 3,
+          "original_verdict": "FAIL",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "Rusty Robots Sim Jam",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "CivicMap Hack 2026",
+          "run": 3,
+          "original_verdict": "PASS",
+          "verdict": "PASS",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "CampusCopilot Hackathon",
+          "run": 3,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "fail",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "DroneZone Live Finals",
+          "run": 3,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "fail",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "CryptoKitty DeFi Hack",
+          "run": 3,
+          "original_verdict": "FAIL",
+          "verdict": "UNSURE",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "unknown",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "RoboArm Hardware Hack",
+          "run": 3,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "fail",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "RetroWeb 2025 Hackathon",
+          "run": 3,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "fail",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "PitchPerfect Video Challenge",
+          "run": 3,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "pass",
+            "6": "pass",
+            "7": "fail"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        },
+        {
+          "candidate": "TeamForge Cup",
+          "run": 3,
+          "original_verdict": "FAIL",
+          "verdict": "FAIL",
+          "checks": {
+            "1": "pass",
+            "2": "pass",
+            "3": "pass",
+            "4": "pass",
+            "5": "fail",
+            "6": "pass",
+            "7": "pass"
+          },
+          "basis": "structured Scout facts; RedTeam advisory only"
+        }
+      ]
+    }
+  }
+}

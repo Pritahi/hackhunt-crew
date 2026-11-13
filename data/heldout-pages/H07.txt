@@ -1,0 +1,9 @@
+SYNTHETIC HELD-OUT FIXTURE, NOT A REAL EVENT
+Device Studio Challenge
+Eligibility: Adults worldwide, solo allowed.
+Format: Every stage is remote.
+Entry: Paid hardware purchase mandatory.
+Solo entry: allowed.
+Deadline: 2026-12-12T23:59:00Z
+Prizes: Winner receives USD2000 cash. Must buy a USD80 device, no simulator.
+Presentation: No face or own-voice requirement. Captions or text writeup accepted.

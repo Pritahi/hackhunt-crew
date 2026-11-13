@@ -33,8 +33,8 @@ ROOT = Path(__file__).parent
 RESULTS = ROOT / "results"
 
 
-def load_candidates() -> list[dict]:
-    candidates = json.loads((ROOT / "data" / "candidates.json").read_text())
+def load_candidates(dataset: str = "candidates.json") -> list[dict]:
+    candidates = json.loads((ROOT / "data" / dataset).read_text())
     for c in candidates:
         c["page_text"] = (ROOT / "data" / c["page_file"]).read_text()
     return candidates
@@ -58,14 +58,19 @@ def save_checkpoint(mode: str, reports: list[dict], ledger: TokenLedger, crew: C
 
 
 def main() -> None:
+    global RESULTS
     ap = argparse.ArgumentParser()
     ap.add_argument("--mode", choices=["baseline", "meko", "both"], default="both")
     ap.add_argument("--runs", type=int, default=2)
     ap.add_argument("--limit", type=int, default=0, help="max candidates this invocation (0 = all)")
     ap.add_argument("--fresh", action="store_true", help="discard existing checkpoints first")
+    ap.add_argument("--dataset", default="candidates.json")
+    ap.add_argument("--outdir", default="results")
+    ap.add_argument("--decision-policy", choices=["raw", "gated"], default="raw")
     args = ap.parse_args()
+    RESULTS = ROOT / args.outdir
 
-    candidates = load_candidates()
+    candidates = load_candidates(args.dataset)
     ground_truth = {c["name"]: c["ground_truth"]["verdict"] for c in candidates}
     modes = ["baseline", "meko"] if args.mode == "both" else [args.mode]
     n = len(candidates)
@@ -91,7 +96,7 @@ def main() -> None:
             )
             meko.initialize()
         llm = LLM.from_env(ledger)
-        crew = Crew(llm, meko=meko, mode=mode)
+        crew = Crew(llm, meko=meko, mode=mode, decision_policy=args.decision_policy)
         state_path = RESULTS / f"state-{mode}.json"
         if state_path.exists():
             state = json.loads(state_path.read_text())

@@ -17,6 +17,7 @@ import json
 import re
 
 from .agents import AGENTS, CRITERIA, user_prompt
+from .decision_gate import decide
 from .llm import LLM
 from .meko_client import MekoClient
 
@@ -34,11 +35,12 @@ def _extract_json(text: str) -> dict:
 
 
 class Crew:
-    def __init__(self, llm: LLM, meko: MekoClient | None = None, mode: str = "baseline"):
+    def __init__(self, llm: LLM, meko: MekoClient | None = None, mode: str = "baseline", decision_policy: str = "raw"):
         assert mode in {"baseline", "meko"}
         self.llm = llm
         self.meko = meko
         self.mode = mode
+        self.decision_policy = decision_policy
         self.learnings: list[str] = []  # baseline mode's in-process memory dump
         self._candidate_id = ""
         self._conversations: dict[str, str] = {}  # "agent:run" -> conversation id
@@ -147,7 +149,7 @@ class Crew:
                 self._learn(f"RedTeam killed {candidate['name']}: {parsed.get('kill_reason')}", agent, run)
                 outputs["_eliminated"] = True
 
-        verdict = self._final_verdict(outputs)
+        verdict = decide(outputs.get("scout", {}))["verdict"] if self.decision_policy == "gated" else self._final_verdict(outputs)
         report = {"candidate": candidate["name"], "mode": self.mode, "run": run, "verdict": verdict, "agents": outputs}
         if self.mode == "meko" and self.meko is not None:
             cid = self._conversation("crew", run)

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "H01",
+    "name": "Lighthouse Search Sprint",
+    "page_file": "heldout-pages/H01.txt",
+    "fixture_type": "synthetic_heldout",
+    "ground_truth": {
+      "verdict": "PASS",
+      "reason": "Read explicit eligibility and format fields against frozen criteria."
+    }
+  },
+  {
+    "id": "H02",
+    "name": "Archive Lens Jam",
+    "page_file": "heldout-pages/H02.txt",
+    "fixture_type": "synthetic_heldout",
+    "ground_truth": {
+      "verdict": "PASS",
+      "reason": "Read explicit eligibility and format fields against frozen criteria."
+    }
+  },
+  {
+    "id": "H03",
+    "name": "Sensor Sandbox Cup",
+    "page_file": "heldout-pages/H03.txt",
+    "fixture_type": "synthetic_heldout",
+    "ground_truth": {
+      "verdict": "PASS",
+      "reason": "Read explicit eligibility and format fields against frozen criteria."
+    }
+  },
+  {
+    "id": "H04",
+    "name": "Knowledge Atlas Build",
+    "page_file": "heldout-pages/H04.txt",
+    "fixture_type": "synthetic_heldout",
+    "ground_truth": {
+      "verdict": "PASS",
+      "reason": "Read explicit eligibility and format fields against frozen criteria."
+    }
+  },
+  {
+    "id": "H05",
+    "name": "Campus Ledger Sprint",
+    "page_file": "heldout-pages/H05.txt",
+    "fixture_type": "synthetic_heldout",
+    "ground_truth": {
+      "verdict": "FAIL",
+      "reason": "Read explicit eligibility and format fields against frozen criteria."
+    }
+  },
+  {
+    "id": "H06",
+    "name": "City Stage Challenge",
+    "page_file": "heldout-pages/H06.txt",
+    "fixture_type": "synthetic_heldout",
+    "ground_truth": {
+      "verdict": "FAIL",
+      "reason": "Read explicit eligibility and format fields against frozen criteria."
+    }
+  },
+  {
+    "id": "H07",
+    "name": "Device Studio Challenge",
+    "page_file": "heldout-pages/H07.txt",
+    "fixture_type": "synthetic_heldout",
+    "ground_truth": {
+      "verdict": "FAIL",
+      "reason": "Read explicit eligibility and format fields against frozen criteria."
+    }
+  },
+  {
+    "id": "H08",
+    "name": "Team Relay Challenge",
+    "page_file": "heldout-pages/H08.txt",
+    "fixture_type": "synthetic_heldout",
+    "ground_truth": {
+      "verdict": "FAIL",
+      "reason": "Read explicit eligibility and format fields against frozen criteria."
+    }
+  },
+  {
+    "id": "H09",
+    "name": "Personal Pitch Prize",
+    "page_file": "heldout-pages/H09.txt",
+    "fixture_type": "synthetic_heldout",
+    "ground_truth": {
+      "verdict": "FAIL",
+      "reason": "Read explicit eligibility and format fields against frozen criteria."
+    }
+  },
+  {
+    "id": "H10",
+    "name": "Old Signal Cup",
+    "page_file": "heldout-pages/H10.txt",
+    "fixture_type": "synthetic_heldout",
+    "ground_truth": {
+      "verdict": "FAIL",
+      "reason": "Read explicit eligibility and format fields against frozen criteria."
+    }
+  },
+  {
+    "id": "H11",
+    "name": "Quiet Reward Sprint",
+    "page_file": "heldout-pages/H11.txt",
+    "fixture_type": "synthetic_heldout",
+    "ground_truth": {
+      "verdict": "UNSURE",
+      "reason": "Prizes will be announced later; no amount or payment form published."
+    }
+  },
+  {
+    "id": "H12",
+    "name": "Enterprise Shift Jam",
+    "page_file": "heldout-pages/H12.txt",
+    "fixture_type": "synthetic_heldout",
+    "ground_truth": {
+      "verdict": "FAIL",
+      "reason": "Read explicit eligibility and format fields against frozen criteria."
+    }
+  }
+]

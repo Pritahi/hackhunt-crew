@@ -1,1 +1,177 @@
-{"status":"validation_in_progress","final_claim":null}
+{
+  "modes": {
+    "baseline": {
+      "overall": {
+        "mode": "baseline",
+        "run": null,
+        "llm_calls": 258,
+        "prompt_tokens": 1924053,
+        "completion_tokens": 40282,
+        "total_tokens": 1964335
+      },
+      "per_run": {
+        "1": {
+          "mode": "baseline",
+          "run": 1,
+          "llm_calls": 86,
+          "prompt_tokens": 247889,
+          "completion_tokens": 13773,
+          "total_tokens": 261662
+        },
+        "2": {
+          "mode": "baseline",
+          "run": 2,
+          "llm_calls": 86,
+          "prompt_tokens": 640012,
+          "completion_tokens": 13154,
+          "total_tokens": 653166
+        },
+        "3": {
+          "mode": "baseline",
+          "run": 3,
+          "llm_calls": 86,
+          "prompt_tokens": 1036152,
+          "completion_tokens": 13355,
+          "total_tokens": 1049507
+        }
+      },
+      "run_stats": {
+        "run_totals": [
+          261662,
+          653166,
+          1049507
+        ],
+        "run_calls": [
+          86,
+          86,
+          86
+        ],
+        "mean_tokens": 654778.3,
+        "spread_tokens": 787845,
+        "mean_calls": 86.0
+      },
+      "accuracy": {
+        "compared": 72,
+        "correct": 69,
+        "accuracy": 0.9583,
+        "misses": [
+          {
+            "candidate": "Rack It Up 2026 (Unstop)",
+            "want": "UNSURE",
+            "got": "FAIL"
+          },
+          {
+            "candidate": "Rack It Up 2026 (Unstop)",
+            "want": "UNSURE",
+            "got": "FAIL"
+          },
+          {
+            "candidate": "Rack It Up 2026 (Unstop)",
+            "want": "UNSURE",
+            "got": "FAIL"
+          }
+        ]
+      }
+    },
+    "meko": {
+      "overall": {
+        "mode": "meko",
+        "run": null,
+        "llm_calls": 257,
+        "prompt_tokens": 227536,
+        "completion_tokens": 43962,
+        "total_tokens": 271498
+      },
+      "per_run": {
+        "1": {
+          "mode": "meko",
+          "run": 1,
+          "llm_calls": 86,
+          "prompt_tokens": 66767,
+          "completion_tokens": 14723,
+          "total_tokens": 81490
+        },
+        "2": {
+          "mode": "meko",
+          "run": 2,
+          "llm_calls": 85,
+          "prompt_tokens": 81370,
+          "completion_tokens": 14371,
+          "total_tokens": 95741
+        },
+        "3": {
+          "mode": "meko",
+          "run": 3,
+          "llm_calls": 86,
+          "prompt_tokens": 79399,
+          "completion_tokens": 14868,
+          "total_tokens": 94267
+        }
+      },
+      "run_stats": {
+        "run_totals": [
+          81490,
+          95741,
+          94267
+        ],
+        "run_calls": [
+          86,
+          85,
+          86
+        ],
+        "mean_tokens": 90499.3,
+        "spread_tokens": 14251,
+        "mean_calls": 85.67
+      },
+      "accuracy": {
+        "compared": 72,
+        "correct": 65,
+        "accuracy": 0.9028,
+        "misses": [
+          {
+            "candidate": "Rack It Up 2026 (Unstop)",
+            "want": "UNSURE",
+            "got": "FAIL"
+          },
+          {
+            "candidate": "QNX Global Hackathon",
+            "want": "PASS",
+            "got": "FAIL"
+          },
+          {
+            "candidate": "Rack It Up 2026 (Unstop)",
+            "want": "UNSURE",
+            "got": "FAIL"
+          },
+          {
+            "candidate": "QNX Global Hackathon",
+            "want": "PASS",
+            "got": "FAIL"
+          },
+          {
+            "candidate": "Rusty Robots Sim Jam",
+            "want": "PASS",
+            "got": "FAIL"
+          },
+          {
+            "candidate": "Rack It Up 2026 (Unstop)",
+            "want": "UNSURE",
+            "got": "FAIL"
+          },
+          {
+            "candidate": "LocalLang NLP Challenge",
+            "want": "PASS",
+            "got": "FAIL"
+          }
+        ]
+      }
+    }
+  },
+  "comparison": {
+    "token_reduction_pct": 86.2,
+    "llm_call_reduction_pct": 0.4,
+    "basis": "means over three sequential passes, not independent trials (see run_stats)",
+    "quality_equal": false,
+    "quality_equal_or_better": false
+  }
+}

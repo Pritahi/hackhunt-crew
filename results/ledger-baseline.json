@@ -2168,5 +2168,415 @@
     "prompt_tokens": 12220,
     "completion_tokens": 217,
     "latency_ms": 1983
+  },
+  {
+    "agent": "scout",
+    "candidate": "AgriSense Data Sprint",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 12057,
+    "completion_tokens": 217,
+    "latency_ms": 1527
+  },
+  {
+    "agent": "verifier",
+    "candidate": "AgriSense Data Sprint",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 12120,
+    "completion_tokens": 155,
+    "latency_ms": 1467
+  },
+  {
+    "agent": "redteam",
+    "candidate": "AgriSense Data Sprint",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 12410,
+    "completion_tokens": 61,
+    "latency_ms": 1108
+  },
+  {
+    "agent": "builder",
+    "candidate": "AgriSense Data Sprint",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 12411,
+    "completion_tokens": 190,
+    "latency_ms": 1828
+  },
+  {
+    "agent": "scout",
+    "candidate": "FinSim Forecasting Hack",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 12236,
+    "completion_tokens": 209,
+    "latency_ms": 10995
+  },
+  {
+    "agent": "verifier",
+    "candidate": "FinSim Forecasting Hack",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 12305,
+    "completion_tokens": 155,
+    "latency_ms": 1233
+  },
+  {
+    "agent": "redteam",
+    "candidate": "FinSim Forecasting Hack",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 12595,
+    "completion_tokens": 51,
+    "latency_ms": 885
+  },
+  {
+    "agent": "builder",
+    "candidate": "FinSim Forecasting Hack",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 12586,
+    "completion_tokens": 209,
+    "latency_ms": 2092
+  },
+  {
+    "agent": "scout",
+    "candidate": "LocalLang NLP Challenge",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 12417,
+    "completion_tokens": 221,
+    "latency_ms": 1782
+  },
+  {
+    "agent": "verifier",
+    "candidate": "LocalLang NLP Challenge",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 12507,
+    "completion_tokens": 167,
+    "latency_ms": 1337
+  },
+  {
+    "agent": "redteam",
+    "candidate": "LocalLang NLP Challenge",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 12821,
+    "completion_tokens": 55,
+    "latency_ms": 1174
+  },
+  {
+    "agent": "builder",
+    "candidate": "LocalLang NLP Challenge",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 12816,
+    "completion_tokens": 206,
+    "latency_ms": 1916
+  },
+  {
+    "agent": "scout",
+    "candidate": "Rusty Robots Sim Jam",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 12630,
+    "completion_tokens": 217,
+    "latency_ms": 1325
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Rusty Robots Sim Jam",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 12707,
+    "completion_tokens": 167,
+    "latency_ms": 1260
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Rusty Robots Sim Jam",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 13021,
+    "completion_tokens": 61,
+    "latency_ms": 1050
+  },
+  {
+    "agent": "builder",
+    "candidate": "Rusty Robots Sim Jam",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 13022,
+    "completion_tokens": 194,
+    "latency_ms": 1562
+  },
+  {
+    "agent": "scout",
+    "candidate": "CivicMap Hack 2026",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 12831,
+    "completion_tokens": 202,
+    "latency_ms": 1700
+  },
+  {
+    "agent": "verifier",
+    "candidate": "CivicMap Hack 2026",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 12906,
+    "completion_tokens": 166,
+    "latency_ms": 1289
+  },
+  {
+    "agent": "redteam",
+    "candidate": "CivicMap Hack 2026",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 13222,
+    "completion_tokens": 55,
+    "latency_ms": 1054
+  },
+  {
+    "agent": "builder",
+    "candidate": "CivicMap Hack 2026",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 13217,
+    "completion_tokens": 242,
+    "latency_ms": 2578
+  },
+  {
+    "agent": "scout",
+    "candidate": "CampusCopilot Hackathon",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 13058,
+    "completion_tokens": 206,
+    "latency_ms": 1240
+  },
+  {
+    "agent": "verifier",
+    "candidate": "CampusCopilot Hackathon",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 13115,
+    "completion_tokens": 79,
+    "latency_ms": 1934
+  },
+  {
+    "agent": "redteam",
+    "candidate": "CampusCopilot Hackathon",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 13254,
+    "completion_tokens": 73,
+    "latency_ms": 3394
+  },
+  {
+    "agent": "scout",
+    "candidate": "DroneZone Live Finals",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 13237,
+    "completion_tokens": 196,
+    "latency_ms": 1236
+  },
+  {
+    "agent": "verifier",
+    "candidate": "DroneZone Live Finals",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 13262,
+    "completion_tokens": 89,
+    "latency_ms": 3374
+  },
+  {
+    "agent": "redteam",
+    "candidate": "DroneZone Live Finals",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 13420,
+    "completion_tokens": 80,
+    "latency_ms": 1175
+  },
+  {
+    "agent": "scout",
+    "candidate": "CryptoKitty DeFi Hack",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 13376,
+    "completion_tokens": 197,
+    "latency_ms": 1395
+  },
+  {
+    "agent": "verifier",
+    "candidate": "CryptoKitty DeFi Hack",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 13428,
+    "completion_tokens": 96,
+    "latency_ms": 1358
+  },
+  {
+    "agent": "redteam",
+    "candidate": "CryptoKitty DeFi Hack",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 13600,
+    "completion_tokens": 82,
+    "latency_ms": 1163
+  },
+  {
+    "agent": "scout",
+    "candidate": "RoboArm Hardware Hack",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 13560,
+    "completion_tokens": 204,
+    "latency_ms": 1257
+  },
+  {
+    "agent": "verifier",
+    "candidate": "RoboArm Hardware Hack",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 13614,
+    "completion_tokens": 95,
+    "latency_ms": 1455
+  },
+  {
+    "agent": "redteam",
+    "candidate": "RoboArm Hardware Hack",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 13784,
+    "completion_tokens": 84,
+    "latency_ms": 1910
+  },
+  {
+    "agent": "scout",
+    "candidate": "RetroWeb 2025 Hackathon",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 13734,
+    "completion_tokens": 201,
+    "latency_ms": 1344
+  },
+  {
+    "agent": "verifier",
+    "candidate": "RetroWeb 2025 Hackathon",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 13803,
+    "completion_tokens": 94,
+    "latency_ms": 3615
+  },
+  {
+    "agent": "redteam",
+    "candidate": "RetroWeb 2025 Hackathon",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 13976,
+    "completion_tokens": 87,
+    "latency_ms": 30631
+  },
+  {
+    "agent": "scout",
+    "candidate": "PitchPerfect Video Challenge",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 13932,
+    "completion_tokens": 214,
+    "latency_ms": 2030
+  },
+  {
+    "agent": "verifier",
+    "candidate": "PitchPerfect Video Challenge",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 14009,
+    "completion_tokens": 108,
+    "latency_ms": 10141
+  },
+  {
+    "agent": "redteam",
+    "candidate": "PitchPerfect Video Challenge",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 14204,
+    "completion_tokens": 96,
+    "latency_ms": 5754
+  },
+  {
+    "agent": "scout",
+    "candidate": "TeamForge Cup",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 14126,
+    "completion_tokens": 210,
+    "latency_ms": 1988
+  },
+  {
+    "agent": "verifier",
+    "candidate": "TeamForge Cup",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 14212,
+    "completion_tokens": 87,
+    "latency_ms": 1821
+  },
+  {
+    "agent": "redteam",
+    "candidate": "TeamForge Cup",
+    "run": 3,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 14365,
+    "completion_tokens": 86,
+    "latency_ms": 1472
   }
 ]

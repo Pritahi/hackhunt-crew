@@ -1,0 +1,689 @@
+[
+  {
+    "candidate": "Lighthouse Search Sprint",
+    "mode": "baseline",
+    "run": 1,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "Lighthouse Search Sprint",
+        "organizer": null,
+        "deadline": "2026-12-20T23:59:00Z",
+        "prizes": {
+          "first_prize": "USD2200 cash"
+        },
+        "first_prize_cash_usd": 2200,
+        "eligibility": "Open to adults worldwide",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Remote hackathon open to adults worldwide. Free entry, solo participation allowed, and no face or voice requirements for submission."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate meets all eligibility criteria: it is open to non-students, fully online, free to enter, offers a cash prize exceeding 100 USD, allows solo participation, has a future deadline, and does not require face or voice recording."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "The organizer is not specified, which increases the risk of prize non-payment or lack of accountability for a remote-only event.",
+            "severity": "medium"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "A privacy-focused, local-first semantic search engine for personal knowledge bases that uses a lightweight vector database to index local documents without cloud dependencies.",
+        "reuse": [
+          "Vector embedding pipeline using open-source HuggingFace models",
+          "Local-first storage architecture (SQLite/ChromaDB)",
+          "React-based UI boilerplate for search interfaces",
+          "Existing CI/CD scripts for automated documentation generation"
+        ],
+        "steps": [
+          "Initialize project with a local-first architecture to ensure no external API costs.",
+          "Implement document ingestion module for common formats (PDF, Markdown, TXT).",
+          "Integrate a local embedding model (e.g., all-MiniLM-L6-v2) to generate vector representations.",
+          "Build the search interface with real-time filtering and relevance ranking.",
+          "Package the solution as a portable CLI tool or desktop app to demonstrate 'Lighthouse' search capabilities.",
+          "Conduct stress testing on local document sets to ensure performance under 200ms latency."
+        ],
+        "demo_risks": [
+          "Performance degradation on large document sets without proper indexing optimization.",
+          "Potential lack of organizer transparency regarding prize distribution (mitigated by focusing on high-quality code submission).",
+          "Dependency conflicts with local environment setups."
+        ],
+        "effort_days": 7
+      }
+    }
+  },
+  {
+    "candidate": "Archive Lens Jam",
+    "mode": "baseline",
+    "run": 1,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "Archive Lens Jam",
+        "organizer": null,
+        "deadline": "2026-11-30T23:59:00Z",
+        "prizes": {
+          "first_prize": "USD150 cash"
+        },
+        "first_prize_cash_usd": 150,
+        "eligibility": "Open to everyone aged 18+",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "The event is remote, free to enter, allows solo participation, and does not require face or voice recording. The deadline is in the future."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate is open to non-students, fully online, free to enter, offers a cash prize of 150 USD (meeting the 100 USD minimum), allows solo participation, has a future deadline, and does not require face or voice recording."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "The organizer is null, which suggests a lack of institutional backing or transparency, increasing the risk of prize non-payment or event cancellation.",
+            "severity": "medium"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "A lightweight browser-based tool that uses local browser APIs (File System Access API) to index and search through local archive folders (ZIP/TAR) without uploading data to a server, ensuring privacy and speed.",
+        "reuse": [
+          "Local-first file indexing logic from previous search-based projects",
+          "UI component library for file tree visualization",
+          "Web Worker implementation for non-blocking archive extraction"
+        ],
+        "steps": [
+          "Implement a file picker interface using the File System Access API.",
+          "Develop a Web Worker to stream and index archive contents (metadata/filenames) without full extraction.",
+          "Build a fuzzy search engine using a lightweight library like FlexSearch.",
+          "Create a responsive dashboard to display search results and provide 'quick-look' previews.",
+          "Package as a static PWA for offline-first usage."
+        ],
+        "demo_risks": [
+          "Browser memory limits when indexing very large archives.",
+          "Performance bottlenecks with deep directory nesting.",
+          "Lack of organizer transparency regarding prize payout (mitigated by keeping development time low)."
+        ],
+        "effort_days": 4
+      }
+    }
+  },
+  {
+    "candidate": "Sensor Sandbox Cup",
+    "mode": "baseline",
+    "run": 1,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "Sensor Sandbox Cup",
+        "organizer": null,
+        "deadline": "2026-12-01T23:59:00Z",
+        "prizes": {
+          "first_prize": "USD600 cash"
+        },
+        "first_prize_cash_usd": 600,
+        "eligibility": "Open worldwide to adults.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Remote hackathon open to adults worldwide. No face or voice requirement; text or captions accepted. Free entry with no required purchases."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate is open to non-students, fully online, free to enter, offers a cash prize of 600 USD (meeting the 100 USD minimum), allows solo participation, has a future deadline, and does not require face or voice recording."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Organizer is null; lack of verifiable entity increases risk of prize non-payment or 'ghost' hackathon.",
+            "severity": "medium"
+          },
+          {
+            "risk": "Potential for hidden 'processing fees' or tax withholding requirements for international winners in India.",
+            "severity": "low"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "A lightweight, browser-based sensor data simulator and visualization dashboard that allows users to test IoT logic without physical hardware.",
+        "reuse": [
+          "Modular data ingestion pipeline from previous IoT projects",
+          "React-based dashboard components for real-time charting",
+          "Mock sensor data generator script"
+        ],
+        "steps": [
+          "Develop a mock sensor data generator using JavaScript to simulate environmental inputs (temperature, humidity, pressure).",
+          "Build a React dashboard to visualize incoming data streams in real-time.",
+          "Implement a 'Sandbox Logic' engine where users can define simple threshold-based triggers (e.g., 'if temp > 30, alert').",
+          "Package the project as a static web app for easy, no-install evaluation by judges.",
+          "Document the API and simulation parameters to ensure the 'Sensor Sandbox' concept is clear."
+        ],
+        "demo_risks": [
+          "The lack of a verifiable organizer may mean the project is never reviewed.",
+          "Browser-based simulation might be perceived as 'too simple' compared to hardware-integrated projects."
+        ],
+        "effort_days": 4
+      }
+    }
+  },
+  {
+    "candidate": "Knowledge Atlas Build",
+    "mode": "baseline",
+    "run": 1,
+    "verdict": "PASS",
+    "agents": {
+      "scout": {
+        "name": "Knowledge Atlas Build",
+        "organizer": null,
+        "deadline": "2026-11-22T23:59:00Z",
+        "prizes": {
+          "first_prize": "USD900 cash"
+        },
+        "first_prize_cash_usd": 900,
+        "eligibility": "Adults globally, independent developers welcome.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Remote hackathon for independent developers. No face or voice recording required; text-only submissions are accepted. Entry is free."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "PASS",
+        "reasons": [
+          "The candidate is open to non-students, fully online, free to enter, offers a cash prize of 900 USD (meeting the 100 USD minimum), allows solo participation, has a future deadline, and does not require face or voice recording."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "The organizer is null, which is a significant red flag for prize payout reliability and legitimacy.",
+            "severity": "high"
+          },
+          {
+            "risk": "Lack of clear terms regarding international prize disbursement (e.g., tax forms, wire transfer fees, or platform-specific payment restrictions) for an independent developer in India.",
+            "severity": "medium"
+          }
+        ],
+        "kill": false,
+        "kill_reason": ""
+      },
+      "builder": {
+        "idea": "A graph-based knowledge visualization tool that uses LLM-extracted entities and relationships from user-uploaded documents to build an interactive, searchable 'atlas' of information.",
+        "reuse": [
+          "Vector database integration logic from previous RAG projects",
+          "React-based force-directed graph component",
+          "FastAPI boilerplate for document processing pipelines"
+        ],
+        "steps": [
+          "Set up a FastAPI backend to handle PDF/text ingestion and entity extraction using a free-tier LLM API.",
+          "Implement a graph database schema (using NetworkX or Neo4j) to store extracted entities and relationships.",
+          "Develop a frontend dashboard using D3.js or React-Force-Graph to visualize the knowledge atlas.",
+          "Add a semantic search feature to allow users to query the atlas and highlight relevant sub-graphs.",
+          "Package the solution as a containerized app with a clear README for the judges."
+        ],
+        "demo_risks": [
+          "The organizer's legitimacy is unverified, risking time investment for a non-existent prize.",
+          "Potential latency issues with free-tier LLM APIs during entity extraction.",
+          "Complexity of visualizing large graphs in a browser without performance degradation."
+        ],
+        "effort_days": 7
+      }
+    }
+  },
+  {
+    "candidate": "Campus Ledger Sprint",
+    "mode": "baseline",
+    "run": 1,
+    "verdict": "FAIL",
+    "agents": {
+      "scout": {
+        "name": "Campus Ledger Sprint",
+        "organizer": null,
+        "deadline": "2026-12-11T23:59:00Z",
+        "prizes": {
+          "first_prize": "USD 500 cash"
+        },
+        "first_prize_cash_usd": 500,
+        "eligibility": "Current university students only. Enrollment proof required.",
+        "student_only": true,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Remote hackathon for university students. Requires proof of enrollment. No face or voice recording required for submission."
+      },
+      "verifier": {
+        "checks": {
+          "1": "fail",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "The candidate is restricted to current university students only, which contradicts the builder's profile as a non-student."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Eligibility violation: The hackathon is strictly limited to current university students, which excludes the builder.",
+            "severity": "high"
+          }
+        ],
+        "kill": true,
+        "kill_reason": "The candidate explicitly requires proof of university enrollment, violating the builder's eligibility criteria."
+      },
+      "_eliminated": true
+    }
+  },
+  {
+    "candidate": "City Stage Challenge",
+    "mode": "baseline",
+    "run": 1,
+    "verdict": "FAIL",
+    "agents": {
+      "scout": {
+        "name": "City Stage Challenge",
+        "organizer": null,
+        "deadline": "2026-12-12T23:59:00Z",
+        "prizes": {
+          "first_prize": "USD3000 cash"
+        },
+        "first_prize_cash_usd": 3000,
+        "eligibility": "Open worldwide to adults",
+        "student_only": false,
+        "online": false,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Features online qualifiers but requires mandatory in-person finals at the participant's own travel expense."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "fail",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "The candidate requires mandatory in-person finals, which violates the requirement for fully online participation with no travel required."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Mandatory in-person finals require significant travel and accommodation costs, which are not covered by the organizer.",
+            "severity": "high"
+          }
+        ],
+        "kill": true,
+        "kill_reason": "The candidate violates the mandatory requirement for fully online participation by requiring in-person finals."
+      },
+      "_eliminated": true
+    }
+  },
+  {
+    "candidate": "Device Studio Challenge",
+    "mode": "baseline",
+    "run": 1,
+    "verdict": "FAIL",
+    "agents": {
+      "scout": {
+        "name": "Device Studio Challenge",
+        "organizer": null,
+        "deadline": "2026-12-12T23:59:00Z",
+        "prizes": {
+          "first_prize": "USD2000 cash"
+        },
+        "first_prize_cash_usd": 2000,
+        "eligibility": "Adults worldwide",
+        "student_only": false,
+        "online": true,
+        "free_entry": false,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Entry requires a mandatory USD80 hardware purchase. No simulator allowed."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "fail",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "The candidate requires a mandatory USD80 hardware purchase, which violates the requirement for free entry."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Mandatory hardware purchase of USD80 creates a significant financial barrier to entry and potential sunk-cost risk.",
+            "severity": "high"
+          }
+        ],
+        "kill": true,
+        "kill_reason": "The candidate requires a mandatory USD80 hardware purchase, which violates the hard entry-criterion requiring the hackathon to be free to enter."
+      },
+      "_eliminated": true
+    }
+  },
+  {
+    "candidate": "Team Relay Challenge",
+    "mode": "baseline",
+    "run": 1,
+    "verdict": "FAIL",
+    "agents": {
+      "scout": {
+        "name": "Team Relay Challenge",
+        "organizer": null,
+        "deadline": "2026-12-15T23:59:00Z",
+        "prizes": {
+          "first_prize": "USD1200 cash"
+        },
+        "first_prize_cash_usd": 1200,
+        "eligibility": "Adults worldwide. Teams of 3-5 only.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": false,
+        "requires_face_or_voice": false,
+        "notes": "Solo participation is explicitly prohibited; teams of 3-5 are required. The event is fully remote and free to enter."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "fail",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "The candidate explicitly prohibits solo participation, requiring teams of 3-5 members, which violates the requirement that solo participation must be allowed."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Mandatory team formation creates a high barrier to entry and potential coordination overhead for independent hobbyists.",
+            "severity": "medium"
+          }
+        ],
+        "kill": true,
+        "kill_reason": "The candidate explicitly prohibits solo participation, which violates the hard entry-criterion requiring that solo participation must be allowed."
+      },
+      "_eliminated": true
+    }
+  },
+  {
+    "candidate": "Personal Pitch Prize",
+    "mode": "baseline",
+    "run": 1,
+    "verdict": "FAIL",
+    "agents": {
+      "scout": {
+        "name": "Personal Pitch Prize",
+        "organizer": null,
+        "deadline": "2026-12-16T23:59:00Z",
+        "prizes": {
+          "first_prize": "USD500 cash"
+        },
+        "first_prize_cash_usd": 500,
+        "eligibility": "Adults worldwide",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": true,
+        "notes": "Requires mandatory selfie video and own spoken narration. TTS is prohibited."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "fail"
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "The candidate requires a mandatory selfie video and own spoken narration, which violates the criterion prohibiting requirements to show your face or record your own voice."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "Mandatory biometric data collection (selfie video and voice recording) poses significant privacy and security risks for the participant.",
+            "severity": "high"
+          }
+        ],
+        "kill": true,
+        "kill_reason": "The candidate explicitly requires a mandatory selfie video and own spoken narration, which violates the hard entry-criterion prohibiting requirements to show your face or record your own voice."
+      },
+      "_eliminated": true
+    }
+  },
+  {
+    "candidate": "Old Signal Cup",
+    "mode": "baseline",
+    "run": 1,
+    "verdict": "FAIL",
+    "agents": {
+      "scout": {
+        "name": "Old Signal Cup",
+        "organizer": null,
+        "deadline": "2026-10-20T23:59:00Z",
+        "prizes": {
+          "first_prize": "USD1000 cash"
+        },
+        "first_prize_cash_usd": 1000,
+        "eligibility": "Adults worldwide",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "The submission deadline has already passed (October 20, 2026)."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "fail",
+          "7": "pass"
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "The submission deadline for this hackathon was October 20, 2026, which has already passed as of the evaluation date of November 10, 2026."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "The submission deadline has passed, rendering the hackathon inaccessible for entry.",
+            "severity": "high"
+          }
+        ],
+        "kill": true,
+        "kill_reason": "The submission deadline of October 20, 2026, has already passed as of the evaluation date of November 10, 2026, violating the hard entry-criterion regarding active participation."
+      },
+      "_eliminated": true
+    }
+  },
+  {
+    "candidate": "Quiet Reward Sprint",
+    "mode": "baseline",
+    "run": 1,
+    "verdict": "UNSURE",
+    "agents": {
+      "scout": {
+        "name": "Quiet Reward Sprint",
+        "organizer": null,
+        "deadline": "2026-12-18T23:59:00Z",
+        "prizes": {},
+        "first_prize_cash_usd": null,
+        "eligibility": "Adults worldwide",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Prizes are not yet announced or defined. The event is fully remote and allows solo entry without face or voice requirements."
+      },
+      "verifier": {
+        "checks": {
+          "1": "pass",
+          "2": "pass",
+          "3": "pass",
+          "4": "unknown",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "UNSURE",
+        "reasons": [
+          "The prize structure for this event is not yet announced or defined, making it impossible to verify if the first prize meets the minimum requirement of 100 USD in cash."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "The prize structure is currently undefined, creating a high risk that the final reward may not meet the $100 USD cash minimum or may be paid in non-cash assets (tokens/credits).",
+            "severity": "high"
+          }
+        ],
+        "kill": true,
+        "kill_reason": "The candidate fails to meet the hard entry-criterion requiring a confirmed cash first prize of at least 100 USD, as the prize structure is currently undefined."
+      },
+      "_eliminated": true
+    }
+  },
+  {
+    "candidate": "Enterprise Shift Jam",
+    "mode": "baseline",
+    "run": 1,
+    "verdict": "FAIL",
+    "agents": {
+      "scout": {
+        "name": "Enterprise Shift Jam",
+        "organizer": null,
+        "deadline": "2026-12-20T23:59:00Z",
+        "prizes": {
+          "first_prize": "USD2500 cash"
+        },
+        "first_prize_cash_usd": 2500,
+        "eligibility": "Working professionals only. Students and non-professionals excluded.",
+        "student_only": false,
+        "online": true,
+        "free_entry": true,
+        "solo_allowed": true,
+        "requires_face_or_voice": false,
+        "notes": "Eligibility is restricted to working professionals; students and non-professionals are explicitly excluded. The event is fully remote and does not require face or voice recording."
+      },
+      "verifier": {
+        "checks": {
+          "1": "fail",
+          "2": "pass",
+          "3": "pass",
+          "4": "pass",
+          "5": "pass",
+          "6": "pass",
+          "7": "pass"
+        },
+        "verdict": "FAIL",
+        "reasons": [
+          "The candidate explicitly restricts eligibility to 'Working professionals only' and excludes 'non-professionals'. As the builder is an independent hobbyist and not an employed working professional, they are ineligible for this event."
+        ]
+      },
+      "redteam": {
+        "risks": [
+          {
+            "risk": "The candidate explicitly restricts eligibility to 'Working professionals only', which excludes the builder's status as an independent hobbyist.",
+            "severity": "high"
+          }
+        ],
+        "kill": true,
+        "kill_reason": "The candidate explicitly restricts eligibility to 'Working professionals only' and excludes 'non-professionals', violating the builder's eligibility status."
+      },
+      "_eliminated": true
+    }
+  }
+]

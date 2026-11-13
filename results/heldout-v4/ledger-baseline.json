@@ -1,0 +1,402 @@
+[
+  {
+    "agent": "scout",
+    "candidate": "Lighthouse Search Sprint",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 497,
+    "completion_tokens": 185,
+    "latency_ms": 1545
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Lighthouse Search Sprint",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 609,
+    "completion_tokens": 109,
+    "latency_ms": 1408
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Lighthouse Search Sprint",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 806,
+    "completion_tokens": 52,
+    "latency_ms": 1541
+  },
+  {
+    "agent": "builder",
+    "candidate": "Lighthouse Search Sprint",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 798,
+    "completion_tokens": 307,
+    "latency_ms": 2992
+  },
+  {
+    "agent": "scout",
+    "candidate": "Archive Lens Jam",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 639,
+    "completion_tokens": 185,
+    "latency_ms": 1690
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Archive Lens Jam",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 758,
+    "completion_tokens": 112,
+    "latency_ms": 1956
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Archive Lens Jam",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 961,
+    "completion_tokens": 53,
+    "latency_ms": 1521
+  },
+  {
+    "agent": "builder",
+    "candidate": "Archive Lens Jam",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 954,
+    "completion_tokens": 259,
+    "latency_ms": 1565
+  },
+  {
+    "agent": "scout",
+    "candidate": "Sensor Sandbox Cup",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 788,
+    "completion_tokens": 179,
+    "latency_ms": 2242
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Sensor Sandbox Cup",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 899,
+    "completion_tokens": 112,
+    "latency_ms": 2569
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Sensor Sandbox Cup",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1102,
+    "completion_tokens": 75,
+    "latency_ms": 2069
+  },
+  {
+    "agent": "builder",
+    "candidate": "Sensor Sandbox Cup",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1117,
+    "completion_tokens": 217,
+    "latency_ms": 3848
+  },
+  {
+    "agent": "scout",
+    "candidate": "Knowledge Atlas Build",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 935,
+    "completion_tokens": 181,
+    "latency_ms": 14717
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Knowledge Atlas Build",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1048,
+    "completion_tokens": 112,
+    "latency_ms": 1225
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Knowledge Atlas Build",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1251,
+    "completion_tokens": 88,
+    "latency_ms": 2378
+  },
+  {
+    "agent": "builder",
+    "candidate": "Knowledge Atlas Build",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1279,
+    "completion_tokens": 240,
+    "latency_ms": 2927
+  },
+  {
+    "agent": "scout",
+    "candidate": "Campus Ledger Sprint",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1078,
+    "completion_tokens": 179,
+    "latency_ms": 2222
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Campus Ledger Sprint",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1193,
+    "completion_tokens": 81,
+    "latency_ms": 1266
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Campus Ledger Sprint",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1333,
+    "completion_tokens": 63,
+    "latency_ms": 1668
+  },
+  {
+    "agent": "scout",
+    "candidate": "City Stage Challenge",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1237,
+    "completion_tokens": 174,
+    "latency_ms": 1614
+  },
+  {
+    "agent": "verifier",
+    "candidate": "City Stage Challenge",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1333,
+    "completion_tokens": 80,
+    "latency_ms": 4643
+  },
+  {
+    "agent": "redteam",
+    "candidate": "City Stage Challenge",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1472,
+    "completion_tokens": 65,
+    "latency_ms": 1761
+  },
+  {
+    "agent": "scout",
+    "candidate": "Device Studio Challenge",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1372,
+    "completion_tokens": 168,
+    "latency_ms": 1399
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Device Studio Challenge",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1472,
+    "completion_tokens": 77,
+    "latency_ms": 871
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Device Studio Challenge",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1605,
+    "completion_tokens": 77,
+    "latency_ms": 2015
+  },
+  {
+    "agent": "scout",
+    "candidate": "Team Relay Challenge",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1528,
+    "completion_tokens": 187,
+    "latency_ms": 1960
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Team Relay Challenge",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1644,
+    "completion_tokens": 85,
+    "latency_ms": 1953
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Team Relay Challenge",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1793,
+    "completion_tokens": 68,
+    "latency_ms": 811
+  },
+  {
+    "agent": "scout",
+    "candidate": "Personal Pitch Prize",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1676,
+    "completion_tokens": 165,
+    "latency_ms": 989
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Personal Pitch Prize",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1776,
+    "completion_tokens": 86,
+    "latency_ms": 1885
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Personal Pitch Prize",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1927,
+    "completion_tokens": 82,
+    "latency_ms": 1515
+  },
+  {
+    "agent": "scout",
+    "candidate": "Old Signal Cup",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1850,
+    "completion_tokens": 172,
+    "latency_ms": 1619
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Old Signal Cup",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 1949,
+    "completion_tokens": 98,
+    "latency_ms": 1414
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Old Signal Cup",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 2124,
+    "completion_tokens": 86,
+    "latency_ms": 2121
+  },
+  {
+    "agent": "scout",
+    "candidate": "Quiet Reward Sprint",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 2033,
+    "completion_tokens": 156,
+    "latency_ms": 1630
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Quiet Reward Sprint",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 2126,
+    "completion_tokens": 95,
+    "latency_ms": 3236
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Quiet Reward Sprint",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 2294,
+    "completion_tokens": 101,
+    "latency_ms": 1178
+  },
+  {
+    "agent": "scout",
+    "candidate": "Enterprise Shift Jam",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 2206,
+    "completion_tokens": 193,
+    "latency_ms": 16534
+  },
+  {
+    "agent": "verifier",
+    "candidate": "Enterprise Shift Jam",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 2332,
+    "completion_tokens": 99,
+    "latency_ms": 3752
+  },
+  {
+    "agent": "redteam",
+    "candidate": "Enterprise Shift Jam",
+    "run": 1,
+    "mode": "baseline",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_tokens": 2508,
+    "completion_tokens": 78,
+    "latency_ms": 1317
+  }
+]
